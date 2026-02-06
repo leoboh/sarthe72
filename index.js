@@ -24,6 +24,10 @@ const svgNavDashBoard = document.querySelector("#svgNavDashBoard");
 
 /* a construire =====>
     fonction qui dit que si le path = path3barre alors on switch avec le pathcroix, sinon path = pathcroix qui devient path3barre
+
+    et // ou
+
+    si path = path3barre => affichage dashboard sinon affichage board
  */
 svgNavDashBoard.addEventListener("click", () => {
     document.querySelector("#svgNavDashBoard").innerHTML = `
