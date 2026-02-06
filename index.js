@@ -28,6 +28,10 @@ const svgNavDashBoard = document.querySelector("#svgNavDashBoard");
     et // ou
 
     si path = path3barre => affichage dashboard sinon affichage board
+
+    et // ou
+
+    si pas possible de mettre path en condition => gerer l'innerhtml en fonction de la class existante => créer une class path1 ou path2. Si class path1 exist alors ca corréspond au dashboard fermé. Si path2 exist alors ca correspond au dashboard ouvert.
  */
 svgNavDashBoard.addEventListener("click", () => {
     document.querySelector("#svgNavDashBoard").innerHTML = `
