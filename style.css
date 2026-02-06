@@ -54,14 +54,38 @@ nav {
 #sectionBoard {
     width: 100vw;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.divSectionBoard {
+    height: 25vh;
+    width: 90vw;
+    border-radius: 15px;
 }
 #divSectionBoardWelcom {
+    border: 1px solid red;
 }
 #divSectionBoardUnits {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
 }
 #divSectionBoardActu {
+    border: 1px solid blue;
 }
-
+.divSectionBoardSingleUnit {
+    width: 45%;
+    height: 100%;
+    border-radius: 15px;
+}
+#divLunchUnit {
+    border: 1px solid rgb(206, 37, 222);
+}
+#divGreenSpaceUnit {
+    border: 1px solid rgb(222, 99, 17);
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
