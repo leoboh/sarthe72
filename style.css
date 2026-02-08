@@ -91,17 +91,16 @@ nav {
 /* dashboard */
 /*************/
 #divSectionBoardDashBoard {
-    height: 60vh;
+    height: 80vh;
     width: 90vw;
     border-radius: 15px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 .divSectionBoardDashBoardElements {
-    width: 45%;
+    width: 80%;
     height: 30%;
     border-radius: 15px;
     border: 1px solid red;
