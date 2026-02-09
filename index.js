@@ -190,4 +190,5 @@ svgNavDashBoard.addEventListener("click", () => {
                                                              Contact = trouver le moyen de mettre un captcha
     2 - changer les balise <a> footer par des btn simple
     3 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
+    4 - ajouter lien sur les div livraison, entretien ev, et contact, dans le board accueil
 */
