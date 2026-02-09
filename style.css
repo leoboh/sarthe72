@@ -18,6 +18,20 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    width: 90%;
+}
+
+p {
+    font-size: 0.7em;
+    width: 90%;
+}
 /**********************/
 /******* HEADER *******/
 /**********************/
@@ -65,20 +79,32 @@ nav {
     border-radius: 15px;
 }
 #divSectionBoardWelcom {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 #divSectionBoardUnits {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
 }
 #divSectionBoardActu {
     border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .divSectionBoardSingleUnit {
     width: 45%;
     height: 100%;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 #divLunchUnit {
     border: 1px solid rgb(206, 37, 222);
