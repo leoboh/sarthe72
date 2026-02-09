@@ -183,5 +183,11 @@ svgNavDashBoard.addEventListener("click", () => {
 
 
 
-        
+        ----------------
+
+    1 - finir d'ajouter les texts dans les differents menu : livraison = menu en cours et contrat de portage
+                                                             Entretien EV
+                                                             Contact = trouver le moyen de mettre un captcha
+    2 - changer les balise <a> footer par des btn simple
+    3 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
 */
