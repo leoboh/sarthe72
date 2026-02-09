@@ -168,10 +168,19 @@ svgNavDashBoard.addEventListener("click", () => {
 
 /*
 
-ajout d'une class sur sectionBoard quand on choisi un elem dans le dashboard, ex => 
-    - au click du premier elem "lunch" ajouter la class lunch a la section. 
-        maintenant : si il y a click sur menu dashboard, puis click sur la croix, retour sur la page d'accueil => alors que nous etions sur la page lunch
-        donc : 
-        avec ajout de class lunch a la section => 
-        au click sur la croix, verifié la class dans la section et afficher la page correspondante.
-**/
+    ajout d'une class sur sectionBoard quand on choisi un elem dans le dashboard, ex => 
+        - au click du premier elem "lunch" ajouter la class lunch a la section. 
+            maintenant : si il y a click sur menu dashboard, puis click sur la croix, retour sur la page d'accueil => alors que nous etions sur la page lunch
+            donc : 
+            avec ajout de class lunch a la section => 
+            au click sur la croix, verifié la class dans la section et afficher la page correspondante.
+
+
+
+        -------------
+
+
+    Menu inutile ? 
+     - remplacer le svgDB par un svg home accueil. 
+     - ajouter un btn precedent ? 
+*/
