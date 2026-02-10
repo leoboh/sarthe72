@@ -143,11 +143,11 @@ footer {
     width: 100vw;
     height: 5vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background-color: antiquewhite;
+    text-align: center;
 }
-.aFooter {
+.pFooter {
     font-size: 0.5em;
     text-decoration: none;
     color: black;
