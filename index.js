@@ -54,7 +54,7 @@ imgNavLogo.addEventListener("click", () => {
 /*****/
 /*****/
 svgNavDashBoard.addEventListener("click", () => {
-    if (document.querySelector(".svgNavDashBoardClose")) {
+    if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardHome")) {
         svgNavDashBoard.classList.remove("svgNavDashBoardClose");
         svgNavDashBoard.classList.add("svgNavDashBoardOpen");
         document.querySelector("#svgNavDashBoard").innerHTML = `
@@ -84,6 +84,8 @@ svgNavDashBoard.addEventListener("click", () => {
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
             svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardHome");
+            sectionBoard.classList.add("sectionBoardLunch");
             document.querySelector("#svgNavDashBoard").innerHTML = `
                 <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
             document.querySelector("#sectionBoard").innerHTML = `
@@ -96,6 +98,8 @@ svgNavDashBoard.addEventListener("click", () => {
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
             svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardHome");
+            sectionBoard.classList.add("sectionBoardGreenSpace");
             document.querySelector("#svgNavDashBoard").innerHTML = `
                 <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
             document.querySelector("#sectionBoard").innerHTML = `
@@ -108,6 +112,8 @@ svgNavDashBoard.addEventListener("click", () => {
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
             svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardHome");
+            sectionBoard.classList.add("sectionBoardContact");
             document.querySelector("#svgNavDashBoard").innerHTML = `
                 <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
             document.querySelector("#sectionBoard").innerHTML = `
@@ -115,8 +121,10 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /**********************************/
-    } else if (document.querySelector(".svgNavDashBoardOpen")) {
+        /*************** HOME *******************/
+        /*************** HOME *******************/
+        /*************** HOME *******************/
+    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardHome")) {
         svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
         svgNavDashBoard.classList.add("svgNavDashBoardClose");
         document.querySelector("#svgNavDashBoard").innerHTML = `
@@ -142,7 +150,164 @@ svgNavDashBoard.addEventListener("click", () => {
                 <h2>Actualités</h2>
             </div>
         `;
-        /**********************************/
+        /*************** LUNCH *******************/
+        /*************** LUNCH *******************/
+        /*************** LUNCH *******************/
+    } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardLunch")) {
+        svgNavDashBoard.classList.remove("svgNavDashBoardClose");
+        svgNavDashBoard.classList.add("svgNavDashBoardOpen");
+        document.querySelector("#svgNavDashBoard").innerHTML = `
+        <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardDashBoard" class="">
+                <div id="divSectionBoardDashBoardOne" class="divSectionBoardDashBoardElements">
+                    <h2>Livraison de repas à domicile</h2>
+                </div>
+                <div id="divSectionBoardDashBoardTwo" class="divSectionBoardDashBoardElements">
+                    <h2>Entretien d'espaces verts</h2>
+                </div>
+                <div id="divSectionBoardDashBoardThree" class="divSectionBoardDashBoardElements">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        `;
+
+        /*****/
+        /*****/
+        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
+        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
+        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
+        /*****/
+        /*****/
+
+        /* LUNCH */
+        divSectionBoardDashBoardOne.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardLunch" class="">
+            `;
+        });
+
+        /*****/
+        /* GREEN.SPACE */
+        divSectionBoardDashBoardTwo.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardLunch");
+            sectionBoard.classList.add("sectionBoardGreenSpace");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardGreenSpace" class="">
+            `;
+        });
+
+        /*****/
+        /* CONTACT */
+        divSectionBoardDashBoardThree.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardLunch");
+            sectionBoard.classList.add("sectionBoardContact");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardContact" class="">
+            `;
+        });
+        /*************** LUNCH2 *******************/
+        /*************** LUNCH2 *******************/
+        /*************** LUNCH2 *******************/
+    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardLunch")) {
+        svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+        svgNavDashBoard.classList.add("svgNavDashBoardClose");
+        document.querySelector("#svgNavDashBoard").innerHTML = `
+        <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardLunch" class="">
+        `;
+        /*************** GREEN.SPACE *******************/
+        /*************** GREEN.SPACE *******************/
+        /*************** GREEN.SPACE *******************/
+    } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardGreenSpace")) {
+        svgNavDashBoard.classList.remove("svgNavDashBoardClose");
+        svgNavDashBoard.classList.add("svgNavDashBoardOpen");
+        document.querySelector("#svgNavDashBoard").innerHTML = `
+            <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardDashBoard" class="">
+                <div id="divSectionBoardDashBoardOne" class="divSectionBoardDashBoardElements">
+                    <h2>Livraison de repas à domicile</h2>
+                </div>
+                <div id="divSectionBoardDashBoardTwo" class="divSectionBoardDashBoardElements">
+                    <h2>Entretien d'espaces verts</h2>
+                </div>
+                <div id="divSectionBoardDashBoardThree" class="divSectionBoardDashBoardElements">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+        `;
+
+        /*****/
+        /*****/
+        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
+        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
+        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
+        /*****/
+        /*****/
+
+        /* LUNCH */
+        divSectionBoardDashBoardOne.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardGreenSpace");
+            sectionBoard.classList.add("sectionBoardLunch");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardLunch" class="">
+            `;
+        });
+
+        /*****/
+        /* GREEN.SPACE */
+        divSectionBoardDashBoardTwo.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardGreenSpace" class="">
+            `;
+        });
+
+        /*****/
+        /* CONTACT */
+        divSectionBoardDashBoardThree.addEventListener("click", () => {
+            svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+            svgNavDashBoard.classList.add("svgNavDashBoardClose");
+            sectionBoard.classList.remove("sectionBoardGreenSpace");
+            sectionBoard.classList.add("sectionBoardContact");
+            document.querySelector("#svgNavDashBoard").innerHTML = `
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardContact" class="">
+            `;
+        });
+        /*************** GREEN.SPACE2 *******************/
+        /*************** GREEN.SPACE2 *******************/
+        /*************** GREEN.SPACE2 *******************/
+    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardGreenSpace")) {
+        svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
+        svgNavDashBoard.classList.add("svgNavDashBoardClose");
+        document.querySelector("#svgNavDashBoard").innerHTML = `
+        <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardGreenSpace" class="">
+        `;
     } else {
         svgNavDashBoard.classList.add("svgNavDashBoardClose");
         document.querySelector("#svgNavDashBoard").innerHTML = `
@@ -191,4 +356,5 @@ svgNavDashBoard.addEventListener("click", () => {
     2 - changer les balise <a> footer par des btn simple
     3 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
     4 - ajouter lien sur les div livraison, entretien ev, et contact, dans le board accueil
+
 */
