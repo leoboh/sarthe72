@@ -151,6 +151,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -164,7 +165,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -178,7 +179,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -256,6 +257,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -267,7 +269,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -281,7 +283,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -294,6 +296,7 @@ svgNavDashBoard.addEventListener("click", () => {
                 <div id="divSectionBoardContact" class="">
             `;
         });
+
         /********************************************************************************/
         /*********************************** LUNCH 2 ************************************/
         /*********************************** LUNCH 2 ************************************/
@@ -307,6 +310,7 @@ svgNavDashBoard.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardLunch" class="">
         `;
+
         /********************************************************************************/
         /********************************* GREEN.SPACE **********************************/
         /********************************* GREEN.SPACE **********************************/
@@ -339,6 +343,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -352,7 +357,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -364,7 +369,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -377,6 +382,7 @@ svgNavDashBoard.addEventListener("click", () => {
                 <div id="divSectionBoardContact" class="">
             `;
         });
+
         /********************************************************************************/
         /******************************** GREEN.SPACE 2 *********************************/
         /******************************** GREEN.SPACE 2 *********************************/
@@ -390,6 +396,7 @@ svgNavDashBoard.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardGreenSpace" class="">
         `;
+
         /********************************************************************************/
         /*********************************** CONTACT ************************************/
         /*********************************** CONTACT ************************************/
@@ -422,6 +429,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -435,7 +443,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -449,7 +457,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -460,6 +468,7 @@ svgNavDashBoard.addEventListener("click", () => {
                 <div id="divSectionBoardContact" class="">
             `;
         });
+
         /********************************************************************************/
         /********************************** CONTACT 2 ***********************************/
         /********************************** CONTACT 2 ***********************************/
@@ -506,6 +515,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -519,7 +529,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -533,7 +543,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -546,6 +556,7 @@ svgNavDashBoard.addEventListener("click", () => {
                 <div id="divSectionBoardContact" class="">
             `;
         });
+
         /********************************************************************************/
         /*********************************** ACTU 2 *************************************/
         /*********************************** ACTU 2 *************************************/
@@ -559,6 +570,7 @@ svgNavDashBoard.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActu" class="">
         `;
+
         /*******************************************************************************/
         /******************************* MENTIONS LEGALES ******************************/
         /******************************* MENTIONS LEGALES ******************************/
@@ -591,6 +603,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /*****/
         /*****/
 
+        /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -604,7 +617,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -618,7 +631,7 @@ svgNavDashBoard.addEventListener("click", () => {
             `;
         });
 
-        /*****/
+        /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgNavDashBoard.classList.remove("svgNavDashBoardOpen");
@@ -631,6 +644,7 @@ svgNavDashBoard.addEventListener("click", () => {
                 <div id="divSectionBoardContact" class="">
             `;
         });
+
         /********************************************************************************/
         /****************************** MENTIONS LEGALES 2 ******************************/
         /****************************** MENTIONS LEGALES 2 ******************************/
@@ -644,6 +658,7 @@ svgNavDashBoard.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardMentionsLegales" class="">
         `;
+
         /*******************************************************************************/
         /*********************************** HOME 3 ************************************/
         /*********************************** HOME 3 ************************************/
@@ -677,6 +692,9 @@ svgNavDashBoard.addEventListener("click", () => {
         /**********************************/
     }
 });
+
+/*****/
+/*****/
 document.querySelector("#pRealLeo").addEventListener("click", () => {
     window.open("https://leoblanche.com", "_blank");
 });
@@ -686,22 +704,6 @@ document.querySelector("#pRealLeo").addEventListener("click", () => {
 -
 -
 -
--
--
--
--
--
--
--
--
-
-    ajout d'une class sur sectionBoard quand on choisi un elem dans le dashboard, ex => 
-        - au click du premier elem "lunch" ajouter la class lunch a la section. 
-            maintenant : si il y a click sur menu dashboard, puis click sur la croix, retour sur la page d'accueil => alors que nous etions sur la page lunch
-            donc : 
-            avec ajout de class lunch a la section => 
-            au click sur la croix, verifié la class dans la section et afficher la page correspondante.
-
 
 
         ----------------
@@ -709,8 +711,7 @@ document.querySelector("#pRealLeo").addEventListener("click", () => {
     1 - finir d'ajouter les texts dans les differents menu : livraison = menu en cours et contrat de portage
                                                              Entretien EV
                                                              Contact = trouver le moyen de mettre un captcha
-    2 - changer les balise <a> footer par des btn simple
-    3 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
-    4 - ajouter lien sur les div livraison, entretien ev, et contact, dans le board accueil
+                                                             Mentions Légales
+    2 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
 
 */
