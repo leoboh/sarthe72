@@ -26,30 +26,7 @@ const pMentionsLegales = document.querySelector("#pMentionsLegales");
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 
-const greenSpace = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
-    sectionBoard.classList.add("sectionBoardGreenSpace");
-    document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardGreenSpace" class="">
-            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
-            <ul id="uldivSectionBoardGreenSpace">
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
-                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
-                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
-                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
-                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
-            </ul>
-        </div>
-    `;
-};
-/* ----------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-/* -------------------------------------------- Event -------------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-
-divLunchUnit.addEventListener("click", () => {
+const lunch = () => {
     sectionBoard.classList.remove("sectionBoardHome");
     sectionBoard.classList.add("sectionBoardLunch");
     document.querySelector("#sectionBoard").innerHTML = `
@@ -138,11 +115,35 @@ divLunchUnit.addEventListener("click", () => {
             window.open("/images/Plaquette-Parigné.pdf", "_blank");
         });
     });
-});
-divGreenSpaceUnit.addEventListener("click", () => {
-    greenSpace();
-});
-divSectionBoardActu.addEventListener("click", () => {
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+const greenSpace = () => {
+    sectionBoard.classList.remove("sectionBoardHome");
+    sectionBoard.classList.add("sectionBoardGreenSpace");
+    document.querySelector("#sectionBoard").innerHTML = `
+        <div id="divSectionBoardGreenSpace" class="">
+            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
+            <ul id="uldivSectionBoardGreenSpace">
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
+                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
+                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
+                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+            </ul>
+        </div>
+    `;
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+const actu = () => {
     sectionBoard.classList.remove("sectionBoardHome");
     sectionBoard.classList.add("sectionBoardActu");
     document.querySelector("#sectionBoard").innerHTML = `
@@ -194,8 +195,13 @@ divSectionBoardActu.addEventListener("click", () => {
             </div>
         `;
     });
-});
-pMentionsLegales.addEventListener("click", () => {
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+const mentionsLegales = () => {
     sectionBoard.classList.remove("sectionBoardHome");
     sectionBoard.classList.add("sectionBoardMentionsLegales");
     document.querySelector("#sectionBoard").innerHTML = `
@@ -215,6 +221,24 @@ pMentionsLegales.addEventListener("click", () => {
             </div>
         </div>
     `;
+};
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- Event -------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+divLunchUnit.addEventListener("click", () => {
+    lunch();
+});
+divGreenSpaceUnit.addEventListener("click", () => {
+    greenSpace();
+});
+divSectionBoardActu.addEventListener("click", () => {
+    actu();
+});
+pMentionsLegales.addEventListener("click", () => {
+    mentionsLegales();
 });
 /*****/
 /*****/
