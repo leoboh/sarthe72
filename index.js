@@ -22,6 +22,29 @@ const pMentionsLegales = document.querySelector("#pMentionsLegales");
 
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------- FONCTION PREPAREE -------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+const greenSpace = () => {
+    sectionBoard.classList.remove("sectionBoardHome");
+    sectionBoard.classList.add("sectionBoardGreenSpace");
+    document.querySelector("#sectionBoard").innerHTML = `
+        <div id="divSectionBoardGreenSpace" class="">
+            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
+            <ul id="uldivSectionBoardGreenSpace">
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
+                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
+                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
+                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+            </ul>
+        </div>
+    `;
+};
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- Event -------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -117,21 +140,7 @@ divLunchUnit.addEventListener("click", () => {
     });
 });
 divGreenSpaceUnit.addEventListener("click", () => {
-    sectionBoard.classList.remove("sectionBoardHome");
-    sectionBoard.classList.add("sectionBoardGreenSpace");
-    document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardGreenSpace" class="">
-            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
-            <ul id="uldivSectionBoardGreenSpace">
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
-                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
-                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
-                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
-                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
-            </ul>
-        </div>
-    `;
+    greenSpace();
 });
 divSectionBoardActu.addEventListener("click", () => {
     sectionBoard.classList.remove("sectionBoardHome");
@@ -263,11 +272,7 @@ imgNavLogo.addEventListener("click", () => {
         `;
     });
     divGreenSpaceUnit.addEventListener("click", () => {
-        sectionBoard.classList.remove("sectionBoardHome");
-        sectionBoard.classList.add("sectionBoardGreenSpace");
-        document.querySelector("#sectionBoard").innerHTML = `
-            <div id="divSectionBoardGreenSpace" class="">
-        `;
+        greenSpace();
     });
     divSectionBoardActu.addEventListener("click", () => {
         sectionBoard.classList.remove("sectionBoardHome");
