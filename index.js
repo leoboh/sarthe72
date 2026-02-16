@@ -26,28 +26,17 @@ const pMentionsLegales = document.querySelector("#pMentionsLegales");
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 
-const homePage = () => {
-    document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardWelcom" class="divSectionBoard">
-            <h1>Bienvenue</h1>
-            <p>
-                L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
-                • venir en aide aux personnes âgées en milieu rural</br>
-                • soutenir des travailleurs handicapés par de l'emploi
-            </p>
-        </div>
-        <div id="divSectionBoardUnits" class="divSectionBoard">
-            <div id="divLunchUnit" class="divSectionBoardSingleUnit">
-                <h2>Livraison de repas à domicile</h2>
-            </div>
-            <div id="divGreenSpaceUnit" class="divSectionBoardSingleUnit">
-                <h2>Entretien d'espaces verts</h2>
-            </div>
-        </div>
-        <div id="divSectionBoardActu" class="divSectionBoard">
-            <h2>Actualités</h2>
-        </div>
-    `;
+const removeClass = () => {
+    sectionBoard.classList.remove(
+        "sectionBoardLunch",
+        "sectionBoardGreenSpace",
+        "sectionBoardContact",
+        "sectionBoardActu",
+        "sectionBoardMentionsLegales",
+        "sectionBoardLunchMenu",
+        "sectionBoardLunchContrat",
+        "sectionBoardHome",
+    );
 };
 /**/
 /**/
@@ -96,8 +85,36 @@ const svgClose = () => {
 /**/
 /**/
 /**/
-const lunch = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
+const homePage = () => {
+    document.querySelector("#sectionBoard").innerHTML = `
+        <div id="divSectionBoardWelcom" class="divSectionBoard">
+            <h1>Bienvenue</h1>
+            <p>
+                L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
+                • venir en aide aux personnes âgées en milieu rural</br>
+                • soutenir des travailleurs handicapés par de l'emploi
+            </p>
+        </div>
+        <div id="divSectionBoardUnits" class="divSectionBoard">
+            <div id="divLunchUnit" class="divSectionBoardSingleUnit">
+                <h2>Livraison de repas à domicile</h2>
+            </div>
+            <div id="divGreenSpaceUnit" class="divSectionBoardSingleUnit">
+                <h2>Entretien d'espaces verts</h2>
+            </div>
+        </div>
+        <div id="divSectionBoardActu" class="divSectionBoard">
+            <h2>Actualités</h2>
+        </div>
+    `;
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+const lunchPage = () => {
+    removeClass();
     sectionBoard.classList.add("sectionBoardLunch");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardLunch" class="">
@@ -177,8 +194,8 @@ const lunch = () => {
 /**/
 /**/
 /**/
-const greenSpace = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
+const greenSpacePage = () => {
+    removeClass();
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
@@ -199,8 +216,8 @@ const greenSpace = () => {
 /**/
 /**/
 /**/
-const actu = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
+const actuPage = () => {
+    removeClass();
     sectionBoard.classList.add("sectionBoardActu");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardAllActu" class="">
@@ -257,8 +274,8 @@ const actu = () => {
 /**/
 /**/
 /**/
-const contact = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
+const contactPage = () => {
+    removeClass();
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
@@ -271,8 +288,8 @@ const contact = () => {
 /**/
 /**/
 /**/
-const mentionsLegales = () => {
-    sectionBoard.classList.remove("sectionBoardHome");
+const mentionsLegalesPage = () => {
+    removeClass();
     sectionBoard.classList.add("sectionBoardMentionsLegales");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardMentionsLegales" class="">
@@ -299,51 +316,47 @@ const mentionsLegales = () => {
 /* ----------------------------------------------------------------------------------------------- */
 
 divLunchUnit.addEventListener("click", () => {
-    lunch();
+    lunchPage();
 });
 divGreenSpaceUnit.addEventListener("click", () => {
-    greenSpace();
+    greenSpacePage();
 });
 divSectionBoardActu.addEventListener("click", () => {
-    actu();
+    actuPage();
 });
 pMentionsLegales.addEventListener("click", () => {
-    mentionsLegales();
+    mentionsLegalesPage();
 });
-/*****/
-/*****/
+/**/
+/**/
+/**/
+/**/
+/**/
 imgNavLogo.addEventListener("click", () => {
     svgClose();
-    sectionBoard.classList.remove(
-        "sectionBoardLunch",
-        "sectionBoardGreenSpace",
-        "sectionBoardContact",
-        "sectionBoardActu",
-        "sectionBoardMentionsLegales",
-        "sectionBoardLunchMenu",
-        "sectionBoardLunchContrat",
-    );
+    removeClass();
     sectionBoard.classList.add("sectionBoardHome");
     homePage();
-    /*****/
     /*****/
     const divLunchUnit = document.querySelector("#divLunchUnit");
     const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
     const divSectionBoardActu = document.querySelector("#divSectionBoardActu");
     /*****/
-    /*****/
     divLunchUnit.addEventListener("click", () => {
-        lunch();
+        lunchPage();
     });
     divGreenSpaceUnit.addEventListener("click", () => {
-        greenSpace();
+        greenSpacePage();
     });
     divSectionBoardActu.addEventListener("click", () => {
-        actu();
+        actuPage();
     });
 });
-/*****/
-/*****/
+/**/
+/**/
+/**/
+/**/
+/**/
 svgNavDashBoard.addEventListener("click", () => {
     /********************************************************************************/
     /************************************* HOME *************************************/
@@ -354,32 +367,30 @@ svgNavDashBoard.addEventListener("click", () => {
         svgOpen();
         navBoard();
         /*****/
-        /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
+            contactPage();
         });
 
         /********************************************************************************/
@@ -399,35 +410,31 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardLunch")) {
         svgOpen();
         navBoard();
-
-        /*****/
         /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
-            /* fct prep CONTACT */
+            contactPage();
         });
 
         /********************************************************************************/
@@ -437,7 +444,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /********************************************************************************/
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardLunch")) {
         svgClose();
-        lunch();
+        lunchPage();
 
         /********************************************************************************/
         /********************************* GREEN.SPACE **********************************/
@@ -447,34 +454,31 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardGreenSpace")) {
         svgOpen();
         navBoard();
-
-        /*****/
         /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
+            contactPage();
         });
 
         /********************************************************************************/
@@ -484,7 +488,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /********************************************************************************/
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardGreenSpace")) {
         svgClose();
-        greenSpace();
+        greenSpacePage();
 
         /********************************************************************************/
         /*********************************** CONTACT ************************************/
@@ -494,34 +498,31 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardContact")) {
         svgOpen();
         navBoard();
-
-        /*****/
         /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
+            contactPage();
         });
 
         /********************************************************************************/
@@ -531,7 +532,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /********************************************************************************/
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardContact")) {
         svgClose();
-        contact();
+        contactPage();
 
         /*******************************************************************************/
         /************************************ ACTU *************************************/
@@ -541,34 +542,31 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardActu")) {
         svgOpen();
         navBoard();
-
-        /*****/
         /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
+            contactPage();
         });
 
         /********************************************************************************/
@@ -578,7 +576,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /********************************************************************************/
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActu")) {
         svgClose();
-        actu();
+        actuPage();
 
         /*******************************************************************************/
         /******************************* MENTIONS LEGALES ******************************/
@@ -588,34 +586,31 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardMentionsLegales")) {
         svgOpen();
         navBoard();
-
-        /*****/
         /*****/
         const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
         const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
         const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
         /*****/
 
         /*********/
         /* LUNCH */
         divSectionBoardDashBoardOne.addEventListener("click", () => {
             svgClose();
-            lunch();
+            lunchPage();
         });
 
         /***************/
         /* GREEN.SPACE */
         divSectionBoardDashBoardTwo.addEventListener("click", () => {
             svgClose();
-            greenSpace();
+            greenSpacePage();
         });
 
         /***********/
         /* CONTACT */
         divSectionBoardDashBoardThree.addEventListener("click", () => {
             svgClose();
-            contact();
+            contactPage();
         });
 
         /********************************************************************************/
@@ -625,7 +620,7 @@ svgNavDashBoard.addEventListener("click", () => {
         /********************************************************************************/
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardMentionsLegales")) {
         svgClose();
-        mentionsLegales();
+        mentionsLegalesPage();
 
         /*******************************************************************************/
         /*********************************** HOME 3 ************************************/
@@ -637,12 +632,9 @@ svgNavDashBoard.addEventListener("click", () => {
         document.querySelector("#svgNavDashBoard").innerHTML = `
             <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
         homePage();
-        /**********************************/
     }
 });
 
-/*****/
-/*****/
 document.querySelector("#pRealLeo").addEventListener("click", () => {
     window.open("https://leoblanche.com", "_blank");
 });
@@ -656,10 +648,6 @@ document.querySelector("#pRealLeo").addEventListener("click", () => {
 
         ----------------
 
-    1 - finir d'ajouter les texts dans les differents menu : livraison = menu en cours et contrat de portage
-                                                             Entretien EV
-                                                             Contact = trouver le moyen de mettre un captcha
-                                                             Mentions Légales
     2 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
 
 */
