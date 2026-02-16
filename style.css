@@ -192,6 +192,24 @@ nav {
     align-items: center;
     text-align: center;
 }
+#uldivSectionBoardGreenSpace {
+    width: 90vw;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.liUldivSectionBoardGreenSpace {
+    border: 1px solid blue;
+    width: 45%;
+    height: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/

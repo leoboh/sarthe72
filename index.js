@@ -100,7 +100,7 @@ divGreenSpaceUnit.addEventListener("click", () => {
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
-            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :<h2>
+            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <ul id="uldivSectionBoardGreenSpace">
                 <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
                 <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
