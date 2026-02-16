@@ -100,20 +100,90 @@ divGreenSpaceUnit.addEventListener("click", () => {
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
+            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :<h2>
+            <ul id="uldivSectionBoardGreenSpace">
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
+                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
+                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
+                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
+                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+            </ul>
+        </div>
     `;
 });
 divSectionBoardActu.addEventListener("click", () => {
     sectionBoard.classList.remove("sectionBoardHome");
     sectionBoard.classList.add("sectionBoardActu");
     document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardActu" class="">
+        <div id="divSectionBoardAllActu" class="">
+            <ul id="uldivSectionBoardActu">
+                <li id="liActuOne" class="liUldivSectionBoardActu">
+                    <h2>1 000 000ème repas</h2>
+                    <p>Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
+                </li>
+                <li id="liActuTwo" class="liUldivSectionBoardActu">
+                    <h2>ASSEMBLEE GENERALE</h2>
+                    <p>L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
+                </li>
+                <li id="liActuThree" class="liUldivSectionBoardActu">
+                    <h2>CRISTAL ROC</h2>
+                    <p>Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
+                </li>
+            </ul>
+        </div>
     `;
+    /*****/
+    /*****/
+    const liActuOne = document.querySelector("#liActuOne");
+    const liActuTwo = document.querySelector("#liActuTwo");
+    const liActuThree = document.querySelector("#liActuThree");
+    /*****/
+    /*****/
+    liActuOne.addEventListener("click", () => {
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardActuOne" class="">
+                <h2>1 000 000ème repas</h2>
+                <p>Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
+            </div>
+        `;
+    });
+    liActuTwo.addEventListener("click", () => {
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardActuTwo" class="">
+                <h2>ASSEMBLEE GENERALE</h2>
+                <p>L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
+            </div>
+        `;
+    });
+    liActuThree.addEventListener("click", () => {
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id="divSectionBoardActuThree" class="">
+                <h2>CRISTAL ROC</h2>
+                <p>Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
+            </div>
+        `;
+    });
 });
 pMentionsLegales.addEventListener("click", () => {
     sectionBoard.classList.remove("sectionBoardHome");
     sectionBoard.classList.add("sectionBoardMentionsLegales");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardMentionsLegales" class="">
+            <h2>Mentions Legales</h2>
+            <div>
+                <p><span>Editeur :</span> SARTH'72</p>
+                <p>Tel: 02 43 75 28 47</p>
+                </br>
+                <p><span>Site hébergé par :</span> 1 & 1</p>
+                <p><span>Direction de publication :</span> THUREAU Alain</p>
+                <p><span>Développement et Intégration du site :</span> Léo</p>
+            </div>
+            <div>
+                <p><span>Protection du site</span></p>
+                <p>Le site de ********** est une œuvre de l’esprit protégée par la législation en vigueur. L’ensemble des éléments le composant tels que, la dénomination, le logo, les dessins, les photos, les animations, les documents téléchargeables et tout autre document sont la propriété exclusive de *********. Toute représentation, reproduction, modification, utilisation commerciale ou non, ainsi que tout transfert vers un autre site et/ou quel que soit le support sont interdits, sauf autorisation expresse et écrite  de **************. Toutefois, l’utilisation à des fins strictement personnelles est autorisée. Les utilisateurs de la messagerie liée au site ne peuvent communiquer de fausses informations, voire utiliser l’identité de tiers sous peine de poursuites pénales.</p>
+            </div>
+        </div>
     `;
 });
 /*****/
