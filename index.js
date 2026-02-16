@@ -39,6 +39,61 @@ divLunchUnit.addEventListener("click", () => {
             </div>
         </div>
     `;
+    /*****/
+    /*****/
+    const divLunchMenu = document.querySelector("#divLunchMenu");
+    const divLunchContrat = document.querySelector("#divLunchContrat");
+    /*****/
+    /*****/
+    divLunchMenu.addEventListener("click", () => {
+        sectionBoard.classList.remove("sectionBoardLunch");
+        sectionBoard.classList.add("sectionBoardLunchMenu", "sectionBoardLunch");
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id ="divMenu">
+                <ul id="ulDivMenuSectionBoardLunch">
+                    <li id="liMenuOne" class="liUlDivMenuSectionBoardLunch">Du 26 Janvier au 01 février 2026</li>
+                    <li id="liMenuTwo" class="liUlDivMenuSectionBoardLunch">Du 02 au 08 février 2026</li>
+                    <li id="liMenuThree" class="liUlDivMenuSectionBoardLunch">Du 09 au 15 février 2026</li>
+                    <li id="liMenuFour" class="liUlDivMenuSectionBoardLunch">Du 16 au 22 février 2026</li>
+                    <li id="liMenuFive" class="liUlDivMenuSectionBoardLunch">Du 23 février au 01 mars 2026</li>
+                </ul>
+            </div>
+        `;
+        /*****/
+        /*****/
+        const divMenu = document.querySelector("#divMenu");
+        const ulDivMenuSectionBoardLunch = document.querySelector("#ulDivMenuSectionBoardLunch");
+        const liUlDivMenuSectionBoardLunch = document.querySelector(".liUlDivMenuSectionBoardLunch");
+        const liMenuOne = document.querySelector("#liMenuOne");
+        const liMenuTwo = document.querySelector("#liMenuTwo");
+        const liMenuThree = document.querySelector("#liMenuThree");
+        const liMenuFour = document.querySelector("#liMenuFour");
+        const liMenuFive = document.querySelector("#liMenuFive");
+        /*****/
+        /*****/
+    });
+    divLunchContrat.addEventListener("click", () => {
+        sectionBoard.classList.remove("sectionBoardLunch");
+        sectionBoard.classList.add("sectionBoardLunchContrat", "sectionBoardLunch");
+        document.querySelector("#sectionBoard").innerHTML = `
+            <div id ="divContrat">
+                <div id="divContratHorsP" class="divContratSectionBoardContrat">
+                    <p>Contrat de portage hors parignéens</p>
+                </div>
+                <div id="divContratP" class="divContratSectionBoardContrat">
+                    <p>Contrat de portage parignéens</p>
+                </div>
+            </div>
+        `;
+        /*****/
+        /*****/
+        const divContrat = document.querySelector("#divContrat");
+        const divContratHorsP = document.querySelector("#divContratHorsP");
+        const divContratP = document.querySelector("#divContratP");
+        const divContratSectionBoardContrat = document.querySelector(".divContratSectionBoardContrat");
+        /*****/
+        /*****/
+    });
 });
 divGreenSpaceUnit.addEventListener("click", () => {
     sectionBoard.classList.remove("sectionBoardHome");
