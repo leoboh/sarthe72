@@ -71,6 +71,21 @@ divLunchUnit.addEventListener("click", () => {
         const liMenuFive = document.querySelector("#liMenuFive");
         /*****/
         /*****/
+        document.querySelector("#liMenuOne").addEventListener("click", () => {
+            window.open("/images/repas1.pdf", "_blank");
+        });
+        document.querySelector("#liMenuTwo").addEventListener("click", () => {
+            window.open("/images/repas2.pdf", "_blank");
+        });
+        document.querySelector("#liMenuThree").addEventListener("click", () => {
+            window.open("/images/repas3.pdf", "_blank");
+        });
+        document.querySelector("#liMenuFour").addEventListener("click", () => {
+            window.open("/images/repas4.pdf", "_blank");
+        });
+        document.querySelector("#liMenuFive").addEventListener("click", () => {
+            window.open("/images/repas5.pdf", "_blank");
+        });
     });
     divLunchContrat.addEventListener("click", () => {
         sectionBoard.classList.remove("sectionBoardLunch");
@@ -93,6 +108,12 @@ divLunchUnit.addEventListener("click", () => {
         const divContratSectionBoardContrat = document.querySelector(".divContratSectionBoardContrat");
         /*****/
         /*****/
+        document.querySelector("#divContratHorsP").addEventListener("click", () => {
+            window.open("/images/Plaquette-hors-Parigné.pdf", "_blank");
+        });
+        document.querySelector("#divContratP").addEventListener("click", () => {
+            window.open("/images/Plaquette-Parigné.pdf", "_blank");
+        });
     });
 });
 divGreenSpaceUnit.addEventListener("click", () => {
