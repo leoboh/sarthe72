@@ -279,20 +279,26 @@ const contactPage = () => {
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
-            <h2>Contactez nous en remplissant ce formulaire</h2>
+            <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire</h2>
             <form id="formDivSectionBoardContact" action="">
-                <input id="inputNomFormContact" class="" type="text" placeholder="Nom :" autocomplete="off">
-                <p class="pErrorInputNomFormContact">Nom invalide</p>
-                <input id="inputPrenomFormContact" class="" type="text" placeholder="Prénom :" autocomplete="off">
-                <p class="pErrorInputPrenomFormContact">Prénom invalide</p>
+                <input id="inputNomFormContact" class="checkInputFormContact" type="text" placeholder="Nom :" autocomplete="off">
+                <p id="pErrorInputNomFormContact" class="pErrorInputFormContact">Nom invalide</p>
+                <input id="inputPrenomFormContact" class="checkInputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
+                <p id="pErrorInputPrenomFormContact" class="pErrorInputFormContact">Prénom invalide</p>
                 <input id="inputPhoneFormContact" class="" type="text" placeholder="Téléphone :" autocomplete="off">
-                <p class="pErrorInputPhoneFormContact">Téléphone invalide</p>
+                <p id="pErrorInputPhoneFormContact" class="pErrorInputFormContact">Téléphone invalide</p>
                 <input id="inputEmailFormContact" class="" type="text" placeholder="E-mail :" autocomplete="off">
-                <p class="pErrorInputEmailFormContact">E-mail invalide</p>
-                <textarea id="textareaFormContact" class="" placeholder="Message :" autocomplete="off"></textarea>
-                <p class="pErrorTextareaFormContact">Message invalide</p>
+                <p id="pErrorInputEmailFormContact" class="pErrorInputFormContact">E-mail invalide</p>
+                <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
+                <p id="pErrorTextareaFormContact" class="pErrorInputFormContact">Message invalide</p>
                 <button onclick="sendMail()" class="" type="button">Envoyer</button>
             </form>
+            <div id="divIframeSectionBoardContact">
+                <iframe
+                    id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10692.14107377621!2d0.362784!3d47.9357015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9796d88e89a034f3!2sS.a.r.t.h%2072!5e0!3m2!1sfr!2sfr!4v1620653831305!5m2!1sfr!2sfr">
+                </iframe>
+            </div>
         </div>
     `;
 };
@@ -321,6 +327,32 @@ const mentionsLegalesPage = () => {
             </div>
         </div>
     `;
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+checkInput = () => {
+    const inputsForm = document.querySelectorAll(".checkInputFormContact");
+
+    for (const inputForm of inputsForm) {
+        if (inputForm.value == "") {
+            inputForm.classList.add("error");
+        }
+
+        inputForm.addEventListener("keyup", () => {
+            if (inputForm.value != "") {
+                inputForm.classList.remove("error");
+                // inputForm.style.marginBottom = "3vh";
+                // inputForm.parentElement.classList.remove("error");
+            } else {
+                inputForm.classList.add("error");
+                // inputForm.style.marginBottom = "2vh";
+                // inputForm.parentElement.classList.add("error");
+            }
+        });
+    }
 };
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
