@@ -279,7 +279,20 @@ const contactPage = () => {
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
-            <h2>Page contact</h2>
+            <h2>Contactez nous en remplissant ce formulaire</h2>
+            <form id="formDivSectionBoardContact" action="">
+                <input id="inputNomFormContact" class="" type="text" placeholder="Nom :" autocomplete="off">
+                <p class="pErrorInputNomFormContact">Nom invalide</p>
+                <input id="inputPrenomFormContact" class="" type="text" placeholder="Prénom :" autocomplete="off">
+                <p class="pErrorInputPrenomFormContact">Prénom invalide</p>
+                <input id="inputPhoneFormContact" class="" type="text" placeholder="Téléphone :" autocomplete="off">
+                <p class="pErrorInputPhoneFormContact">Téléphone invalide</p>
+                <input id="inputEmailFormContact" class="" type="text" placeholder="E-mail :" autocomplete="off">
+                <p class="pErrorInputEmailFormContact">E-mail invalide</p>
+                <textarea id="textareaFormContact" class="" placeholder="Message :" autocomplete="off"></textarea>
+                <p class="pErrorTextareaFormContact">Message invalide</p>
+                <button onclick="sendMail()" class="" type="button">Envoyer</button>
+            </form>
         </div>
     `;
 };
