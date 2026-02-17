@@ -424,6 +424,19 @@ sendMail = () => {
     const inputPhoneFormContact = document.getElementById("inputPhoneFormContact");
     const inputEmailFormContact = document.getElementById("inputEmailFormContact");
     const textareaFormContact = document.getElementById("textareaFormContact");
+
+    if (
+        !inputNomFormContact.classList.contains("error") &&
+        !inputPrenomFormContact.classList.contains("error") &&
+        !inputPhoneFormContact.classList.contains("error") &&
+        !inputEmailFormContact.classList.contains("error") &&
+        !textareaFormContact.classList.contains("error")
+    ) {
+        document.querySelector("#formDivSectionBoardContact").innerHTML = `
+            <p>Votre e-mail à bien été envoyé</p>
+         `;
+    } else {
+    }
 };
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
