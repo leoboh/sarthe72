@@ -301,7 +301,7 @@ const contactPage = () => {
                     <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
                     <p class="pErrorInputFormContact">Message invalide</p>
                 </div>
-                <button onclick="sendMail()" class="btn buttonFormContact" type="button">Envoyer</button>
+                <button onclick="sendMail()" class="buttonFormContact" type="button">Envoyer</button>
             </form>
             <div id="divIframeSectionBoardContact">
                 <iframe
@@ -413,7 +413,18 @@ checkPhone = () => {
         }
     });
 };
-
+/**/
+/**/
+/**/
+/**/
+/**/
+sendMail = () => {
+    const inputNomFormContact = document.getElementById("inputNomFormContact");
+    const inputPrenomFormContact = document.getElementById("inputPrenomFormContact");
+    const inputPhoneFormContact = document.getElementById("inputPhoneFormContact");
+    const inputEmailFormContact = document.getElementById("inputEmailFormContact");
+    const textareaFormContact = document.getElementById("textareaFormContact");
+};
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- Event -------------------------------------------- */

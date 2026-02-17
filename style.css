@@ -231,6 +231,11 @@ footer {
 /*********************/
 /*********************/
 /*********************/
+#divSectionBoardContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .pErrorInputFormContact {
     display: none;
 }
