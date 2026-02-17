@@ -436,6 +436,65 @@ sendMail = () => {
             <p>Votre e-mail à bien été envoyé</p>
          `;
     } else {
+        // Check Inputs
+        const inputsForm = document.querySelectorAll(".checkInputFormContact");
+
+        for (const inputForm of inputsForm) {
+            if (inputForm.value == "") {
+                inputForm.classList.add("error");
+                inputForm.parentElement.classList.add("error");
+            }
+
+            inputForm.addEventListener("keyup", () => {
+                if (inputForm.value != "") {
+                    inputForm.classList.remove("error");
+                    inputForm.parentElement.classList.remove("error");
+                } else {
+                    inputForm.classList.add("error");
+                    inputForm.parentElement.classList.add("error");
+                }
+            });
+        }
+        // Check Email
+        const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+        const inputEmailContactForm = document.getElementById("inputEmailFormContact");
+
+        if (!inputEmailContactForm.value.match(emailRegex)) {
+            inputEmailContactForm.classList.add("error");
+            inputEmailContactForm.parentElement.classList.add("error");
+        } else {
+            inputEmailContactForm.classList.remove("error");
+            inputEmailContactForm.parentElement.classList.remove("error");
+        }
+        inputEmailContactForm.addEventListener("keyup", () => {
+            if (!inputEmailContactForm.value.match(emailRegex)) {
+                inputEmailContactForm.classList.add("error");
+                inputEmailContactForm.parentElement.classList.add("error");
+            } else {
+                inputEmailContactForm.classList.remove("error");
+                inputEmailContactForm.parentElement.classList.remove("error");
+            }
+        });
+        // Check Phone
+        const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/g;
+        const inputPhoneContactForm = document.getElementById("inputPhoneFormContact");
+
+        if (!inputPhoneContactForm.value.match(phoneRegex)) {
+            inputPhoneContactForm.classList.add("error");
+            inputPhoneContactForm.parentElement.classList.add("error");
+        } else {
+            inputPhoneContactForm.classList.remove("error");
+            inputPhoneContactForm.parentElement.classList.remove("error");
+        }
+        inputPhoneContactForm.addEventListener("keyup", () => {
+            if (!inputPhoneContactForm.value.match(phoneRegex)) {
+                inputPhoneContactForm.classList.add("error");
+                inputPhoneContactForm.parentElement.classList.add("error");
+            } else {
+                inputPhoneContactForm.classList.remove("error");
+                inputPhoneContactForm.parentElement.classList.remove("error");
+            }
+        });
     }
 };
 /* ----------------------------------------------------------------------------------------------- */

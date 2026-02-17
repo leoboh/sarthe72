@@ -112,10 +112,6 @@ nav {
 #divGreenSpaceUnit {
     border: 1px solid rgb(222, 99, 17);
 }
-
-/*************/
-/* dashboard */
-/*************/
 #divSectionBoardDashBoard {
     height: 80vh;
     width: 90vw;
@@ -210,6 +206,23 @@ nav {
     justify-content: center;
     border-radius: 15px;
 }
+#divSectionBoardContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pErrorInputFormContact {
+    display: none;
+}
+.pErrorTextareaForm {
+    display: none;
+}
+.divInputFormContact.error .pErrorInputFormContact {
+    display: block;
+}
+.divTextareaFormContact.error .pErrorTextareaFormContact {
+    display: block;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
@@ -231,20 +244,3 @@ footer {
 /*********************/
 /*********************/
 /*********************/
-#divSectionBoardContact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.pErrorInputFormContact {
-    display: none;
-}
-.pErrorTextareaForm {
-    display: none;
-}
-.divInputFormContact.error .pErrorInputFormContact {
-    display: block;
-}
-.divTextareaFormContact.error .pErrorTextareaFormContact {
-    display: block;
-}
