@@ -280,18 +280,28 @@ const contactPage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
             <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire</h2>
-            <form id="formDivSectionBoardContact" action="">
-                <input id="inputNomFormContact" class="checkInputFormContact" type="text" placeholder="Nom :" autocomplete="off">
-                <p id="pErrorInputNomFormContact" class="pErrorInputFormContact">Nom invalide</p>
-                <input id="inputPrenomFormContact" class="checkInputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
-                <p id="pErrorInputPrenomFormContact" class="pErrorInputFormContact">Prénom invalide</p>
-                <input id="inputPhoneFormContact" class="" type="text" placeholder="Téléphone :" autocomplete="off">
-                <p id="pErrorInputPhoneFormContact" class="pErrorInputFormContact">Téléphone invalide</p>
-                <input id="inputEmailFormContact" class="" type="text" placeholder="E-mail :" autocomplete="off">
-                <p id="pErrorInputEmailFormContact" class="pErrorInputFormContact">E-mail invalide</p>
-                <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
-                <p id="pErrorTextareaFormContact" class="pErrorInputFormContact">Message invalide</p>
-                <button onclick="sendMail()" class="" type="button">Envoyer</button>
+            <form id="formDivSectionBoardContact" action="#">
+                <div class="divInputFormContact">
+                    <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
+                    <p class="pErrorInputFormContact">Nom invalide</p>
+                </div>
+                <div class="divInputFormContact">
+                    <input id="inputPrenomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
+                    <p class="pErrorInputFormContact">Prénom invalide</p>
+                </div>
+                <div class="divInputFormContact">
+                    <input id="inputPhoneFormContact" class="inputFormContact" type="text" placeholder="Téléphone :" autocomplete="off">
+                    <p class="pErrorInputFormContact pErrorPhoneFormContact">Téléphone invalide</p>
+                </div>
+                <div class="divInputFormContact">
+                    <input id="inputEmailFormContact" class="inputFormContact" type="text" placeholder="E-mail :" autocomplete="off">
+                    <p class="pErrorInputFormContact pErrorEmailFormContact">Adresse E-mail invalide</p>
+                </div>
+                <div id="divTextareaFormContact" class="divInputFormContact">
+                    <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
+                    <p class="pErrorInputFormContact">Message invalide</p>
+                </div>
+                <button onclick="sendMail()" class="btn buttonFormContact" type="button">Envoyer</button>
             </form>
             <div id="divIframeSectionBoardContact">
                 <iframe
@@ -301,6 +311,9 @@ const contactPage = () => {
             </div>
         </div>
     `;
+    checkInput();
+    checkEmail();
+    checkPhone();
 };
 /**/
 /**/
@@ -344,16 +357,63 @@ checkInput = () => {
         inputForm.addEventListener("keyup", () => {
             if (inputForm.value != "") {
                 inputForm.classList.remove("error");
-                // inputForm.style.marginBottom = "3vh";
-                // inputForm.parentElement.classList.remove("error");
+                inputForm.parentElement.classList.remove("error");
             } else {
                 inputForm.classList.add("error");
-                // inputForm.style.marginBottom = "2vh";
-                // inputForm.parentElement.classList.add("error");
+                inputForm.parentElement.classList.add("error");
             }
         });
     }
 };
+/**/
+/**/
+/**/
+/**/
+/**/
+checkEmail = () => {
+    const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const inputEmailContactForm = document.getElementById("inputEmailFormContact");
+
+    if (!inputEmailContactForm.value.match(emailRegex)) {
+        inputEmailContactForm.classList.add("error");
+    } else {
+        inputEmailContactForm.classList.remove("error");
+    }
+    inputEmailContactForm.addEventListener("keyup", () => {
+        if (!inputEmailContactForm.value.match(emailRegex)) {
+            inputEmailContactForm.classList.add("error");
+            inputEmailContactForm.parentElement.classList.add("error");
+        } else {
+            inputEmailContactForm.classList.remove("error");
+            inputEmailContactForm.parentElement.classList.remove("error");
+        }
+    });
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+checkPhone = () => {
+    const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/g;
+    const inputPhoneContactForm = document.getElementById("inputPhoneFormContact");
+
+    if (!inputPhoneContactForm.value.match(phoneRegex)) {
+        inputPhoneContactForm.classList.add("error");
+    } else {
+        inputPhoneContactForm.classList.remove("error");
+    }
+    inputPhoneContactForm.addEventListener("keyup", () => {
+        if (!inputPhoneContactForm.value.match(phoneRegex)) {
+            inputPhoneContactForm.classList.add("error");
+            inputPhoneContactForm.parentElement.classList.add("error");
+        } else {
+            inputPhoneContactForm.classList.remove("error");
+            inputPhoneContactForm.parentElement.classList.remove("error");
+        }
+    });
+};
+
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- Event -------------------------------------------- */
