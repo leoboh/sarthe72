@@ -497,6 +497,20 @@ sendMail = () => {
         });
     }
 };
+setPage = () => {
+    divSectionBoardDashBoardOne.addEventListener("click", () => {
+        svgClose();
+        lunchPage();
+    });
+    divSectionBoardDashBoardTwo.addEventListener("click", () => {
+        svgClose();
+        greenSpacePage();
+    });
+    divSectionBoardDashBoardThree.addEventListener("click", () => {
+        svgClose();
+        contactPage();
+    });
+};
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- Event -------------------------------------------- */
@@ -554,32 +568,7 @@ svgNavDashBoard.addEventListener("click", () => {
     if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardHome")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /************************************ HOME 2 ************************************/
@@ -598,32 +587,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardLunch")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /*********************************** LUNCH 2 ************************************/
@@ -642,32 +606,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardGreenSpace")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /******************************** GREEN.SPACE 2 *********************************/
@@ -686,32 +625,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardContact")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /********************************** CONTACT 2 ***********************************/
@@ -730,32 +644,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardActu")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /*********************************** ACTU 2 *************************************/
@@ -774,32 +663,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardMentionsLegales")) {
         svgOpen();
         navBoard();
-        /*****/
-        const divSectionBoardDashBoardOne = document.querySelector("#divSectionBoardDashBoardOne");
-        const divSectionBoardDashBoardTwo = document.querySelector("#divSectionBoardDashBoardTwo");
-        const divSectionBoardDashBoardThree = document.querySelector("#divSectionBoardDashBoardThree");
-        /*****/
-
-        /*********/
-        /* LUNCH */
-        divSectionBoardDashBoardOne.addEventListener("click", () => {
-            svgClose();
-            lunchPage();
-        });
-
-        /***************/
-        /* GREEN.SPACE */
-        divSectionBoardDashBoardTwo.addEventListener("click", () => {
-            svgClose();
-            greenSpacePage();
-        });
-
-        /***********/
-        /* CONTACT */
-        divSectionBoardDashBoardThree.addEventListener("click", () => {
-            svgClose();
-            contactPage();
-        });
+        setPage();
 
         /********************************************************************************/
         /****************************** MENTIONS LEGALES 2 ******************************/
