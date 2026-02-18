@@ -36,6 +36,7 @@ const removeClass = () => {
         "sectionBoardLunchMenu",
         "sectionBoardLunchContrat",
         "sectionBoardHome",
+        "resizeDashBoard",
     );
 };
 /**/
@@ -629,6 +630,7 @@ svgNavDashBoard.addEventListener("click", () => {
         svgOpen();
         navBoard();
         setPage();
+        sectionBoard.classList.add("resizeDashBoard");
 
         /********************************************************************************/
         /********************************** CONTACT 2 ***********************************/
@@ -638,6 +640,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardContact")) {
         svgClose();
         contactPage();
+        sectionBoard.classList.remove("resizeDashBoard");
 
         /*******************************************************************************/
         /************************************ ACTU *************************************/

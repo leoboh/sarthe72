@@ -313,6 +313,9 @@ color: white;
 .divInputFormContact.error .pErrorInputFormContact {
     display: block;
 }
+.resizeDashBoard{
+    height: 90vh!important;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
