@@ -48,13 +48,22 @@ const navBoard = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardDashBoard" class="">
             <div id="divSectionBoardDashBoardOne" class="divSectionBoardDashBoardElements">
-                <h2>Livraison de repas à domicile</h2>
+                <h2 class="h2ElemDashBoard">Livraison de repas à domicile</h2>
+                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path d="M32 96c0-35.3 28.7-64 64-64l224 0c23.7 0 44.4 12.9 55.4 32l40.4 0c32.4 0 61.6 19.6 74 49.5l43.8 106.3 1.7 4.2 24.7 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-.4 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-2.7 .1-5.4 .4-8l-144.7 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-3.6 .2-7.1 .6-10.5-19-6.4-32.6-24.4-32.6-45.5l0-48c-17.7 0-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32l0-32zm352 32l0 96 82.1 0-35.4-86.1c-2.5-6-8.3-9.9-14.8-9.9L384 128zM192 392a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm280 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
+                </svg>
             </div>
             <div id="divSectionBoardDashBoardTwo" class="divSectionBoardDashBoardElements">
-                <h2>Entretien d'espaces verts</h2>
+                <h2 class="h2ElemDashBoard">Entretien d'espaces verts</h2>
+                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M0 32c477.6 0 366.6 317.3 367.1 366.3l80.9 81.7-26 0-70.4-71.2C312.6 413 227.2 443.3 137.2 371.8 47 300.3 52 214.7 0 32zM79.7 78c-49.7-23.5-5.2 9.2-5.2 9.2 45.2 31.2 66 73.7 90.2 119.9 31.5 60.2 79 139.7 144.2 167.7 65 28 34.2 12.5 6-8.5-28.2-21.2-68.2-87-91-130.2-31.7-60-61-118.6-144.2-158.1z"/>
+                </svg>
             </div>
             <div id="divSectionBoardDashBoardThree" class="divSectionBoardDashBoardElements">
-                <h2>Contact</h2>
+                <h2 class="h2ElemDashBoard">Contact</h2>
+                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/>
+                </svg>
             </div>
         </div>
     `;
@@ -68,7 +77,7 @@ const svgOpen = () => {
     svgNavDashBoard.classList.remove("svgNavDashBoardClose");
     svgNavDashBoard.classList.add("svgNavDashBoardOpen");
     document.querySelector("#svgNavDashBoard").innerHTML = `
-            <path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C221.6 240.4 221.6 255.6 231 264.9L286 319.9L231 374.9C221.6 384.3 221.6 399.5 231 408.8C240.4 418.1 255.6 418.2 264.9 408.8L319.9 353.8L374.9 408.8C384.3 418.2 399.5 418.2 408.8 408.8C418.1 399.4 418.2 384.2 408.8 374.9L353.8 319.9L408.8 264.9C418.2 255.5 418.2 240.3 408.8 231C399.4 221.7 384.2 221.6 374.9 231L319.9 286L264.9 231C255.5 221.6 240.3 221.6 231 231z" />`;
+        <path d="M320 112C434.9 112 528 205.1 528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C221.6 240.4 221.6 255.6 231 264.9L286 319.9L231 374.9C221.6 384.3 221.6 399.5 231 408.8C240.4 418.1 255.6 418.2 264.9 408.8L319.9 353.8L374.9 408.8C384.3 418.2 399.5 418.2 408.8 408.8C418.1 399.4 418.2 384.2 408.8 374.9L353.8 319.9L408.8 264.9C418.2 255.5 418.2 240.3 408.8 231C399.4 221.7 384.2 221.6 374.9 231L319.9 286L264.9 231C255.5 221.6 240.3 221.6 231 231z" />`;
 };
 /**/
 /**/
@@ -129,10 +138,16 @@ const lunchPage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardLunch" class="">
             <div id="divLunchMenu" class="divUnitLunch divSectionBoard">
-                <h2>Menu en cours</h2>
+                <h2 class="h2divUnitLunch">Menu en cours</h2>
+                <svg class="svgUnitLunch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M256 141.3l0 309.3 .5-.2C311.1 427.7 369.7 416 428.8 416l19.2 0 0-320-19.2 0c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7zM230.9 61.5L256 72 281.1 61.5C327.9 42 378.1 32 428.8 32L464 32c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-35.2 0c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480L48 480c-26.5 0-48-21.5-48-48L0 80C0 53.5 21.5 32 48 32l35.2 0c50.7 0 100.9 10 147.7 29.5z"/>
+                </svg>
             </div>
             <div id="divLunchContrat" class="divUnitLunch divSectionBoard">
-                <h2>Contrat de portage</h2>
+                <h2 class="h2divUnitLunch">Contrat de portage</h2>
+                <svg class="svgUnitLunch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM88 64C74.7 64 64 74.7 64 88s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 64zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0zm70.3 160c-11.3 0-21.9 5.1-28.9 13.9L69.3 409c-8.3 10.3-6.6 25.5 3.7 33.7s25.5 6.6 33.7-3.8l47.1-58.8 15.2 50.7c3 10.2 12.4 17.1 23 17.1l104 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-86.1 0-16.1-53.6c-4.7-15.7-19.1-26.4-35.5-26.4z"/>
+                </svg>
             </div>
         </div>
     `;
@@ -216,7 +231,7 @@ const greenSpacePage = () => {
                 <li class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
                 <li class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
                 <li class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
-                <li class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">Exct...</li>
             </ul>
         </div>
     `;
@@ -708,16 +723,3 @@ svgNavDashBoard.addEventListener("click", () => {
 document.querySelector("#pRealLeo").addEventListener("click", () => {
     window.open("https://leoblanche.com", "_blank");
 });
-/*
-
--
--
--
--
-
-
-        ----------------
-
-    2 - ajouter les actu sous forme de slider (si click, envoie sur la page actu ou il y a le resumé de l'actu cliké, et l'acces au autres actu)
-
-*/
