@@ -279,7 +279,7 @@ const contactPage = () => {
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
-            <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire</h2>
+            <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire :</h2>
             <form id="formDivSectionBoardContact" action="#">
                 <div class="divInputFormContact">
                     <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
@@ -433,7 +433,7 @@ sendMail = () => {
         !textareaFormContact.classList.contains("error")
     ) {
         document.querySelector("#formDivSectionBoardContact").innerHTML = `
-            <p>Votre e-mail à bien été envoyé</p>
+            <h2 id="h2SendMailContact">Votre e-mail à bien été envoyé</h2>
          `;
     } else {
         // Check Inputs
