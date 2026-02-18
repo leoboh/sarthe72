@@ -511,6 +511,21 @@ setPage = () => {
         contactPage();
     });
 };
+setHomePageEvent = () => {
+    const divLunchUnit = document.querySelector("#divLunchUnit");
+    const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
+    const divSectionBoardActu = document.querySelector("#divSectionBoardActu");
+    /*****/
+    divLunchUnit.addEventListener("click", () => {
+        lunchPage();
+    });
+    divGreenSpaceUnit.addEventListener("click", () => {
+        greenSpacePage();
+    });
+    divSectionBoardActu.addEventListener("click", () => {
+        actuPage();
+    });
+};
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------------- Event -------------------------------------------- */
@@ -539,20 +554,7 @@ imgNavLogo.addEventListener("click", () => {
     removeClass();
     sectionBoard.classList.add("sectionBoardHome");
     homePage();
-    /*****/
-    const divLunchUnit = document.querySelector("#divLunchUnit");
-    const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
-    const divSectionBoardActu = document.querySelector("#divSectionBoardActu");
-    /*****/
-    divLunchUnit.addEventListener("click", () => {
-        lunchPage();
-    });
-    divGreenSpaceUnit.addEventListener("click", () => {
-        greenSpacePage();
-    });
-    divSectionBoardActu.addEventListener("click", () => {
-        actuPage();
-    });
+    setHomePageEvent();
 });
 /**/
 /**/
@@ -578,6 +580,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardHome")) {
         svgClose();
         homePage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /************************************ LUNCH *************************************/

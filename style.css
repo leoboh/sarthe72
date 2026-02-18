@@ -155,7 +155,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
-    border: 1px solid pink;
 }
 .divUnitLunch {
     display: flex;
