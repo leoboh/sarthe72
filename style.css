@@ -353,6 +353,25 @@ footer {
 #h2ActuSectionBoard{
     margin-bottom: 20px;
 }
+#imgActuOne,
+#imgActuTwo,
+#imgActuThree{
+    width: 90vw;
+    border-radius: 15px;
+}
+.pActuSectionBoard{
+    margin: 0!important;
+}
+#divSectionBoardActuOne,
+#divSectionBoardActuTwo,
+#divSectionBoardActuThree{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
 /*
 #F5A86B = orange
 #E87659 = orange 2 plus foncé
