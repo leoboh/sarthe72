@@ -21,16 +21,21 @@ body {
 h1 {
     font-size: 1.2em;
     text-align: center;
+    color: white;
+    margin: auto;
 }
 
 h2 {
     font-size: 1em;
     width: 90%;
+    color: white;
 }
 
 p {
     font-size: 0.7em;
     width: 90%;
+    color: #d9d9d9;
+    margin: auto;
 }
 /**********************/
 /******* HEADER *******/
@@ -46,13 +51,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
+    background: linear-gradient(40deg, #13301d 0%, #0b7a31 100%)
 }
 #imgNavLogo {
     width: 8vh;
     height: 8vh;
     object-fit: contain;
-    border: 1px solid red;
+    background: white;
     border-radius: 100%;
     margin-left: 5vw;
 }
@@ -60,6 +65,8 @@ nav {
     width: 8vh;
     height: 8vh;
     margin-right: 4vw;
+    color: white;
+    fill : white
 }
 
 /***********************/
@@ -72,6 +79,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(135deg, #F5A86B 0%, #732814 100%);
 }
 .divSectionBoard {
     height: 25vh;
@@ -79,7 +87,7 @@ nav {
     border-radius: 15px;
 }
 #divSectionBoardWelcom {
-    /* border: 1px solid red; */
+    background: #ff000021;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,7 +99,6 @@ nav {
     justify-content: space-between;
 }
 #divSectionBoardActu {
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,10 +114,17 @@ nav {
     justify-content: center;
 }
 #divLunchUnit {
-    border: 1px solid rgb(206, 37, 222);
+    background: linear-gradient(135deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff69;
 }
 #divGreenSpaceUnit {
-    border: 1px solid rgb(222, 99, 17);
+    background: linear-gradient(135deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff69;
+}
+#divSectionBoardActu{
+    background: linear-gradient(314deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff69;
+    /* border: 1px solid #b1b1b1; */
 }
 #divSectionBoardDashBoard {
     height: 80vh;
@@ -125,7 +139,8 @@ nav {
     width: 80%;
     height: 30%;
     border-radius: 15px;
-    border: 1px solid red;
+    background: linear-gradient(180deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff69;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,11 +158,12 @@ nav {
     border: 1px solid pink;
 }
 .divUnitLunch {
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: linear-gradient(180deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff69;
 }
 #divMenu,
 #divSectionBoardAllActu {
@@ -167,18 +183,26 @@ nav {
 }
 .liUlDivMenuSectionBoardLunch,
 .divContratSectionBoardContrat {
-    border: 1px solid blue;
+    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff6e;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 90vw;
-    height: 10%;
     border-radius: 15px;
+    color: white;
+}
+.liUlDivMenuSectionBoardLunch{
+    height: 10%;
+}
+.divContratSectionBoardContrat{
+    height: 30%;
 }
 
 .liUldivSectionBoardActu {
-    border: 1px solid blue;
+    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
+    box-shadow: 0 0 0.5em 0px #ffffff6e;
     width: 90vw;
     height: 25vh;
     border-radius: 15px;
@@ -188,28 +212,44 @@ nav {
     align-items: center;
     text-align: center;
 }
+.h2LiUlSectionBoardActu{
+    margin: auto;
+}
 #uldivSectionBoardGreenSpace {
     width: 90vw;
-    height: 50%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-between;
 }
 .liUldivSectionBoardGreenSpace {
-    border: 1px solid blue;
-    width: 45%;
+    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
+    width: 40%;
     height: 25%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    color: white;
+    padding: 10px;
 }
 #divSectionBoardContact {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#divSectionBoardMentionsLegales{
+    background: #ff000021;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    width: 90vw;
+    height: 90%;
 }
 .pErrorInputFormContact {
     display: none;
@@ -231,16 +271,26 @@ footer {
     height: 5vh;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background: linear-gradient(200deg, #13301d 0%, #0b7a31 100%);
     text-align: center;
 }
 .pFooter {
     font-size: 0.5em;
     text-decoration: none;
-    color: black;
 }
 
 /*********************/
 /*********************/
 /*********************/
 /*********************/
+/*
+#F5A86B = orange
+#E87659 = orange 2 plus foncé
+#2BA297 = vert moche
+#274755 = vert bleu moche
+#0b8f39 = vert
+#086227 = vert plus foncé
+background: linear-gradient(135deg, rgb(139 39 91) 0%, rgb(0 0 0) 50%, rgb(22 0 58) 100%);
+
+background: linear-gradient(300deg, rgb(139 39 91 / 43%) 0%, rgb(120 120 120 / 4%) 50%, rgb(22 0 58 / 88%) 100%);
+    

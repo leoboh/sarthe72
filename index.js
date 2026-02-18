@@ -170,10 +170,10 @@ const lunchPage = () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id ="divContrat">
                 <div id="divContratHorsP" class="divContratSectionBoardContrat">
-                    <p>Contrat de portage hors parignéens</p>
+                    <h2>Contrat de portage hors parignéens</h2>
                 </div>
                 <div id="divContratP" class="divContratSectionBoardContrat">
-                    <p>Contrat de portage parignéens</p>
+                    <h2>Contrat de portage parignéens</h2>
                 </div>
             </div>
         `;
@@ -201,12 +201,12 @@ const greenSpacePage = () => {
         <div id="divSectionBoardGreenSpace" class="">
             <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <ul id="uldivSectionBoardGreenSpace">
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
-                <li class="liUldivSectionBoardGreenSpace">taille de haies</li>
-                <li class="liUldivSectionBoardGreenSpace">entretien du jardin</li>
-                <li class="liUldivSectionBoardGreenSpace">taille d'arbustes</li>
-                <li class="liUldivSectionBoardGreenSpace">ramassage des feuilles</li>
-                <li class="liUldivSectionBoardGreenSpace">tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
+                <li class="liUldivSectionBoardGreenSpace">Taille de haies</li>
+                <li class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
+                <li class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
+                <li class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
+                <li class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
             </ul>
         </div>
     `;
@@ -223,15 +223,15 @@ const actuPage = () => {
         <div id="divSectionBoardAllActu" class="">
             <ul id="uldivSectionBoardActu">
                 <li id="liActuOne" class="liUldivSectionBoardActu">
-                    <h2>1 000 000ème repas</h2>
+                    <h2 class="h2LiUlSectionBoardActu">1 000 000ème repas</h2>
                     <p>Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
                 </li>
                 <li id="liActuTwo" class="liUldivSectionBoardActu">
-                    <h2>ASSEMBLEE GENERALE</h2>
+                    <h2 class="h2LiUlSectionBoardActu">ASSEMBLEE GENERALE</h2>
                     <p>L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
                 </li>
                 <li id="liActuThree" class="liUldivSectionBoardActu">
-                    <h2>CRISTAL ROC</h2>
+                    <h2 class="h2LiUlSectionBoardActu">CRISTAL ROC</h2>
                     <p>Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
                 </li>
             </ul>
