@@ -380,15 +380,18 @@ checkInput = () => {
     for (const inputForm of inputsForm) {
         if (inputForm.value == "") {
             inputForm.classList.add("error");
+            inputForm.classList.remove("inputCheckedTrue");
         }
 
         inputForm.addEventListener("keyup", () => {
             if (inputForm.value != "") {
+                inputForm.classList.add("inputCheckedTrue");
                 inputForm.classList.remove("error");
                 inputForm.parentElement.classList.remove("error");
             } else {
                 inputForm.classList.add("error");
                 inputForm.parentElement.classList.add("error");
+                inputForm.classList.remove("inputCheckedTrue");
             }
         });
     }
@@ -404,16 +407,20 @@ checkEmail = () => {
 
     if (!inputEmailContactForm.value.match(emailRegex)) {
         inputEmailContactForm.classList.add("error");
+        inputEmailContactForm.classList.remove("inputCheckedTrue");
     } else {
         inputEmailContactForm.classList.remove("error");
+        inputEmailContactForm.classList.add("inputCheckedTrue");
     }
     inputEmailContactForm.addEventListener("keyup", () => {
         if (!inputEmailContactForm.value.match(emailRegex)) {
             inputEmailContactForm.classList.add("error");
             inputEmailContactForm.parentElement.classList.add("error");
+            inputEmailContactForm.classList.remove("inputCheckedTrue");
         } else {
             inputEmailContactForm.classList.remove("error");
             inputEmailContactForm.parentElement.classList.remove("error");
+            inputEmailContactForm.classList.add("inputCheckedTrue");
         }
     });
 };
@@ -428,16 +435,20 @@ checkPhone = () => {
 
     if (!inputPhoneContactForm.value.match(phoneRegex)) {
         inputPhoneContactForm.classList.add("error");
+        inputPhoneContactForm.classList.remove("inputCheckedTrue");
     } else {
         inputPhoneContactForm.classList.remove("error");
+        inputPhoneContactForm.classList.add("inputCheckedTrue");
     }
     inputPhoneContactForm.addEventListener("keyup", () => {
         if (!inputPhoneContactForm.value.match(phoneRegex)) {
             inputPhoneContactForm.classList.add("error");
             inputPhoneContactForm.parentElement.classList.add("error");
+            inputPhoneContactForm.classList.remove("inputCheckedTrue");
         } else {
             inputPhoneContactForm.classList.remove("error");
             inputPhoneContactForm.parentElement.classList.remove("error");
+            inputPhoneContactForm.classList.add("inputCheckedTrue");
         }
     });
 };

@@ -660,6 +660,10 @@ nav {
     overflow: auto;
     height: auto;
 }
+.inputCheckedTrue{
+    border: 2px solid #42ae66!important;
+    box-shadow: none!important;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
