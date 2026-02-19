@@ -16,7 +16,6 @@
 
 body {
     margin: 0;
-    text-overflow: clip;
 }
 
 h1 {
@@ -266,6 +265,7 @@ nav {
 }
 .liUlDivMenuSectionBoardLunch{
     height: 10%;
+    opacity: 0;
 }
 .divContratSectionBoardContrat{
     height: 30%;
@@ -509,6 +509,51 @@ nav {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
+#liMenuOne{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+#liMenuTwo{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#liMenuThree{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#liMenuFour{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+#liMenuFive{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#divContratHorsP,
+#divContratP{
+    width: 80%;
+    opacity: 0;
+}
+#divContratHorsP{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+#divContratP{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
@@ -525,7 +570,6 @@ footer {
     text-decoration: none;
     color: white;
 }
-
 /*********************/
 /*********************/
 /*********************/
