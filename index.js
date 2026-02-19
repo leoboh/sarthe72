@@ -98,8 +98,8 @@ const svgClose = () => {
 const homePage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardWelcom" class="divSectionBoard">
-            <h1>Bienvenue</h1>
-            <p>
+            <h1 id="h1Welcom">Bienvenue</h1>
+            <p id="pWelcom">
                 L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
                 • venir en aide aux personnes âgées en milieu rural</br>
                 • soutenir des travailleurs handicapés par de l'emploi
