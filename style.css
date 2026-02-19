@@ -1,12 +1,15 @@
-/* -------------------------------- */
-/* -------------------------------- */
-/* ------------- CSS -------------- */
-/* -------------------------------- */
-/* -------------------------------- */
 
-/**********************/
-/******* GLOBAL *******/
-/**********************/
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* --------------------------------------------- CSS --------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- GLOBAL ------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 * {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     list-style: none;
@@ -37,9 +40,11 @@ p {
     color: #ececec;
     margin: auto;
 }
-/*************************/
-/******* KEYFRAMES *******/
-/*************************/
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ KEYFRAMES ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 @keyframes animOpaScale {
     0% {
         opacity: 0;
@@ -63,7 +68,7 @@ p {
         scale: 1;
     }
 }
-@keyframes slide-inDescP {
+@keyframes slide-in {
     0% {
         width: 0;
     }
@@ -71,9 +76,11 @@ p {
         width: 85%;
     }
 }
-/**********************/
-/******* HEADER *******/
-/**********************/
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- HEADER ------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 
 header {
     width: 100vw;
@@ -103,9 +110,11 @@ nav {
     fill : white
 }
 
-/***********************/
-/*** SECTION - BOARD ***/
-/***********************/
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ HOME-PAGE ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 #sectionBoard {
     width: 100vw;
     height: 90vh;
@@ -130,7 +139,7 @@ nav {
     background: #ef5f23c4;
     padding: 2.5%;
     animation-duration: 1s;
-    animation-name: slide-inDescP;
+    animation-name: slide-in;
     animation-fill-mode: forwards;
 }
 #divSectionBoardUnits {
@@ -189,6 +198,23 @@ nav {
     align-items: center;
     flex-direction: column;
 }
+#h1Welcom {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScale;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#pWelcom{
+    opacity: 0;
+    overflow: auto;
+    height: auto;
+    animation-duration: 1s;
+    animation-name: animOpaScale;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+/* NAV-BOARD */
 .divSectionBoardDashBoardElements {
     width: 80%;
     height: 30%;
@@ -201,6 +227,33 @@ nav {
     align-items: center;
     text-align: center;
 }
+#divSectionBoardDashBoardOne,
+#divSectionBoardDashBoardTwo,
+#divSectionBoardDashBoardThree{
+    opacity: 0;
+}
+#divSectionBoardDashBoardOne{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+#divSectionBoardDashBoardTwo{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#divSectionBoardDashBoardThree{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------- LUNCH-PAGE ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 #divSectionBoardLunch {
     width: 100%;
     height: 100%;
@@ -233,22 +286,6 @@ nav {
     animation-fill-mode: forwards;
     width: 80%;
 }
-#divMenu,
-#divSectionBoardAllActu {
-    width: 100%;
-    height: 100%;
-}
-#ulDivMenuSectionBoardLunch,
-#divContrat,
-#divSectionBoardGreenSpace,
-#uldivSectionBoardActu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 .liUlDivMenuSectionBoardLunch,
 .divContratSectionBoardContrat {
     background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
@@ -269,7 +306,16 @@ nav {
 .divContratSectionBoardContrat{
     height: 30%;
 }
-
+#divContratHorsP,
+#divContratP{
+    width: 80%;
+    opacity: 0;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ ACTU-PAGE ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 .liUldivSectionBoardActu {
     background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
@@ -286,6 +332,71 @@ nav {
 .h2LiUlSectionBoardActu{
     margin: auto;
 }
+#imgActuOne,
+#imgActuTwo{
+    width: 90vw;
+    border-radius: 15px;
+}
+#imgActuThree{
+    border-radius: 15px;
+}
+.pActuSectionBoard{
+    margin: 0!important;
+    width: 80%;
+    color: white;
+    background: #ef5f23c4;
+    border-radius: 15px;
+    padding: 5%;
+    font-size: 0.8em;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#divSectionBoardActuOne,
+#divSectionBoardActuTwo,
+#divSectionBoardActuThree{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+#liActuOne,
+#liActuTwo,
+#liActuThree{
+    opacity: 0;
+}
+.h2Actu{
+    color: white;
+    background: #ef5f23c4;
+    border-radius: 15px;
+    padding: 5%;
+    width: auto;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.imgSectionBoardActu{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+.pLiUlSectionBoardActu{
+    overflow: auto;
+    height: auto;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------- GREEN_SPACE-PAGE --------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 #uldivSectionBoardGreenSpace {
     width: 90vw;
     height: 70%;
@@ -307,6 +418,11 @@ nav {
     padding: 10px;
     opacity: 0;
 }
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* --------------------------------------- CONTACT-PAGE ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 .sectionBoardContact{
     height: auto !important;
     padding: 5vh 0 5vh 0;
@@ -377,17 +493,6 @@ nav {
     border: none;
     border-radius: 15px;
 }
-#divSectionBoardMentionsLegales{
-    background: #ff000021;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    width: 90vw;
-    height: 90%;
-}
 .pErrorInputFormContact {
     display: none;
     margin-bottom: 7px;
@@ -401,6 +506,63 @@ nav {
     height: 90vh!important;
     padding: 0;
 }
+#h2DivSectionBoardContact{
+    margin-bottom: 5vh;
+}
+.inputCheckedTrue{
+    border: 2px solid #42ae66!important;
+    box-shadow: none!important;
+}
+#h2SendMailContact{
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: #42ae66;
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------ MENTIONS_LEGALES-PAGE ------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+#divSectionBoardMentionsLegales{
+    background: #ff000021;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    width: 90vw;
+    height: 90%;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- GROUPES ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+#divMenu,
+#divSectionBoardAllActu {
+    width: 100%;
+    height: 100%;
+}
+#ulDivMenuSectionBoardLunch,
+#divContrat,
+#divSectionBoardGreenSpace,
+#uldivSectionBoardActu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .svgHomePage,
 .svgUnitLunch,
 .svgElemDashBoard{
@@ -413,106 +575,23 @@ nav {
 .h2ElemDashBoard{
     margin-bottom: 20px;
 }
-#imgActuOne,
-#imgActuTwo{
-    width: 90vw;
-    border-radius: 15px;
-}
-#imgActuThree{
-    border-radius: 15px;
-}
-.pActuSectionBoard{
-    margin: 0!important;
-    width: 80%;
-    color: white;
-    background: #ef5f23c4;
-    border-radius: 15px;
-    padding: 5%;
-    font-size: 0.8em;
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#divSectionBoardActuOne,
-#divSectionBoardActuTwo,
-#divSectionBoardActuThree{
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
-}
-#divSectionBoardDashBoardOne,
-#divSectionBoardDashBoardTwo,
-#divSectionBoardDashBoardThree{
-    opacity: 0;
-}
-#divSectionBoardDashBoardOne{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards;
-}
-#divSectionBoardDashBoardTwo{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#divSectionBoardDashBoardThree{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-.h2TittleSectionBoardGreenSpace, #h2DivSectionBoardContact{
-    width: 80%;
-    color: white;
-    background: #ef5f23c4;
-    border-radius: 15px;
-    padding: 5%;
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards;
-}
+.h2TittleSectionBoardGreenSpace,
 #h2DivSectionBoardContact{
-    margin-bottom: 5vh;
-}
-.h2Actu{
+    width: 80%;
     color: white;
     background: #ef5f23c4;
     border-radius: 15px;
     padding: 5%;
-    width: auto;
     opacity: 0;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-#h1Welcom {
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScale;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-#pWelcom{
-    opacity: 0;
-    overflow: auto;
-    height: auto;
-    animation-duration: 1s;
-    animation-name: animOpaScale;
-    animation-delay: 0.75s;
-    animation-fill-mode: forwards;
-}
-#liActuOne,
-#liActuTwo,
-#liActuThree{
-    opacity: 0;
-}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------- ANIMATION-CLASS ---------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 #liActuOne{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
@@ -558,11 +637,6 @@ nav {
     animation-name: animOpaScalTwo;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-}
-#divContratHorsP,
-#divContratP{
-    width: 80%;
-    opacity: 0;
 }
 #divContratHorsP{
     animation-duration: 1s;
@@ -648,38 +722,11 @@ nav {
     animation-delay: 1.75s;
     animation-fill-mode: forwards;
 }
-.imgSectionBoardActu{
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-
-}
-.pLiUlSectionBoardActu{
-    overflow: auto;
-    height: auto;
-}
-.inputCheckedTrue{
-    border: 2px solid #42ae66!important;
-    box-shadow: none!important;
-}
-#h2SendMailContact{
-    text-align: center;
-    width: 80%;
-    color: white;
-    background: #42ae66;
-    border-radius: 15px;
-    padding: 5%;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards;
-}
-/**********************/
-/******* FOOTER *******/
-/**********************/
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* -------------------------------------------- FOOTER ------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 footer {
     width: 100vw;
     height: 5vh;
@@ -693,25 +740,16 @@ footer {
     text-decoration: none;
     color: white;
 }
-/*********************/
-/*********************/
-/*********************/
-/*********************/
-
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* --------------------------------------------- END --------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 
 
 /*
-#F5A86B = orange
-#E87659 = orange 2 plus foncé
-#2BA297 = vert moche
-#274755 = vert bleu moche
-#0b8f39 = vert
-#086227 = vert plus foncé
 
-
-- voir pour ranger le css => c'est ni fait ni à faire !!!!!!
 - voir pour ajouter deux fleches <= => dans la section actu, pour qu'on puisse naviguer d'une actu a l'autre (au click sur l'icon, next page)
-- page contact boff
 - ajouter des animations
     - animation qui remplace le logo par l'icone maison toutes les x seconde pour que les gens saches que c'est le retour accueil
 - faire le responsive
