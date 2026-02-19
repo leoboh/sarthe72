@@ -270,33 +270,69 @@ const actuPage = () => {
     const liActuThree = document.querySelector("#liActuThree");
     /*****/
     /*****/
-    liActuOne.addEventListener("click", () => {
-        document.querySelector("#sectionBoard").innerHTML = `
-            <div id="divSectionBoardActuOne" class="">
-                <h2 class="h2Actu">1 000 000ème repas</h2>
-                <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
-                <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.jpg" alt="image de personnes à table">
-            </div>
-        `;
-    });
-    liActuTwo.addEventListener("click", () => {
-        document.querySelector("#sectionBoard").innerHTML = `
-            <div id="divSectionBoardActuTwo" class="">
-                <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
-                <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
-                <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
-            </div>
-        `;
-    });
-    liActuThree.addEventListener("click", () => {
-        document.querySelector("#sectionBoard").innerHTML = `
-            <div id="divSectionBoardActuThree" class="">
-                <h2 class="h2Actu">CRISTAL ROC</h2>
-                <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
-                <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
-            </div>
-        `;
-    });
+    if (window.matchMedia("(max-width: 649px)").matches) {
+        liActuOne.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuOne" class="">
+                    <h2 class="h2Actu">1 000 000ème repas</h2>
+                    <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
+                    <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.jpg" alt="image de personnes à table">
+                </div>
+            `;
+        });
+        liActuTwo.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuTwo" class="">
+                    <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
+                    <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
+                    <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
+                </div>
+            `;
+        });
+        liActuThree.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuThree" class="">
+                    <h2 class="h2Actu">CRISTAL ROC</h2>
+                    <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
+                    <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
+                </div>
+            `;
+        });
+    } else {
+        liActuOne.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuOne" class="">
+                    <div class="divSectionBoardActuGrp">
+                        <h2 class="h2Actu">1 000 000ème repas</h2>
+                        <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
+                    </div>
+                    <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.jpg" alt="image de personnes à table">
+                </div>
+            `;
+        });
+        liActuTwo.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuTwo" class="">
+                    <div class="divSectionBoardActuGrp">
+                        <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
+                        <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
+                    </div>
+                    <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
+                </div>
+            `;
+        });
+        liActuThree.addEventListener("click", () => {
+            document.querySelector("#sectionBoard").innerHTML = `
+                <div id="divSectionBoardActuThree" class="">
+                    <div class="divSectionBoardActuGrp">
+                        <h2 class="h2Actu">CRISTAL ROC</h2>
+                        <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
+                    </div>
+                    <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
+                </div>
+            `;
+        });
+    }
 };
 /**/
 /**/
