@@ -689,7 +689,7 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 649px) and (max-width: 1400px) {
+@media screen and (min-width: 649px) and (max-width: 1300px) {
     #sectionBoard {
         width: 600px;
         margin: auto;
@@ -733,8 +733,32 @@ footer {
     .liUlDivMenuSectionBoardLunch:hover,
     .divContratSectionBoardContrat:hover,
     .buttonFormContact:hover,
-    .liUldivSectionBoardActu:hover {
+    .liUldivSectionBoardActu:hover,
+    .divSectionBoardDashBoardElements:hover {
         cursor: pointer;
+    }
+    /**/
+    #divLunchUnit:hover,
+    #divGreenSpaceUnit:hover,
+    #divSectionBoardActu:hover,
+    #pRealLeo:hover,
+    #pMentionsLegales:hover,
+    #divLunchMenu:hover,
+    #divLunchContrat:hover,
+    .liUlDivMenuSectionBoardLunch:hover,
+    .divContratSectionBoardContrat:hover,
+    .liUldivSectionBoardActu:hover,
+    .divSectionBoardDashBoardElements:hover {
+        scale: 1.01 !important;
+        box-shadow: 0 0 0.5em 0px #42ae66;
+    }
+    /**/
+    .buttonFormContact:hover {
+        scale: 1.02 !important;
+    }
+    /**/
+    #svgNavDashBoard:hover {
+        fill: #ff9c75;
     }
 }
 /* ----------------------------------------------------------------------------------------------- */
