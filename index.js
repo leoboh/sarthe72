@@ -224,7 +224,7 @@ const greenSpacePage = () => {
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
-            <h2>Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
+            <h2 class="h2TittleSectionBoard">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <ul id="uldivSectionBoardGreenSpace">
                 <li class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
                 <li class="liUldivSectionBoardGreenSpace">Taille de haies</li>
@@ -272,7 +272,7 @@ const actuPage = () => {
     liActuOne.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuOne" class="">
-                <h2>1 000 000ème repas</h2>
+                <h2 class="h2Actu">1 000 000ème repas</h2>
                 <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
                 <img id="imgActuOne" src="/images/actu1.jpg" alt="image de personnes à table">
             </div>
@@ -281,7 +281,7 @@ const actuPage = () => {
     liActuTwo.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuTwo" class="">
-                <h2>ASSEMBLEE GENERALE</h2>
+                <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
                 <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
                 <img id="imgActuTwo" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
             </div>
@@ -290,7 +290,7 @@ const actuPage = () => {
     liActuThree.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuThree" class="">
-                <h2>CRISTAL ROC</h2>
+                <h2 class="h2Actu">CRISTAL ROC</h2>
                 <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
                 <img id="imgActuThree" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
             </div>

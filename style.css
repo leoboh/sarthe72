@@ -34,7 +34,7 @@ h2 {
 p {
     font-size: 0.7em;
     width: 90%;
-    color: #d9d9d9;
+    color: #ececec;
     margin: auto;
 }
 /**********************/
@@ -51,7 +51,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(40deg, #13301d 0%, #0b7a31 100%)
+    background: linear-gradient(356deg, #42ae66 0%, #58b276 100%);
 }
 #imgNavLogo {
     width: 8vh;
@@ -79,7 +79,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(135deg, #F5A86B 0%, #732814 100%);
+    background: linear-gradient(135deg, #e8e8e8 0%, #ddbcbc 100%);
 }
 .divSectionBoard {
     height: 25vh;
@@ -87,14 +87,17 @@ nav {
     border-radius: 15px;
 }
 #divSectionBoardWelcom {
-    background: #ff000021;
+    background: #ff5d1abd;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 85%;
+    color: white;
+    background: #ef5f23c4;
+    padding: 2.5%;
 }
 #divSectionBoardUnits {
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
 }
@@ -117,18 +120,10 @@ nav {
     justify-content: space-evenly;
     flex-direction: column;
 }
-#divLunchUnit {
-    background: linear-gradient(135deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff69;
-}
-#divGreenSpaceUnit {
-    background: linear-gradient(135deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff69;
-}
-#divSectionBoardActu{
-    background: linear-gradient(314deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff69;
-    /* border: 1px solid #b1b1b1; */
+#divLunchUnit,#divGreenSpaceUnit,#divSectionBoardActu  {
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
 }
 #divSectionBoardDashBoard {
     height: 80vh;
@@ -143,8 +138,9 @@ nav {
     width: 80%;
     height: 30%;
     border-radius: 15px;
-    background: linear-gradient(180deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff69;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,8 +161,9 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(180deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff69;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
 }
 #divMenu,
 #divSectionBoardAllActu {
@@ -186,8 +183,9 @@ nav {
 }
 .liUlDivMenuSectionBoardLunch,
 .divContratSectionBoardContrat {
-    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff6e;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,8 +202,9 @@ nav {
 }
 
 .liUldivSectionBoardActu {
-    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.5em 0px #ffffff6e;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
     width: 90vw;
     height: 25vh;
     border-radius: 15px;
@@ -227,7 +226,7 @@ nav {
     justify-content: space-between;
 }
 .liUldivSectionBoardGreenSpace {
-    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
     width: 40%;
     height: 25%;
     text-align: center;
@@ -239,11 +238,12 @@ nav {
     padding: 10px;
 }
 .sectionBoardContact{
-    height: 120vh!important;
+    height: auto !important;
+    padding: 5vh 0 5vh 0;
 }
 #divSectionBoardContact {
     width: 90vw;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,6 +254,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5vh;
 }
 .divInputFormContact, #divTextareaFormContact{
     width: 100%;
@@ -264,24 +265,26 @@ nav {
     padding: 7px;
     margin-bottom: 5px;
     border: none;
-    background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
-    box-shadow: 0 0 0.4em 0px #ffffff6e;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
     border-radius: 10px;
     color: white;
 }
 .buttonFormContact{
-width: 50%;
-padding: 7px;
-margin-bottom: 10px;
-border: none;
-background: linear-gradient(160deg, #1f5e2780 0%, #0e0e0e45 100%);
-box-shadow: 0 0 0.4em 0px #ffffff6e;
-border-radius: 10px;
-color: white;
+    width: 50%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: none;
+    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    box-shadow: 0 0 0.5em 0px #2b2b2b61;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    color: white;
 }
 .inputFormContact::placeholder,
 #textareaFormContact::placeholder {
-    color: rgb(212, 212, 212);
+    color: rgb(250, 250, 250);
 }
 .inputFormContact:focus,
 #textareaFormContact:focus {
@@ -311,7 +314,7 @@ color: white;
 .pErrorInputFormContact {
     display: none;
     margin-bottom: 7px;
-    color: white;
+    color:#bd3f27;
     font-weight: 900;
 }
 .divInputFormContact.error .pErrorInputFormContact {
@@ -319,13 +322,14 @@ color: white;
 }
 .resizeDashBoard{
     height: 90vh!important;
+    padding: 0;
 }
 .svgHomePage,
 .svgUnitLunch,
 .svgElemDashBoard{
     width: 1.5em;
     height: 1.5em;
-    fill : #00ab00;
+    fill: #5ed65e;
 }
 #h2ActuSectionBoard,
 .h2divUnitLunch,
@@ -333,13 +337,21 @@ color: white;
     margin-bottom: 20px;
 }
 #imgActuOne,
-#imgActuTwo,
-#imgActuThree{
+#imgActuTwo{
     width: 90vw;
+    border-radius: 15px;
+}
+#imgActuThree{
     border-radius: 15px;
 }
 .pActuSectionBoard{
     margin: 0!important;
+    width: 80%;
+    color: white;
+    background: #ef5f23c4;
+    border-radius: 15px;
+    padding: 5%;
+    font-size: 0.8em;
 }
 #divSectionBoardActuOne,
 #divSectionBoardActuTwo,
@@ -351,6 +363,23 @@ color: white;
     flex-direction: column;
     text-align: center;
 }
+.h2TittleSectionBoard, #h2DivSectionBoardContact{
+    width: 80%;
+    color: white;
+    background: #ef5f23c4;
+    border-radius: 15px;
+    padding: 5%;
+}
+#h2DivSectionBoardContact{
+    margin-bottom: 5vh;
+}
+.h2Actu{
+    color: white;
+    background: #ef5f23c4;
+    border-radius: 15px;
+    padding: 5%;
+    width: auto;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
@@ -359,12 +388,13 @@ footer {
     height: 5vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(200deg, #13301d 0%, #0b7a31 100%);
+    background: linear-gradient(356deg, #42ae66 0%, #58b276 100%);
     text-align: center;
 }
 .pFooter {
     font-size: 0.5em;
     text-decoration: none;
+    color: white;
 }
 
 /*********************/
@@ -389,4 +419,3 @@ footer {
 - ajouter des animations
     - animation qui remplace le logo par l'icone maison toutes les x seconde pour que les gens saches que c'est le retour accueil
 - faire le responsive
-
