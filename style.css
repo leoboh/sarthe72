@@ -802,3 +802,9 @@ footer {
 /* --------------------------------------------- END --------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
+
+
+/*
+
+- voir pour changer les actu, mettre même typo petit et grand screen => mettre la nouvelle typo (groupé)
+    => condition ligne 273 dans le js a enlever et mettre en groupé direct, enlevé les class css qui serviron plus a rien dans le css
