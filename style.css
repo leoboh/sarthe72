@@ -1,4 +1,3 @@
-
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* --------------------------------------------- CSS --------------------------------------------- */
@@ -19,6 +18,7 @@
 
 body {
     margin: 0;
+    background: linear-gradient(135deg, #e8e8e8 0%, #ddbcbc 100%);
 }
 
 h1 {
@@ -105,8 +105,13 @@ nav {
     width: 8vh;
     height: 8vh;
     margin-right: 4vw;
-    color: white;
-    fill : white
+    fill: white;
+}
+#svgHomeNavDashBoard {
+    width: 6vh;
+    height: 6vh;
+    margin-left: 5vw;
+    fill: white;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -120,7 +125,6 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(135deg, #e8e8e8 0%, #ddbcbc 100%);
 }
 .divSectionBoard {
     height: 25vh;
@@ -163,7 +167,9 @@ nav {
     justify-content: space-evenly;
     flex-direction: column;
 }
-#divLunchUnit,#divGreenSpaceUnit,#divSectionBoardActu  {
+#divLunchUnit,
+#divGreenSpaceUnit,
+#divSectionBoardActu {
     background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
@@ -203,7 +209,7 @@ nav {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
-#pWelcom{
+#pWelcom {
     opacity: 0;
     overflow: auto;
     height: auto;
@@ -231,21 +237,21 @@ nav {
 }
 #divSectionBoardDashBoardOne,
 #divSectionBoardDashBoardTwo,
-#divSectionBoardDashBoardThree{
+#divSectionBoardDashBoardThree {
     opacity: 0;
 }
-#divSectionBoardDashBoardOne{
+#divSectionBoardDashBoardOne {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-#divSectionBoardDashBoardTwo{
+#divSectionBoardDashBoardTwo {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
-#divSectionBoardDashBoardThree{
+#divSectionBoardDashBoardThree {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.5s;
@@ -275,13 +281,13 @@ nav {
     border: 1px solid #dddddd;
     opacity: 0;
 }
-#divLunchMenu{
+#divLunchMenu {
     width: 80%;
     animation-duration: 0.5s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-#divLunchContrat{
+#divLunchContrat {
     animation-duration: 0.5s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.25s;
@@ -301,15 +307,15 @@ nav {
     border-radius: 15px;
     color: white;
 }
-.liUlDivMenuSectionBoardLunch{
+.liUlDivMenuSectionBoardLunch {
     height: 10%;
     opacity: 0;
 }
-.divContratSectionBoardContrat{
+.divContratSectionBoardContrat {
     height: 30%;
 }
 #divContratHorsP,
-#divContratP{
+#divContratP {
     width: 80%;
     opacity: 0;
 }
@@ -331,24 +337,25 @@ nav {
     align-items: center;
     text-align: center;
 }
-.h2LiUlSectionBoardActu{
+.h2LiUlSectionBoardActu {
     margin: auto;
 }
 #imgActuOne,
-#imgActuTwo{
+#imgActuTwo {
     width: 90vw;
     border-radius: 15px;
 }
-#imgActuThree{
+#imgActuThree {
     border-radius: 15px;
+    max-width: 150px;
 }
-.pActuSectionBoard{
-    margin: 0!important;
+.pActuSectionBoard {
+    margin: 0 !important;
     width: 80%;
     color: white;
     background: #ef5f23c4;
     border-radius: 15px;
-    padding: 5%;
+    padding: 15px;
     font-size: 0.8em;
     opacity: 0;
     animation-duration: 1s;
@@ -358,7 +365,7 @@ nav {
 }
 #divSectionBoardActuOne,
 #divSectionBoardActuTwo,
-#divSectionBoardActuThree{
+#divSectionBoardActuThree {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -368,29 +375,29 @@ nav {
 }
 #liActuOne,
 #liActuTwo,
-#liActuThree{
+#liActuThree {
     opacity: 0;
 }
-.h2Actu{
+.h2Actu {
     color: white;
     background: #ef5f23c4;
     border-radius: 15px;
-    padding: 5%;
+    padding: 15px;
     width: auto;
     opacity: 0;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-.imgSectionBoardActu{
+.imgSectionBoardActu {
     opacity: 0;
+    max-width: 300px;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
-
 }
-.pLiUlSectionBoardActu{
+.pLiUlSectionBoardActu {
     overflow: auto;
     height: auto;
 }
@@ -425,7 +432,7 @@ nav {
 /* --------------------------------------- CONTACT-PAGE ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-.sectionBoardContact{
+.sectionBoardContact {
     height: auto !important;
     padding: 5vh 0 5vh 0;
 }
@@ -437,19 +444,21 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 }
-#formDivSectionBoardContact{
+#formDivSectionBoardContact {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
 }
-.divInputFormContact, #divTextareaFormContact{
+.divInputFormContact,
+#divTextareaFormContact {
     width: 100%;
     text-align: center;
     opacity: 0;
 }
-.inputFormContact,#textareaFormContact{
+.inputFormContact,
+#textareaFormContact {
     width: 90%;
     padding: 7px;
     margin-bottom: 5px;
@@ -460,7 +469,7 @@ nav {
     border-radius: 10px;
     color: white;
 }
-.buttonFormContact{
+.buttonFormContact {
     width: 50%;
     padding: 7px;
     margin-bottom: 10px;
@@ -487,10 +496,10 @@ nav {
     scale: 0.99;
     background: #ef5f23c4;
 }
-#textareaFormContact{
+#textareaFormContact {
     resize: none;
 }
-#map{
+#map {
     width: 100%;
     border: none;
     border-radius: 15px;
@@ -498,24 +507,24 @@ nav {
 .pErrorInputFormContact {
     display: none;
     margin-bottom: 7px;
-    color:#bd3f27;
+    color: #bd3f27;
     font-weight: 900;
 }
 .divInputFormContact.error .pErrorInputFormContact {
     display: block;
 }
-.resizeDashBoard{
-    height: 90vh!important;
+.resizeDashBoard {
+    height: 90vh !important;
     padding: 0;
 }
-#h2DivSectionBoardContact{
+#h2DivSectionBoardContact {
     margin-bottom: 5vh;
 }
-.inputCheckedTrue{
-    border: 2px solid #42ae66!important;
-    box-shadow: none!important;
+.inputCheckedTrue {
+    border: 2px solid #42ae66 !important;
+    box-shadow: none !important;
 }
-#h2SendMailContact{
+#h2SendMailContact {
     text-align: center;
     width: 80%;
     color: white;
@@ -533,8 +542,8 @@ nav {
 /* ------------------------------------ MENTIONS_LEGALES-PAGE ------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-#divSectionBoardMentionsLegales{
-    background: #ff000021;
+#divSectionBoardMentionsLegales {
+    background: #ef5f23c4;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -543,6 +552,7 @@ nav {
     border-radius: 15px;
     width: 90vw;
     height: 90%;
+    overflow: auto;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -567,18 +577,18 @@ nav {
 }
 .svgHomePage,
 .svgUnitLunch,
-.svgElemDashBoard{
+.svgElemDashBoard {
     width: 1.5em;
     height: 1.5em;
     fill: #5ed65e;
 }
 #h2ActuSectionBoard,
 .h2divUnitLunch,
-.h2ElemDashBoard{
+.h2ElemDashBoard {
     margin-bottom: 20px;
 }
 .h2TittleSectionBoardGreenSpace,
-#h2DivSectionBoardContact{
+#h2DivSectionBoardContact {
     width: 80%;
     color: white;
     background: #ef5f23c4;
@@ -594,8 +604,9 @@ nav {
 /* -------------------------------------- ANIMATION-CLASS ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-#liActuOne,#liMenuOne,
-#divContratHorsP{
+#liActuOne,
+#liMenuOne,
+#divContratHorsP {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
@@ -604,7 +615,7 @@ nav {
 #liMenuTwo,
 #divContratP,
 #liUlGreenSpaceOne,
-#divInputNomFormContact{
+#divInputNomFormContact {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.25s;
@@ -613,7 +624,7 @@ nav {
 #liActuThree,
 #liMenuThree,
 #liUlGreenSpaceTwo,
-#divInputPrenomFormContact{
+#divInputPrenomFormContact {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.5s;
@@ -621,7 +632,7 @@ nav {
 }
 #liMenuFour,
 #liUlGreenSpaceThree,
-#divInputPhoneFormContact{
+#divInputPhoneFormContact {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.75s;
@@ -629,26 +640,26 @@ nav {
 }
 #liMenuFive,
 #liUlGreenSpaceFour,
-#divInputEmailFormContact{
+#divInputEmailFormContact {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceFive,
-#divTextareaFormContact{
+#divTextareaFormContact {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1.25s;
     animation-fill-mode: forwards;
 }
-#liUlGreenSpaceSix{
+#liUlGreenSpaceSix {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
-#divIframeSectionBoardContact{
+#divIframeSectionBoardContact {
     opacity: 0;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
@@ -675,14 +686,50 @@ footer {
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
+/* ------------------------------------------- LAPTOP -------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 649px) and (max-width: 1200px) {
+    #sectionBoard {
+        width: 600px;
+        margin: auto;
+    }
+    .divSectionBoard {
+        height: 22vh;
+    }
+    #divSectionBoardUnits,
+    #divSectionBoardActu {
+        width: 90%;
+    }
+    #divSectionBoardDashBoard,
+    #divSectionBoardContact,
+    .liUldivSectionBoardActu,
+    #divSectionBoardMentionsLegales {
+        width: 600px;
+    }
+    #uldivSectionBoardGreenSpace,
+    .liUlDivMenuSectionBoardLunch {
+        width: 540px;
+    }
+    .liUldivSectionBoardGreenSpace {
+        height: 20%;
+    }
+    #formDivSectionBoardContact {
+        width: 70%;
+    }
+    #imgActuThree {
+        max-width: 300px;
+    }
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
+/* ----------------------------------------- BIG-SCREEN ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 /* --------------------------------------------- END --------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-
-
-/*
-
-- voir pour ajouter deux fleches <= => dans la section actu, pour qu'on puisse naviguer d'une actu a l'autre (au click sur l'icon, next page)
-- ajouter des animations
-    - animation qui remplace le logo par l'icone maison toutes les x seconde pour que les gens saches que c'est le retour accueil
-- faire le responsive

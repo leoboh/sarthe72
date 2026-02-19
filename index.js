@@ -5,6 +5,7 @@
 
 const body = document.querySelector("body");
 const header = document.querySelector("header");
+const nav = document.querySelector("nav");
 const sectionBoard = document.querySelector("#sectionBoard");
 const footer = document.querySelector("footer");
 
@@ -536,6 +537,11 @@ sendMail = () => {
         });
     }
 };
+/**/
+/**/
+/**/
+/**/
+/**/
 setPage = () => {
     divSectionBoardDashBoardOne.addEventListener("click", () => {
         svgClose();
@@ -550,6 +556,11 @@ setPage = () => {
         contactPage();
     });
 };
+/**/
+/**/
+/**/
+/**/
+/**/
 setHomePageEvent = () => {
     const divLunchUnit = document.querySelector("#divLunchUnit");
     const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
@@ -730,7 +741,11 @@ svgNavDashBoard.addEventListener("click", () => {
         homePage();
     }
 });
-
+/**/
+/**/
+/**/
+/**/
+/**/
 document.querySelector("#pRealLeo").addEventListener("click", () => {
     window.open("https://leoblanche.com", "_blank");
 });
