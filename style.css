@@ -121,7 +121,6 @@ nav {
     border-radius: 15px;
 }
 #divSectionBoardWelcom {
-    background: #ff5d1abd;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -330,6 +329,7 @@ nav {
 .divInputFormContact, #divTextareaFormContact{
     width: 100%;
     text-align: center;
+    opacity: 0;
 }
 .inputFormContact,#textareaFormContact{
     width: 90%;
@@ -352,6 +352,11 @@ nav {
     border: 1px solid #dddddd;
     border-radius: 10px;
     color: white;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 .inputFormContact::placeholder,
 #textareaFormContact::placeholder {
@@ -424,6 +429,11 @@ nav {
     border-radius: 15px;
     padding: 5%;
     font-size: 0.8em;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
 }
 #divSectionBoardActuOne,
 #divSectionBoardActuTwo,
@@ -457,12 +467,16 @@ nav {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
-.h2TittleSectionBoard, #h2DivSectionBoardContact{
+.h2TittleSectionBoardGreenSpace, #h2DivSectionBoardContact{
     width: 80%;
     color: white;
     background: #ef5f23c4;
     border-radius: 15px;
     padding: 5%;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 #h2DivSectionBoardContact{
     margin-bottom: 5vh;
@@ -473,6 +487,10 @@ nav {
     border-radius: 15px;
     padding: 5%;
     width: auto;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 #h1Welcom {
     opacity: 0;
@@ -483,9 +501,11 @@ nav {
 }
 #pWelcom{
     opacity: 0;
+    overflow: auto;
+    height: auto;
     animation-duration: 1s;
     animation-name: animOpaScale;
-    animation-delay: 1s;
+    animation-delay: 0.75s;
     animation-fill-mode: forwards;
 }
 #liActuOne,
@@ -558,37 +578,87 @@ nav {
 #liUlGreenSpaceOne{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceTwo{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceThree{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
+    animation-delay: 0.75s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceFour{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
-    animation-delay: 0.75s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceFive{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
-    animation-delay: 1s;
+    animation-delay: 1.25s;
     animation-fill-mode: forwards;
 }
 #liUlGreenSpaceSix{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+#divInputNomFormContact{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#divInputPrenomFormContact{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#divInputPhoneFormContact{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+#divInputEmailFormContact{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#divTextareaFormContact{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
     animation-delay: 1.25s;
     animation-fill-mode: forwards;
+}
+#divIframeSectionBoardContact{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+}
+.imgSectionBoardActu{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+.pLiUlSectionBoardActu{
+    overflow: auto;
+    height: auto;
 }
 /**********************/
 /******* FOOTER *******/

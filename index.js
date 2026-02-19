@@ -224,7 +224,7 @@ const greenSpacePage = () => {
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
-            <h2 class="h2TittleSectionBoard">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
+            <h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <ul id="uldivSectionBoardGreenSpace">
                 <li id="liUlGreenSpaceOne" class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
                 <li id="liUlGreenSpaceTwo" class="liUldivSectionBoardGreenSpace">Taille de haies</li>
@@ -249,15 +249,15 @@ const actuPage = () => {
             <ul id="uldivSectionBoardActu">
                 <li id="liActuOne" class="liUldivSectionBoardActu">
                     <h2 class="h2LiUlSectionBoardActu">1 000 000ème repas</h2>
-                    <p>Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
+                    <p class="pLiUlSectionBoardActu">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
                 </li>
                 <li id="liActuTwo" class="liUldivSectionBoardActu">
                     <h2 class="h2LiUlSectionBoardActu">ASSEMBLEE GENERALE</h2>
-                    <p>L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
+                    <p class="pLiUlSectionBoardActu">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
                 </li>
                 <li id="liActuThree" class="liUldivSectionBoardActu">
                     <h2 class="h2LiUlSectionBoardActu">CRISTAL ROC</h2>
-                    <p>Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
+                    <p class="pLiUlSectionBoardActu">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
                 </li>
             </ul>
         </div>
@@ -274,7 +274,7 @@ const actuPage = () => {
             <div id="divSectionBoardActuOne" class="">
                 <h2 class="h2Actu">1 000 000ème repas</h2>
                 <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
-                <img id="imgActuOne" src="/images/actu1.jpg" alt="image de personnes à table">
+                <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.jpg" alt="image de personnes à table">
             </div>
         `;
     });
@@ -283,7 +283,7 @@ const actuPage = () => {
             <div id="divSectionBoardActuTwo" class="">
                 <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
                 <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
-                <img id="imgActuTwo" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
+                <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
             </div>
         `;
     });
@@ -292,7 +292,7 @@ const actuPage = () => {
             <div id="divSectionBoardActuThree" class="">
                 <h2 class="h2Actu">CRISTAL ROC</h2>
                 <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
-                <img id="imgActuThree" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
+                <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
             </div>
         `;
     });
@@ -309,19 +309,19 @@ const contactPage = () => {
         <div id="divSectionBoardContact" class="">
             <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire :</h2>
             <form id="formDivSectionBoardContact" action="#">
-                <div class="divInputFormContact">
+                <div id="divInputNomFormContact" class="divInputFormContact">
                     <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
                     <p class="pErrorInputFormContact">Nom invalide</p>
                 </div>
-                <div class="divInputFormContact">
+                <div id="divInputPrenomFormContact" class="divInputFormContact">
                     <input id="inputPrenomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
                     <p class="pErrorInputFormContact">Prénom invalide</p>
                 </div>
-                <div class="divInputFormContact">
+                <div id="divInputPhoneFormContact" class="divInputFormContact">
                     <input id="inputPhoneFormContact" class="inputFormContact" type="text" placeholder="Téléphone :" autocomplete="off">
                     <p class="pErrorInputFormContact pErrorPhoneFormContact">Téléphone invalide</p>
                 </div>
-                <div class="divInputFormContact">
+                <div id="divInputEmailFormContact" class="divInputFormContact">
                     <input id="inputEmailFormContact" class="inputFormContact" type="text" placeholder="E-mail :" autocomplete="off">
                     <p class="pErrorInputFormContact pErrorEmailFormContact">Adresse E-mail invalide</p>
                 </div>
