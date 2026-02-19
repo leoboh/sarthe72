@@ -306,6 +306,7 @@ nav {
     border-radius: 15px;
     color: white;
     padding: 10px;
+    opacity: 0;
 }
 .sectionBoardContact{
     height: auto !important;
@@ -552,6 +553,41 @@ nav {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceOne{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceTwo{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceThree{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceFour{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceFive{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+#liUlGreenSpaceSix{
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-delay: 1.25s;
     animation-fill-mode: forwards;
 }
 /**********************/

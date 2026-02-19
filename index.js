@@ -226,12 +226,12 @@ const greenSpacePage = () => {
         <div id="divSectionBoardGreenSpace" class="">
             <h2 class="h2TittleSectionBoard">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <ul id="uldivSectionBoardGreenSpace">
-                <li class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
-                <li class="liUldivSectionBoardGreenSpace">Taille de haies</li>
-                <li class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
-                <li class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
-                <li class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
-                <li class="liUldivSectionBoardGreenSpace">Exct...</li>
+                <li id="liUlGreenSpaceOne" class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
+                <li id="liUlGreenSpaceTwo" class="liUldivSectionBoardGreenSpace">Taille de haies</li>
+                <li id="liUlGreenSpaceThree" class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
+                <li id="liUlGreenSpaceFour" class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
+                <li id="liUlGreenSpaceFive" class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
+                <li id="liUlGreenSpaceSix" class="liUldivSectionBoardGreenSpace">Exct...</li>
             </ul>
         </div>
     `;
