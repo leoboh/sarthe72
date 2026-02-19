@@ -664,6 +664,19 @@ nav {
     border: 2px solid #42ae66!important;
     box-shadow: none!important;
 }
+#h2SendMailContact{
+    text-align: center;
+    width: 80%;
+    color: white;
+    background: #42ae66;
+    border-radius: 15px;
+    padding: 5%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
 /**********************/
 /******* FOOTER *******/
 /**********************/
