@@ -689,7 +689,7 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 649px) and (max-width: 1200px) {
+@media screen and (min-width: 649px) and (max-width: 1400px) {
     #sectionBoard {
         width: 600px;
         margin: auto;
@@ -719,6 +719,22 @@ footer {
     }
     #imgActuThree {
         max-width: 300px;
+    }
+    /* ---HOVER--- */
+    #imgNavLogo:hover,
+    #svgNavDashBoard:hover,
+    #divLunchUnit:hover,
+    #divGreenSpaceUnit:hover,
+    #divSectionBoardActu:hover,
+    #pRealLeo:hover,
+    #pMentionsLegales:hover,
+    #divLunchMenu:hover,
+    #divLunchContrat:hover,
+    .liUlDivMenuSectionBoardLunch:hover,
+    .divContratSectionBoardContrat:hover,
+    .buttonFormContact:hover,
+    .liUldivSectionBoardActu:hover {
+        cursor: pointer;
     }
 }
 /* ----------------------------------------------------------------------------------------------- */
