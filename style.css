@@ -81,7 +81,6 @@ p {
 /* -------------------------------------------- HEADER ------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-
 header {
     width: 100vw;
     height: 10vh;
@@ -109,7 +108,6 @@ nav {
     color: white;
     fill : white
 }
-
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ------------------------------------------ HOME-PAGE ------------------------------------------ */
@@ -214,7 +212,11 @@ nav {
     animation-delay: 0.75s;
     animation-fill-mode: forwards;
 }
-/* NAV-BOARD */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ NAV-BOARD ------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 .divSectionBoardDashBoardElements {
     width: 80%;
     height: 30%;
@@ -592,88 +594,49 @@ nav {
 /* -------------------------------------- ANIMATION-CLASS ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-#liActuOne{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards;
-}
-#liActuTwo{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#liActuThree{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-#liMenuOne{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards;
-}
-#liMenuTwo{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#liMenuThree{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-#liMenuFour{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.75s;
-    animation-fill-mode: forwards;
-}
-#liMenuFive{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
+#liActuOne,#liMenuOne,
 #divContratHorsP{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-#divContratP{
+#liActuTwo,
+#liMenuTwo,
+#divContratP,
+#liUlGreenSpaceOne,
+#divInputNomFormContact{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
-#liUlGreenSpaceOne{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#liUlGreenSpaceTwo{
+#liActuThree,
+#liMenuThree,
+#liUlGreenSpaceTwo,
+#divInputPrenomFormContact{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
-#liUlGreenSpaceThree{
+#liMenuFour,
+#liUlGreenSpaceThree,
+#divInputPhoneFormContact{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 0.75s;
     animation-fill-mode: forwards;
 }
-#liUlGreenSpaceFour{
+#liMenuFive,
+#liUlGreenSpaceFour,
+#divInputEmailFormContact{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
-#liUlGreenSpaceFive{
+#liUlGreenSpaceFive,
+#divTextareaFormContact{
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1.25s;
@@ -683,36 +646,6 @@ nav {
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
     animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-}
-#divInputNomFormContact{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards;
-}
-#divInputPrenomFormContact{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-#divInputPhoneFormContact{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.75s;
-    animation-fill-mode: forwards;
-}
-#divInputEmailFormContact{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-#divTextareaFormContact{
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 1.25s;
     animation-fill-mode: forwards;
 }
 #divIframeSectionBoardContact{
