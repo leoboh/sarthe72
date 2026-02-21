@@ -131,6 +131,10 @@ nav {
     width: 90vw;
     border-radius: 15px;
 }
+.sectionBoardHome{
+    background-image: url("./images/img/tp189-hein-06-job137.jpg");
+    background-size: contain;
+}
 #divSectionBoardWelcom {
     display: flex;
     flex-direction: column;
@@ -809,7 +813,6 @@ footer {
 
 
 /*
+border-radius: 10% 30% 50% 70%;
 
-- voir pour changer les actu, mettre même typo petit et grand screen => mettre la nouvelle typo (groupé)
-    => condition ligne 273 dans le js a enlever et mettre en groupé direct, enlevé les class css qui serviron plus a rien dans le css
-- ajouter anim scale 1.1 toute les 5 - 10 secondes pour alerté des elements clickable ( autre anim rotae de 5 - 10 deg sur les elem pour donner de la vie, essayer pour voir ce que ca donne, ou scaleTop de 10px puis reset, a try)
+- retravailler le design
