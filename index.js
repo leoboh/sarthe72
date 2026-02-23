@@ -50,23 +50,39 @@ const removeClass = () => {
 const navBoard = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardDashBoard" class="">
-            <div id="divSectionBoardDashBoardOne" class="divSectionBoardDashBoardElements">
-                <h2 class="h2ElemDashBoard">Livraison de repas à domicile</h2>
-                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                    <path d="M32 96c0-35.3 28.7-64 64-64l224 0c23.7 0 44.4 12.9 55.4 32l40.4 0c32.4 0 61.6 19.6 74 49.5l43.8 106.3 1.7 4.2 24.7 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-.4 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-2.7 .1-5.4 .4-8l-144.7 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-3.6 .2-7.1 .6-10.5-19-6.4-32.6-24.4-32.6-45.5l0-48c-17.7 0-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32l0-32zm352 32l0 96 82.1 0-35.4-86.1c-2.5-6-8.3-9.9-14.8-9.9L384 128zM192 392a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm280 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
-                </svg>
-            </div>
-            <div id="divSectionBoardDashBoardTwo" class="divSectionBoardDashBoardElements">
-                <h2 class="h2ElemDashBoard">Entretien d'espaces verts</h2>
-                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M0 32c477.6 0 366.6 317.3 367.1 366.3l80.9 81.7-26 0-70.4-71.2C312.6 413 227.2 443.3 137.2 371.8 47 300.3 52 214.7 0 32zM79.7 78c-49.7-23.5-5.2 9.2-5.2 9.2 45.2 31.2 66 73.7 90.2 119.9 31.5 60.2 79 139.7 144.2 167.7 65 28 34.2 12.5 6-8.5-28.2-21.2-68.2-87-91-130.2-31.7-60-61-118.6-144.2-158.1z"/>
-                </svg>
-            </div>
-            <div id="divSectionBoardDashBoardThree" class="divSectionBoardDashBoardElements">
-                <h2 class="h2ElemDashBoard">Contact</h2>
-                <svg class="svgElemDashBoard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/>
-                </svg>
+            <div id="divAllUnitsDashBoard">
+                <div id="divUnitDelivery" class="divUnit">
+                    <div id="divUnitDeliveryh2" class="divUnith2">
+                        <h2 class="h2Unit">Livraison de repas à domicile</h2>
+                    </div>
+                    <div class="divUnitImg">
+                        <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
+                    </div>
+                </div>
+                <div id="divUnitEV" class="divUnit">
+                    <div class="divUnitImg">
+                        <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
+                    </div>
+                    <div id="divUnitEvh2" class="divUnith2">
+                        <h2 class="h2Unit">Entretien d'espaces verts</h2>
+                    </div>
+                </div>
+                <div id="divUnitActu" class="divUnit">
+                    <div id="divUnitActuh2" class="divUnith2">
+                        <h2 class="h2Unit">Actualités</h2>
+                    </div>
+                    <div id="divUnitActuImg" class="divUnitImg">
+                        <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
+                    </div>
+                </div>
+                <div id="divUnitContact" class="divUnit">
+                    <div class="divUnitImg">
+                        <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
+                    </div>
+                    <div id="divUnitContacth2" class="divUnith2">
+                        <h2 class="h2Unit">Contact</h2>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -252,14 +268,26 @@ const greenSpacePage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
             <h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
-            <ul id="uldivSectionBoardGreenSpace">
-                <li id="liUlGreenSpaceOne" class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
-                <li id="liUlGreenSpaceTwo" class="liUldivSectionBoardGreenSpace">Taille de haies</li>
-                <li id="liUlGreenSpaceThree" class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
-                <li id="liUlGreenSpaceFour" class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
-                <li id="liUlGreenSpaceFive" class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
-                <li id="liUlGreenSpaceSix" class="liUldivSectionBoardGreenSpace">Exct...</li>
-            </ul>
+            <div id="divElemEvOne" class="divElemEv">
+                <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
+                <img id="imgElemEvOne" class="imgElemEv" src="/images/img/tondeuse.webp" alt="logo" />
+            </div>
+            <div id="divElemEvTwo" class="divElemEv">
+                <img id="imgElemEvTwo" class="imgElemEv" src="/images/img/taille_haie.webp" alt="logo" />
+                <p id="pElemEvTwo" class="pElemEv">Taille de haies</p>
+            </div>
+            <div id="divElemEvThree" class="divElemEv">
+                <p id="pElemEvThree" class="pElemEv">Entretien du jardin</p>
+                <img id="imgElemEvThree" class="imgElemEv" src="/images/img/entretien_jardin.webp" alt="logo" />
+            </div>
+            <div id="divElemEvFour" class="divElemEv">
+                <img id="imgElemEvFour" class="imgElemEv" src="/images/img/taille_arbuste.webp" alt="logo" />
+                <p id="pElemEvFour" class="pElemEv">Taille d'arbustes</p>
+            </div>
+            <div id="divElemEvFive" class="divElemEv">
+                <p id="pElemEvFive" class="pElemEv">Ramassage des feuilles</p>
+                <img id="imgElemEvFive" class="imgElemEv" src="/images/img/ramassage_feuille.webp" alt="logo" />
+            </div>
         </div>
     `;
 };
@@ -604,20 +632,24 @@ sendMail = () => {
 /**/
 /**/
 /**/
-setPage = () => {
-    divSectionBoardDashBoardOne.addEventListener("click", () => {
-        svgClose();
-        lunchPage();
-    });
-    divSectionBoardDashBoardTwo.addEventListener("click", () => {
-        svgClose();
-        greenSpacePage();
-    });
-    divSectionBoardDashBoardThree.addEventListener("click", () => {
-        svgClose();
-        contactPage();
-    });
-};
+// setPage = () => {
+//     divUnitDelivery.addEventListener("click", () => {
+//         svgClose();
+//         lunchPage();
+//     });
+//     divUnitEV.addEventListener("click", () => {
+//         svgClose();
+//         greenSpacePage();
+//     });
+//     divUnitActu.addEventListener("click", () => {
+//         svgClose();
+//         actuPage();
+//     });
+//     divUnitContact.addEventListener("click", () => {
+//         svgClose();
+//         contactPage();
+//     });
+// };
 /**/
 /**/
 /**/
@@ -630,15 +662,19 @@ setHomePageEvent = () => {
     const divUnitContact = document.querySelector("#divUnitContact");
     /*****/
     divUnitDelivery.addEventListener("click", () => {
+        svgClose();
         lunchPage();
     });
     divUnitEV.addEventListener("click", () => {
+        svgClose();
         greenSpacePage();
     });
     divUnitActu.addEventListener("click", () => {
+        svgClose();
         actuPage();
     });
     divUnitContact.addEventListener("click", () => {
+        svgClose();
         contactPage();
     });
 };
@@ -689,7 +725,8 @@ svgNavDashBoard.addEventListener("click", () => {
     if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardHome")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /************************************ HOME 2 ************************************/
@@ -709,7 +746,8 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardLunch")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /*********************************** LUNCH 2 ************************************/
@@ -728,7 +766,8 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardGreenSpace")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /******************************** GREEN.SPACE 2 *********************************/
@@ -747,7 +786,8 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardContact")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
         sectionBoard.classList.add("resizeDashBoard");
 
         /********************************************************************************/
@@ -768,7 +808,8 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardActu")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /*********************************** ACTU 2 *************************************/
@@ -787,7 +828,8 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardMentionsLegales")) {
         svgOpen();
         navBoard();
-        setPage();
+        // setPage();
+        setHomePageEvent();
 
         /********************************************************************************/
         /****************************** MENTIONS LEGALES 2 ******************************/
