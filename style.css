@@ -279,7 +279,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(311deg, #fc8cc3 0%, #c070f8e6 100%);
+    background:#de73eaed;
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
     opacity: 0;
@@ -471,6 +471,9 @@ nav {
 .sectionBoardContact {
     height: auto !important;
     padding: 5vh 0 5vh 0;
+
+    background-image: url(./images/img/img_contact2.jpg);
+    background-size: cover;
 }
 #divSectionBoardContact {
     width: 90vw;
@@ -499,7 +502,7 @@ nav {
     padding: 7px;
     margin-bottom: 5px;
     border: none;
-    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    background: linear-gradient(311deg, #097b7be0 0%, #12d9d9e0 100%);
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
     border-radius: 10px;
@@ -510,7 +513,7 @@ nav {
     padding: 7px;
     margin-bottom: 10px;
     border: none;
-    background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
+    background: linear-gradient(311deg, #097b7be0 0%, #12d9d9e0 100%);
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
     border-radius: 10px;
@@ -554,7 +557,8 @@ nav {
     padding: 0;
 }
 #h2DivSectionBoardContact {
-    margin-bottom: 5vh;
+    background-color: #12d9d9e0!important;
+    border-radius: 15px 0 40% 20%!important;
 }
 .inputCheckedTrue {
     border: 2px solid #42ae66 !important;
