@@ -17,8 +17,10 @@ const footer = document.querySelector("footer");
 
 const imgNavLogo = document.querySelector("#imgNavLogo");
 const svgNavDashBoard = document.querySelector("#svgNavDashBoard");
-const divLunchUnit = document.querySelector("#divLunchUnit");
-const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
+const divUnitDelivery = document.querySelector("#divUnitDelivery");
+const divUnitEV = document.querySelector("#divUnitEV");
+const divUnitActu = document.querySelector("#divUnitActu");
+const divUnitContact = document.querySelector("#divUnitContact");
 const pMentionsLegales = document.querySelector("#pMentionsLegales");
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -98,33 +100,57 @@ const svgClose = () => {
 /**/
 const homePage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardWelcom" class="divSectionBoard">
-            <h1 id="h1Welcom">Bienvenue</h1>
-            <p id="pWelcom">
-                L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
-                • venir en aide aux personnes âgées en milieu rural</br>
-                • soutenir des travailleurs handicapés par de l'emploi
-            </p>
-        </div>
-        <div id="divSectionBoardUnits" class="divSectionBoard">
-            <div id="divLunchUnit" class="divSectionBoardSingleUnit">
-                <h2>Livraison de repas à domicile</h2>
-                <svg class="svgHomePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                    <path d="M32 96c0-35.3 28.7-64 64-64l224 0c23.7 0 44.4 12.9 55.4 32l40.4 0c32.4 0 61.6 19.6 74 49.5l43.8 106.3 1.7 4.2 24.7 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-.4 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-2.7 .1-5.4 .4-8l-144.7 0c.2 2.6 .4 5.3 .4 8 0 48.6-39.4 88-88 88s-88-39.4-88-88c0-3.6 .2-7.1 .6-10.5-19-6.4-32.6-24.4-32.6-45.5l0-48c-17.7 0-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32l0-32zm352 32l0 96 82.1 0-35.4-86.1c-2.5-6-8.3-9.9-14.8-9.9L384 128zM192 392a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm280 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/>
-                </svg>
+        <div id="divBorder">
+            <div id="divSectionBoardWelcom" class="divSectionBoard">
+                <h1 id="h1Welcom">Bienvenue</h1>
+                <p id="pWelcom">
+                    L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
+                    • venir en aide aux personnes âgées en milieu rural</br>
+                    • soutenir des travailleurs handicapés par de l'emploi
+                </p>
             </div>
-            <div id="divGreenSpaceUnit" class="divSectionBoardSingleUnit">
-                <h2>Entretien d'espaces verts</h2>
-                <svg class="svgHomePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M0 32c477.6 0 366.6 317.3 367.1 366.3l80.9 81.7-26 0-70.4-71.2C312.6 413 227.2 443.3 137.2 371.8 47 300.3 52 214.7 0 32zM79.7 78c-49.7-23.5-5.2 9.2-5.2 9.2 45.2 31.2 66 73.7 90.2 119.9 31.5 60.2 79 139.7 144.2 167.7 65 28 34.2 12.5 6-8.5-28.2-21.2-68.2-87-91-130.2-31.7-60-61-118.6-144.2-158.1z"/>
-                </svg>
-            </div>
-        </div>
-        <div id="divSectionBoardActu" class="divSectionBoard">
-            <h2 id="h2ActuSectionBoard">Actualités</h2>
-            <svg class="svgHomePage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/>
+            <svg id="svgSepare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#0099ff" fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,96C320,96,400,64,480,42.7C560,21,640,11,720,16C800,21,880,43,960,42.7C1040,43,1120,21,1200,26.7C1280,32,1360,64,1400,80L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
             </svg>
+        </div>
+        <div id="divSectionBoardUnits" class="">
+            <svg id="svgSeparetwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <path fill="#0099ff" fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,96C320,96,400,64,480,42.7C560,21,640,11,720,16C800,21,880,43,960,42.7C1040,43,1120,21,1200,26.7C1280,32,1360,64,1400,80L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
+            <div id="divAllUnits">
+                <div id="divUnitDelivery" class="divUnit">
+                    <div id="divUnitDeliveryh2" class="divUnith2">
+                        <h2 class="h2Unit">Livraison de repas à domicile</h2>
+                    </div>
+                    <div class="divUnitImg">
+                        <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
+                    </div>
+                </div>
+                <div id="divUnitEV" class="divUnit">
+                    <div class="divUnitImg">
+                        <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
+                    </div>
+                    <div id="divUnitEvh2" class="divUnith2">
+                        <h2 class="h2Unit">Entretien d'espaces verts</h2>
+                    </div>
+                </div>
+                <div id="divUnitActu" class="divUnit">
+                    <div id="divUnitActuh2" class="divUnith2">
+                        <h2 class="h2Unit">Actualités</h2>
+                    </div>
+                    <div id="divUnitActuImg" class="divUnitImg">
+                        <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
+                    </div>
+                </div>
+                <div id="divUnitContact" class="divUnit">
+                    <div class="divUnitImg">
+                        <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
+                    </div>
+                    <div id="divUnitContacth2" class="divUnith2">
+                        <h2 class="h2Unit">Contact</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
 };
@@ -598,18 +624,22 @@ setPage = () => {
 /**/
 /**/
 setHomePageEvent = () => {
-    const divLunchUnit = document.querySelector("#divLunchUnit");
-    const divGreenSpaceUnit = document.querySelector("#divGreenSpaceUnit");
-    const divSectionBoardActu = document.querySelector("#divSectionBoardActu");
+    const divUnitDelivery = document.querySelector("#divUnitDelivery");
+    const divUnitEV = document.querySelector("#divUnitEV");
+    const divUnitActu = document.querySelector("#divUnitActu");
+    const divUnitContact = document.querySelector("#divUnitContact");
     /*****/
-    divLunchUnit.addEventListener("click", () => {
+    divUnitDelivery.addEventListener("click", () => {
         lunchPage();
     });
-    divGreenSpaceUnit.addEventListener("click", () => {
+    divUnitEV.addEventListener("click", () => {
         greenSpacePage();
     });
-    divSectionBoardActu.addEventListener("click", () => {
+    divUnitActu.addEventListener("click", () => {
         actuPage();
+    });
+    divUnitContact.addEventListener("click", () => {
+        contactPage();
     });
 };
 /* ----------------------------------------------------------------------------------------------- */
@@ -618,14 +648,17 @@ setHomePageEvent = () => {
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 
-divLunchUnit.addEventListener("click", () => {
+divUnitDelivery.addEventListener("click", () => {
     lunchPage();
 });
-divGreenSpaceUnit.addEventListener("click", () => {
+divUnitEV.addEventListener("click", () => {
     greenSpacePage();
 });
-divSectionBoardActu.addEventListener("click", () => {
+divUnitActu.addEventListener("click", () => {
     actuPage();
+});
+divUnitContact.addEventListener("click", () => {
+    contactPage();
 });
 pMentionsLegales.addEventListener("click", () => {
     mentionsLegalesPage();
