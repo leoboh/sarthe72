@@ -276,6 +276,7 @@ nav {
     height: 20vh;
     display: flex;
     max-width: 350px;
+    opacity: 0;
 }
 .divUnith2 {
     width: 50%;
@@ -297,6 +298,33 @@ nav {
 }
 .imgStretch {
     width: stretch;
+}
+.animDivUnitDelivery {
+    animation-duration: 1s;
+    animation-delay: 1.75s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitEV {
+    animation-duration: 1s;
+    animation-delay: 2.25s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitActu {
+    animation-duration: 1s;
+    animation-delay: 2.75s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitContact {
+    animation-duration: 1s;
+    animation-delay: 3.25s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.opacityBlock {
+    opacity: 1;
 }
 #divUnitDeliveryh2 {
     border-radius: 15px 0 0 0;
@@ -991,13 +1019,19 @@ footer {
     #imgNavLogo:hover {
         scale: 1.05;
     }
+    #displayWrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80%;
+    }
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* ----------------------------------------- BIG-SCREEN ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */

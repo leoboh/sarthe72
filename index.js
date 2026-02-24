@@ -48,7 +48,7 @@ const navBoard = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardDashBoard" class="">
             <div id="divAllUnitsDashBoard">
-                <div id="divUnitDelivery" class="divUnit">
+                <div id="divUnitDelivery" class="divUnit opacityBlock">
                     <div id="divUnitDeliveryh2" class="divUnith2">
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
@@ -56,7 +56,7 @@ const navBoard = () => {
                         <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
                     </div>
                 </div>
-                <div id="divUnitEV" class="divUnit">
+                <div id="divUnitEV" class="divUnit opacityBlock">
                     <div class="divUnitImg">
                         <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
                     </div>
@@ -64,7 +64,7 @@ const navBoard = () => {
                         <h2 class="h2Unit">Entretien d'espaces verts</h2>
                     </div>
                 </div>
-                <div id="divUnitActu" class="divUnit">
+                <div id="divUnitActu" class="divUnit opacityBlock">
                     <div id="divUnitActuh2" class="divUnith2">
                         <h2 class="h2Unit">Actualités</h2>
                     </div>
@@ -72,7 +72,7 @@ const navBoard = () => {
                         <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
                     </div>
                 </div>
-                <div id="divUnitContact" class="divUnit">
+                <div id="divUnitContact" class="divUnit opacityBlock">
                     <div class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
                     </div>
@@ -131,7 +131,7 @@ const homePage = () => {
                 <path d="M0,32L40,48C80,64,160,96,240,96C320,96,400,64,480,42.7C560,21,640,11,720,16C800,21,880,43,960,42.7C1040,43,1120,21,1200,26.7C1280,32,1360,64,1400,80L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
             </svg>
             <div id="divAllUnits">
-                <div id="divUnitDelivery" class="divUnit">
+                <div id="divUnitDelivery" class="divUnit animDivUnitDelivery">
                     <div id="divUnitDeliveryh2" class="divUnith2">
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
@@ -139,7 +139,7 @@ const homePage = () => {
                         <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
                     </div>
                 </div>
-                <div id="divUnitEV" class="divUnit">
+                <div id="divUnitEV" class="divUnit animDivUnitEV">
                     <div class="divUnitImg">
                         <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
                     </div>
@@ -147,7 +147,7 @@ const homePage = () => {
                         <h2 class="h2Unit">Entretien d'espaces verts</h2>
                     </div>
                 </div>
-                <div id="divUnitActu" class="divUnit">
+                <div id="divUnitActu" class="divUnit animDivUnitActu">
                     <div id="divUnitActuh2" class="divUnith2">
                         <h2 class="h2Unit">Actualités</h2>
                     </div>
@@ -155,7 +155,7 @@ const homePage = () => {
                         <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
                     </div>
                 </div>
-                <div id="divUnitContact" class="divUnit">
+                <div id="divUnitContact" class="divUnit animDivUnitContact">
                     <div class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
                     </div>
@@ -265,25 +265,27 @@ const greenSpacePage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
             <h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
-            <div id="divElemEvOne" class="divElemEv">
-                <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
-                <img id="imgElemEvOne" class="imgElemEv" src="/images/img/tondeuse.webp" alt="logo" />
-            </div>
-            <div id="divElemEvTwo" class="divElemEv">
-                <img id="imgElemEvTwo" class="imgElemEv" src="/images/img/taille_haie.webp" alt="logo" />
-                <p id="pElemEvTwo" class="pElemEv">Taille de haies</p>
-            </div>
-            <div id="divElemEvThree" class="divElemEv">
-                <p id="pElemEvThree" class="pElemEv">Entretien du jardin</p>
-                <img id="imgElemEvThree" class="imgElemEv" src="/images/img/entretien_jardin.webp" alt="logo" />
-            </div>
-            <div id="divElemEvFour" class="divElemEv">
-                <img id="imgElemEvFour" class="imgElemEv" src="/images/img/taille_arbuste.webp" alt="logo" />
-                <p id="pElemEvFour" class="pElemEv">Taille d'arbustes</p>
-            </div>
-            <div id="divElemEvFive" class="divElemEv">
-                <p id="pElemEvFive" class="pElemEv">Ramassage des feuilles</p>
-                <img id="imgElemEvFive" class="imgElemEv" src="/images/img/ramassage_feuille.webp" alt="logo" />
+            <div id="displayWrap">
+                <div id="divElemEvOne" class="divElemEv">
+                    <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
+                    <img id="imgElemEvOne" class="imgElemEv" src="/images/img/tondeuse.webp" alt="logo" />
+                </div>
+                <div id="divElemEvTwo" class="divElemEv">
+                    <img id="imgElemEvTwo" class="imgElemEv" src="/images/img/taille_haie.webp" alt="logo" />
+                    <p id="pElemEvTwo" class="pElemEv">Taille de haies</p>
+                </div>
+                <div id="divElemEvThree" class="divElemEv">
+                    <p id="pElemEvThree" class="pElemEv">Entretien du jardin</p>
+                    <img id="imgElemEvThree" class="imgElemEv" src="/images/img/entretien_jardin.webp" alt="logo" />
+                </div>
+                <div id="divElemEvFour" class="divElemEv">
+                    <img id="imgElemEvFour" class="imgElemEv" src="/images/img/taille_arbuste.webp" alt="logo" />
+                    <p id="pElemEvFour" class="pElemEv">Taille d'arbustes</p>
+                </div>
+                <div id="divElemEvFive" class="divElemEv">
+                    <p id="pElemEvFive" class="pElemEv">Ramassage des feuilles</p>
+                    <img id="imgElemEvFive" class="imgElemEv" src="/images/img/ramassage_feuille.webp" alt="logo" />
+                </div>
             </div>
         </div>
     `;
