@@ -21,7 +21,6 @@ const divUnitDelivery = document.querySelector("#divUnitDelivery");
 const divUnitEV = document.querySelector("#divUnitEV");
 const divUnitActu = document.querySelector("#divUnitActu");
 const divUnitContact = document.querySelector("#divUnitContact");
-const pMentionsLegales = document.querySelector("#pMentionsLegales");
 
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -398,6 +397,12 @@ const contactPage = () => {
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10692.14107377621!2d0.362784!3d47.9357015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9796d88e89a034f3!2sS.a.r.t.h%2072!5e0!3m2!1sfr!2sfr!4v1620653831305!5m2!1sfr!2sfr">
                 </iframe>
             </div>
+            <div id="infoAdress">
+                <p id="pInfoAdress">SARTH'72</br>
+                11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
+                Telephone 02 43 75 28 47</br>
+                Lundi au Vendredi : 8h15 à 17h</p>
+            </div>
         </div>
     `;
     checkInput();
@@ -665,9 +670,6 @@ divUnitActu.addEventListener("click", () => {
 });
 divUnitContact.addEventListener("click", () => {
     contactPage();
-});
-pMentionsLegales.addEventListener("click", () => {
-    mentionsLegalesPage();
 });
 /**/
 /**/
