@@ -326,7 +326,7 @@ const actuPage = () => {
     liActuOne.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuOne" class="">
-                <div class="test8">
+                <div class="divActu">
                     <h2 class="h2Actu">1 000 000ème repas</h2>
                     <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
                 </div>
@@ -337,7 +337,7 @@ const actuPage = () => {
     liActuTwo.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuTwo" class="">
-                <div class="test8">
+                <div class="divActu">
                     <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
                     <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
                 </div>
@@ -348,7 +348,7 @@ const actuPage = () => {
     liActuThree.addEventListener("click", () => {
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuThree" class="">
-                <div class="test8">
+                <div class="divActu">
                     <h2 class="h2Actu">CRISTAL ROC</h2>
                     <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
                 </div>

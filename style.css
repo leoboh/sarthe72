@@ -120,7 +120,6 @@ nav {
 /* ----------------------------------------------------------------------------------------------- */
 #sectionBoard {
     width: 100vw;
-    /* height: 90vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,10 +129,6 @@ nav {
     width: 90vw;
     border-radius: 15px;
 }
-/* .sectionBoardHome{
-    background-image: url("./images/img/tp189-hein-06-job137.jpg");
-    background-size: contain;
-} */
 #divSectionBoardWelcom {
     display: flex;
     flex-direction: column;
@@ -146,10 +141,7 @@ nav {
     animation-duration: 1s;
     animation-name: slide-in;
     animation-fill-mode: forwards;
-}
-#divSectionBoardUnits {
-    display: flex;
-    justify-content: space-between;
+    max-width: 350px;
 }
 #divSectionBoardActu,
 .divUnitLunch,
@@ -210,6 +202,8 @@ nav {
     animation-name: animOpaScale;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    font-family: "Betania Patmos", cursive;
+    font-style: italic;
 }
 #pWelcom {
     opacity: 0;
@@ -219,6 +213,112 @@ nav {
     animation-name: animOpaScale;
     animation-delay: 0.75s;
     animation-fill-mode: forwards;
+    padding: 5px;
+}
+#divSvgSepare {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#divBorder {
+    background-image: url(./images/img/tp189-hein-06-job137.jpg);
+    background-size: contain;
+    position: relative;
+    height: 38vh;
+    width: 100%;
+}
+.divSectionBoard {
+    height: 20vh;
+    margin: 5vh auto auto auto;
+}
+#svgSepare {
+    bottom: 0px;
+    position: absolute;
+    fill: #0099ff;
+}
+#svgSeparetwo {
+    position: absolute;
+    fill: #0099ff;
+}
+#divAllUnits {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#divAllUnitsDashBoard {
+    width: 100%;
+    height: 100%;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+#divSectionBoardUnits {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    background-image: url(./images/img/tp189-hein-03-g-job137.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.divUnit {
+    width: 75%;
+    height: 20vh;
+    display: flex;
+    max-width: 350px;
+}
+.divUnith2 {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0a1ec;
+}
+
+.divUnitImg {
+    width: 50%;
+    text-align: center;
+    background: rebeccapurple;
+}
+.imgUnit {
+    width: auto;
+    height: 100%;
+}
+.imgStretch {
+    width: stretch;
+}
+#divUnitDeliveryh2 {
+    border-radius: 15px 0 0 0;
+    background-color: #de73ea;
+}
+#divUnitEvh2 {
+    background: #efc817;
+}
+#divUnitActuh2 {
+    background: #d96d3b;
+}
+#divUnitContacth2 {
+    background: #12d9d9;
+    border-radius: 0 0 15px 0;
+}
+#divUnitActuImg {
+    background: #0f7b0f;
+}
+.h2Unit {
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -279,14 +379,15 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background:#de73eaed;
+    background: #de73eaed;
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
     opacity: 0;
-    margin: 0!important;
+    margin: 0 !important;
 }
 #divLunchMenu {
     width: 80%;
+    max-width: 400px;
     animation-duration: 0.5s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
@@ -297,10 +398,11 @@ nav {
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
     width: 80%;
+    max-width: 400px;
 }
 .liUlDivMenuSectionBoardLunch,
 .divContratSectionBoardContrat {
-    background: #e991ffe0;
+    background: #e991fff2;
     box-shadow: 0 0 0.5em 0px #2b2b2b61;
     border: 1px solid #dddddd;
     display: flex;
@@ -314,16 +416,18 @@ nav {
 .liUlDivMenuSectionBoardLunch {
     height: 10%;
     opacity: 0;
+    max-width: 400px;
 }
 .divContratSectionBoardContrat {
     height: 30%;
+    max-width: 400px;
 }
 #divContratHorsP,
 #divContratP {
     width: 80%;
     opacity: 0;
 }
-.svgUnitLunch{
+.svgUnitLunch {
     fill: #825ed6;
     width: 1.5em;
     height: 1.5em;
@@ -334,7 +438,7 @@ nav {
     background-image: url(./images/img/img_lunch2.jpg);
     background-size: cover;
 }
-#divContrat{
+#divContrat {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -349,9 +453,9 @@ nav {
 /* ------------------------------------------ ACTU-PAGE ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-#divSectionBoardAllActu{
+#divSectionBoardAllActu {
     width: 100%;
-    height: 90vh!important;
+    height: 90vh !important;
     background-image: url(./images/img/img_actu.jpg);
     background-size: cover;
 }
@@ -367,10 +471,13 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    max-width: 350px;
 }
 .h2LiUlSectionBoardActu {
     margin: auto;
     color: white;
+    font-family: "Betania Patmos", cursive;
+    font-style: italic;
 }
 #imgActuOne,
 #imgActuTwo {
@@ -386,18 +493,6 @@ nav {
     padding: 15px;
     font-weight: bolder;
     font-size: 0.8em;
-    /* margin: 0 !important;
-    width: 80%;
-    color: white;
-    background: #ef5f23c4;
-    border-radius: 15px;
-    padding: 15px;
-    font-size: 0.8em;
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-delay: 0.25s;
-    animation-fill-mode: forwards; */
 }
 #divSectionBoardActuOne,
 #divSectionBoardActuTwo,
@@ -410,6 +505,7 @@ nav {
     text-align: center;
     background-image: url(./images/img/img_actu.jpg);
     background-size: cover;
+    width: 100%;
 }
 #liActuOne,
 #liActuTwo,
@@ -420,20 +516,11 @@ nav {
 #liActuThree {
     border-radius: 15px 0 15px 0;
 }
-#liActuTwo{
+#liActuTwo {
     border-radius: 0px 15px 0px 15px;
 }
 .h2Actu {
     color: #4366d3;
-    /* color: white;
-    background: #ef5f23c4;
-    border-radius: 15px;
-    padding: 15px;
-    width: auto;
-    opacity: 0;
-    animation-duration: 1s;
-    animation-name: animOpaScalTwo;
-    animation-fill-mode: forwards; */
 }
 .imgSectionBoardActu {
     opacity: 0;
@@ -449,14 +536,22 @@ nav {
     color: white;
     font-weight: bold;
 }
+.divActu {
+    margin: 0 !important;
+    width: 80%;
+    background: #ffafccd4;
+    border-radius: 15px 15px 80px 30px;
+    padding: 15px;
+    max-width: 350px;
+}
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* -------------------------------------- GREEN_SPACE-PAGE --------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 
-#divSectionBoardGreenSpace{
-    height: auto!important;
+#divSectionBoardGreenSpace {
+    height: auto !important;
     background-image: url(./images/img/img_ev.jpg);
     background-size: cover;
 }
@@ -478,6 +573,46 @@ nav {
     color: white;
     padding: 10px;
     opacity: 0;
+}
+.divElemEv {
+    width: 80%;
+    height: 150px;
+    background: #e4b43ce6;
+    display: flex;
+    margin: 2.5vh;
+    box-shadow: 0 0 7px #4f5506;
+    padding: 10px;
+    max-width: 350px;
+}
+.pElemEv {
+    text-align: center;
+    width: 50%;
+    font-size: 1em;
+    color: #148e14;
+    padding: 15px;
+    font-weight: bolder;
+    font-family: "Betania Patmos", cursive;
+    font-style: italic;
+}
+.imgElemEv {
+    width: 50%;
+    object-fit: contain;
+}
+#divElemEvOne {
+    border-radius: 10% 30% 50% 70%;
+}
+#divElemEvTwo {
+    border-radius: 40% 70% 70% 50%;
+}
+#divElemEvThree {
+    border-radius: 50% 30% 80% 40%;
+}
+#divElemEvFour {
+    border-radius: 60% 20% 30% 70%;
+}
+#divElemEvFive {
+    border-radius: 70% 50% 70% 20%;
+    margin: 2.5vh 2.5vh 10vh 2.5vh;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -503,6 +638,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
+    max-width: 400px;
 }
 .divInputFormContact,
 #divTextareaFormContact {
@@ -572,7 +708,8 @@ nav {
 }
 #h2DivSectionBoardContact {
     background-color: #2fbcde !important;
-    border-radius: 15px 0 40% 20%!important;
+    border-radius: 15px 20px 40% 20% !important;
+    max-width: 350px;
 }
 .inputCheckedTrue {
     border: 2px solid #42ae66 !important;
@@ -591,22 +728,19 @@ nav {
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-/* ----------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-/* ------------------------------------ MENTIONS_LEGALES-PAGE ------------------------------------ */
-/* ----------------------------------------------------------------------------------------------- */
-/* ----------------------------------------------------------------------------------------------- */
-#divSectionBoardMentionsLegales {
-    background: #ef5f23c4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    border-radius: 15px;
-    width: 90vw;
-    height: 90%;
-    overflow: auto;
+#infoAdress {
+    width: 100%;
+    background: #ffae15f0;
+    padding: 50px 5px;
+    margin: 5vh 0;
+    border-radius: 20% 40% 30% 60%;
+    max-width: 350px;
+}
+#pInfoAdress {
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -644,6 +778,7 @@ nav {
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
     margin: 5vh auto 5vh auto;
+    max-width: 350px;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -736,21 +871,34 @@ footer {
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 649px) and (max-width: 1300px) {
-    #sectionBoard {
-        width: 600px;
-        margin: auto;
-    }
     .divSectionBoard {
         height: 22vh;
     }
-    #divSectionBoardUnits,
-    #divSectionBoardActu {
-        width: 90%;
+    #divBorder {
+        background-size: cover;
+        height: 45vh !important;
     }
-    #divSectionBoardDashBoard,
-    #divSectionBoardContact,
-    #divSectionBoardMentionsLegales {
-        width: 600px;
+    #pWelcom {
+        font-size: 0.8em;
+    }
+    #divSectionBoardWelcom {
+        padding: 0;
+        max-width: 500px !important;
+    }
+    .divUnit {
+        max-width: 400px;
+    }
+    #divSectionBoardDashBoard {
+        width: 100%;
+    }
+    #divAllUnitsDashBoard {
+        flex-direction: column;
+        margin: 10vh 0;
+    }
+    #divAllUnits {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 100px;
     }
     .liUldivSectionBoardActu,
     .divSectionBoardActuGrp {
@@ -768,6 +916,12 @@ footer {
     }
     #imgActuThree {
         max-width: 300px;
+    }
+    .h2TittleSectionBoardGreenSpace {
+        padding: 30px;
+    }
+    #divSectionBoardLunch {
+        background-size: cover;
     }
     /* ---HOVER--- */
     #imgNavLogo:hover,
@@ -818,6 +972,10 @@ footer {
         font-size: 0.8em !important;
         font-weight: bold;
     }
+    .divUnit:hover {
+        cursor: pointer;
+        scale: 1.01;
+    }
     p {
         font-size: 0.9em;
     }
@@ -851,183 +1009,3 @@ footer {
 /* --------------------------------------------- END --------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-
-#divSvgSepare {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-#divBorder {
-    background-image: url(./images/img/tp189-hein-06-job137.jpg);
-    background-size: contain;
-    position: relative;
-    height: 38vh;
-}
-.divSectionBoard {
-    height: 20vh;
-    margin: 5vh auto auto auto;
-}
-#svgSepare {
-    bottom: 0px;
-    position: absolute;
-    fill:#0099ff;
-}
-#svgSeparetwo {
-    position: absolute;
-    fill:#0099ff;
-}
-#divAllUnits {
-    width: 100%;
-    height: 100%;
-    margin-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-#divAllUnitsDashBoard{
-    width: 100%;
-    height: 100%;
-    margin-top: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 5vh;
-}
-#divSectionBoardUnits {
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
-    background-image: url(./images/img/tp189-hein-03-g-job137.jpg);
-    background-size: cover;
-}
-.divUnit {
-    width: 75%;
-    height: 20vh;
-    display: flex;
-}
-.divUnith2 {
-    width: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e0a1ec;
-}
-
-.divUnitImg {
-    width: 50%;
-    text-align: center;
-    background: rebeccapurple;
-}
-.imgUnit {
-    width: auto;
-    height: 100%;
-}
-.imgStretch {
-    width: stretch;
-}
-#divUnitDeliveryh2 {
-    border-radius: 15px 0 0 0;
-    background-color: #de73ea;
-}
-#divUnitEvh2 {
-    background: #efc817;
-}
-#divUnitActuh2 {
-    background: #d96d3b;
-}
-#divUnitContacth2 {
-    background: #12d9d9;
-    border-radius: 0 0 15px 0;
-}
-#divUnitActuImg {
-    background: #0f7b0f;
-}
-.h2Unit {
-    font-family: "Betania Patmos", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-/*********/
-
-.divElemEv{
-    width: 80%;
-    height: 150px;
-    background: #e4b43ce6;
-    display: flex;
-    margin: 2.5vh;
-    box-shadow: 0 0 7px #4f5506;
-    padding: 10px;
-}
-.pElemEv{
-    text-align: center;
-    width: 50%;
-    font-size: 1em;
-    color: #148e14;
-    padding: 15px;
-    font-weight: bolder;
-}
-.imgElemEv{
-    width: 50%;
-    object-fit: contain;
-}
-#divElemEvOne{
-    border-radius: 10% 30% 50% 70%;
-}
-#divElemEvTwo{
-    border-radius: 40% 70% 70% 50%;
-}
-#divElemEvThree{
-    border-radius: 50% 30% 80% 40%;
-}
-#divElemEvFour{
-    border-radius: 60% 20% 30% 70%;
-}
-#divElemEvFive{
-    border-radius: 70% 50% 70% 20%;
-    margin: 2.5vh 2.5vh 10vh 2.5vh;
-}
-
-/****************/
-
-
-.test8{
-    margin: 0 !important;
-    width: 80%;
-    background: #ffafccd4;
-    border-radius: 15px 15px 80px 30px;
-    padding: 15px;
-}
-#infoAdress{
-    width: 100%;
-    background: #ffae15f0;
-    padding: 50px 5px;
-    margin: 5vh 0;
-    border-radius: 20% 40% 30% 60%;
-}
-#pInfoAdress{
-    text-align: right;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-/* 
-<h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
-            <ul id="uldivSectionBoardGreenSpace">
-                <li id="liUlGreenSpaceOne" class="liUldivSectionBoardGreenSpace">Tonte de pelouse</li>
-                <li id="liUlGreenSpaceTwo" class="liUldivSectionBoardGreenSpace">Taille de haies</li>
-                <li id="liUlGreenSpaceThree" class="liUldivSectionBoardGreenSpace">Entretien du jardin</li>
-                <li id="liUlGreenSpaceFour" class="liUldivSectionBoardGreenSpace">Taille d'arbustes</li>
-                <li id="liUlGreenSpaceFive" class="liUldivSectionBoardGreenSpace">Ramassage des feuilles</li>
-                <li id="liUlGreenSpaceSix" class="liUldivSectionBoardGreenSpace">Exct...</li>
-            </ul>
-
-
-
-    background: top / contain no-repeat url(./images/img/img_contact.jpg);
-
