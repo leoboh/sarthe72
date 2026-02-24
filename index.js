@@ -34,11 +34,9 @@ const removeClass = () => {
         "sectionBoardGreenSpace",
         "sectionBoardContact",
         "sectionBoardActu",
-        "sectionBoardMentionsLegales",
         "sectionBoardLunchMenu",
         "sectionBoardLunchContrat",
         "sectionBoardHome",
-        "resizeDashBoard",
     );
 };
 /**/
@@ -414,32 +412,6 @@ const contactPage = () => {
 /**/
 /**/
 /**/
-const mentionsLegalesPage = () => {
-    removeClass();
-    sectionBoard.classList.add("sectionBoardMentionsLegales");
-    document.querySelector("#sectionBoard").innerHTML = `
-        <div id="divSectionBoardMentionsLegales" class="">
-            <h2>Mentions Legales</h2>
-            <div>
-                <p><span>Editeur :</span> SARTH'72</p>
-                <p>Tel: 02 43 75 28 47</p>
-                </br>
-                <p><span>Site hébergé par :</span> 1 & 1</p>
-                <p><span>Direction de publication :</span> THUREAU Alain</p>
-                <p><span>Développement et Intégration du site :</span> Léo</p>
-            </div>
-            <div>
-                <p><span>Protection du site</span></p>
-                <p>Le site de ********** est une œuvre de l’esprit protégée par la législation en vigueur. L’ensemble des éléments le composant tels que, la dénomination, le logo, les dessins, les photos, les animations, les documents téléchargeables et tout autre document sont la propriété exclusive de *********. Toute représentation, reproduction, modification, utilisation commerciale ou non, ainsi que tout transfert vers un autre site et/ou quel que soit le support sont interdits, sauf autorisation expresse et écrite  de **************. Toutefois, l’utilisation à des fins strictement personnelles est autorisée. Les utilisateurs de la messagerie liée au site ne peuvent communiquer de fausses informations, voire utiliser l’identité de tiers sous peine de poursuites pénales.</p>
-            </div>
-        </div>
-    `;
-};
-/**/
-/**/
-/**/
-/**/
-/**/
 checkInput = () => {
     const inputsForm = document.querySelectorAll(".checkInputFormContact");
 
@@ -607,29 +579,6 @@ sendMail = () => {
 /**/
 /**/
 /**/
-// setPage = () => {
-//     divUnitDelivery.addEventListener("click", () => {
-//         svgClose();
-//         lunchPage();
-//     });
-//     divUnitEV.addEventListener("click", () => {
-//         svgClose();
-//         greenSpacePage();
-//     });
-//     divUnitActu.addEventListener("click", () => {
-//         svgClose();
-//         actuPage();
-//     });
-//     divUnitContact.addEventListener("click", () => {
-//         svgClose();
-//         contactPage();
-//     });
-// };
-/**/
-/**/
-/**/
-/**/
-/**/
 setHomePageEvent = () => {
     const divUnitDelivery = document.querySelector("#divUnitDelivery");
     const divUnitEV = document.querySelector("#divUnitEV");
@@ -697,7 +646,6 @@ svgNavDashBoard.addEventListener("click", () => {
     if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardHome")) {
         svgOpen();
         navBoard();
-        // setPage();
         setHomePageEvent();
 
         /********************************************************************************/
@@ -718,7 +666,6 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardLunch")) {
         svgOpen();
         navBoard();
-        // setPage();
         setHomePageEvent();
 
         /********************************************************************************/
@@ -738,7 +685,6 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardGreenSpace")) {
         svgOpen();
         navBoard();
-        // setPage();
         setHomePageEvent();
 
         /********************************************************************************/
@@ -758,9 +704,7 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardContact")) {
         svgOpen();
         navBoard();
-        // setPage();
         setHomePageEvent();
-        sectionBoard.classList.add("resizeDashBoard");
 
         /********************************************************************************/
         /********************************** CONTACT 2 ***********************************/
@@ -770,7 +714,6 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardContact")) {
         svgClose();
         contactPage();
-        sectionBoard.classList.remove("resizeDashBoard");
 
         /*******************************************************************************/
         /************************************ ACTU *************************************/
@@ -780,7 +723,6 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardActu")) {
         svgOpen();
         navBoard();
-        // setPage();
         setHomePageEvent();
 
         /********************************************************************************/
@@ -791,27 +733,6 @@ svgNavDashBoard.addEventListener("click", () => {
     } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActu")) {
         svgClose();
         actuPage();
-
-        /*******************************************************************************/
-        /******************************* MENTIONS LEGALES ******************************/
-        /******************************* MENTIONS LEGALES ******************************/
-        /******************************* MENTIONS LEGALES ******************************/
-        /*******************************************************************************/
-    } else if (document.querySelector(".svgNavDashBoardClose") && document.querySelector(".sectionBoardMentionsLegales")) {
-        svgOpen();
-        navBoard();
-        // setPage();
-        setHomePageEvent();
-
-        /********************************************************************************/
-        /****************************** MENTIONS LEGALES 2 ******************************/
-        /****************************** MENTIONS LEGALES 2 ******************************/
-        /****************************** MENTIONS LEGALES 2 ******************************/
-        /********************************************************************************/
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardMentionsLegales")) {
-        svgClose();
-        mentionsLegalesPage();
-
         /*******************************************************************************/
         /*********************************** HOME 3 ************************************/
         /*********************************** HOME 3 ************************************/

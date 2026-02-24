@@ -621,7 +621,6 @@ nav {
 /* ----------------------------------------------------------------------------------------------- */
 .sectionBoardContact {
     height: auto !important;
-    padding: 5vh 0 5vh 0;
     background: center / cover no-repeat url(./images/img/img_contact.jpg);
 }
 #divSectionBoardContact {
@@ -701,10 +700,6 @@ nav {
 }
 .divInputFormContact.error .pErrorInputFormContact {
     display: block;
-}
-.resizeDashBoard {
-    height: 90vh !important;
-    padding: 0;
 }
 #h2DivSectionBoardContact {
     background-color: #2fbcde !important;
