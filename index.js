@@ -60,12 +60,12 @@ const navBoard = () => {
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
                     <div class="divUnitImg">
-                        <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEVDashBoard">
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
+                        <img class="imgUnit" src="/images/img_ev.webp" alt="">
                     </div>
                     <div id="divUnitEvh2" class="divUnith2">
                         <h2 class="h2Unit">Entretien d'espaces verts</h2>
@@ -76,12 +76,12 @@ const navBoard = () => {
                         <h2 class="h2Unit">Actualités</h2>
                     </div>
                     <div id="divUnitActuImg" class="divUnitImg">
-                        <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
+                        <img class="imgUnit" src="/images/img_actu2.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContactDashBoard">
                     <div class="divUnitImg">
-                        <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">
                         <h2 class="h2Unit">Contact</h2>
@@ -144,12 +144,12 @@ const homePage = () => {
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
                     <div class="divUnitImg">
-                        <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEV">
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
+                        <img class="imgUnit" src="/images/img_ev.webp" alt="">
                     </div>
                     <div id="divUnitEvh2" class="divUnith2">
                         <h2 class="h2Unit">Entretien d'espaces verts</h2>
@@ -160,12 +160,12 @@ const homePage = () => {
                         <h2 class="h2Unit">Actualités</h2>
                     </div>
                     <div id="divUnitActuImg" class="divUnitImg">
-                        <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
+                        <img class="imgUnit" src="/images/img_actu2.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContact">
                     <div class="divUnitImg">
-                        <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">
                         <h2 class="h2Unit">Contact</h2>
@@ -280,23 +280,23 @@ const greenSpacePage = () => {
             <div id="displayWrap">
                 <div id="divElemEvOne" class="divElemEv animDivElemEvOne">
                     <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
-                    <img id="imgElemEvOne" class="imgElemEv" src="/images/img/tondeuse.webp" alt="logo" />
+                    <img id="imgElemEvOne" class="imgElemEv" src="/images/tondeuse.webp" alt="logo" />
                 </div>
                 <div id="divElemEvTwo" class="divElemEv animDivElemEvTwo">
-                    <img id="imgElemEvTwo" class="imgElemEv" src="/images/img/taille_haie.webp" alt="logo" />
+                    <img id="imgElemEvTwo" class="imgElemEv" src="/images/taille_haie.webp" alt="logo" />
                     <p id="pElemEvTwo" class="pElemEv">Taille de haies</p>
                 </div>
                 <div id="divElemEvThree" class="divElemEv animDivElemEvThree">
                     <p id="pElemEvThree" class="pElemEv">Entretien du jardin</p>
-                    <img id="imgElemEvThree" class="imgElemEv" src="/images/img/entretien_jardin.webp" alt="logo" />
+                    <img id="imgElemEvThree" class="imgElemEv" src="/images/entretien_jardin.webp" alt="logo" />
                 </div>
                 <div id="divElemEvFour" class="divElemEv animDivElemEvFour">
-                    <img id="imgElemEvFour" class="imgElemEv" src="/images/img/taille_arbuste.webp" alt="logo" />
+                    <img id="imgElemEvFour" class="imgElemEv" src="/images/taille_arbuste.webp" alt="logo" />
                     <p id="pElemEvFour" class="pElemEv">Taille d'arbustes</p>
                 </div>
                 <div id="divElemEvFive" class="divElemEv animDivElemEvFive">
                     <p id="pElemEvFive" class="pElemEv">Ramassage des feuilles</p>
-                    <img id="imgElemEvFive" class="imgElemEv" src="/images/img/ramassage_feuille.webp" alt="logo" />
+                    <img id="imgElemEvFive" class="imgElemEv" src="/images/ramassage_feuille.webp" alt="logo" />
                 </div>
             </div>
         </div>
@@ -344,7 +344,7 @@ const actuPage = () => {
                     <h2 class="h2Actu">1 000 000ème repas</h2>
                     <p class="pActuSectionBoard">Suite à l'assemblée générale du 28 octobre dernier, un repas était offert aux bénéficiaires pour fêter le 1 000 000ème repas livrés.</p>
                 </div>
-                <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.jpg" alt="image de personnes à table">
+                <img id="imgActuOne" class="imgSectionBoardActu" src="/images/actu1.webp" alt="image de personnes à table">
             </div>
         `;
     });
@@ -356,7 +356,7 @@ const actuPage = () => {
                     <h2 class="h2Actu">ASSEMBLEE GENERALE</h2>
                     <p class="pActuSectionBoard">L'assemblée générale de l'association aura lieu le jeudi 28 octobre à 10h30 au foyer loisirs de Parigné l'Evêque.</p>
                 </div>
-                <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.jpg" alt="carte de visite sarthe'72">
+                <img id="imgActuTwo" class="imgSectionBoardActu" src="/images/actu3.webp" alt="carte de visite sarthe'72">
             </div>
         `;
     });
@@ -368,7 +368,7 @@ const actuPage = () => {
                     <h2 class="h2Actu">CRISTAL ROC</h2>
                     <p class="pActuSectionBoard">Comme tous les étés, nous pouvons compter sur Cristal Roc - Roxane pour leur don de bouteilles d'eau que nous distribuons aux bénéficiaires des repas. Cela leur évite la déshydratation lors des grosses chaleurs.</p>
                 </div>
-                <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.jpg" alt="image de personnes travaillant chez cristal roc">
+                <img id="imgActuThree" class="imgSectionBoardActu" src="/images/actu2.webp" alt="image de personnes travaillant chez cristal roc">
             </div>
         `;
     });
