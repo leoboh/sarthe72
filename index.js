@@ -27,7 +27,13 @@ const divUnitContact = document.querySelector("#divUnitContact");
 /* -------------------------------------- FONCTION PREPAREE -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-
+const scrolltop = () => {
+    if (window.scrollY > 0) {
+        window.scroll(0, 0);
+    } else {
+        window.scroll(0, 0);
+    }
+};
 const removeClass = () => {
     sectionBoard.classList.remove(
         "sectionBoardLunch",
@@ -45,10 +51,11 @@ const removeClass = () => {
 /**/
 /**/
 const navBoard = () => {
+    scrolltop();
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardDashBoard" class="">
             <div id="divAllUnitsDashBoard">
-                <div id="divUnitDelivery" class="divUnit opacityBlock">
+                <div id="divUnitDelivery" class="divUnit animDivUnitDeliveryDashBoard">
                     <div id="divUnitDeliveryh2" class="divUnith2">
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
@@ -56,7 +63,7 @@ const navBoard = () => {
                         <img class="imgUnit imgStretch" src="/images/img/img_delivery.jpg" alt="">
                     </div>
                 </div>
-                <div id="divUnitEV" class="divUnit opacityBlock">
+                <div id="divUnitEV" class="divUnit animDivUnitEVDashBoard">
                     <div class="divUnitImg">
                         <img class="imgUnit" src="/images/img/img_ev.webp" alt="">
                     </div>
@@ -64,7 +71,7 @@ const navBoard = () => {
                         <h2 class="h2Unit">Entretien d'espaces verts</h2>
                     </div>
                 </div>
-                <div id="divUnitActu" class="divUnit opacityBlock">
+                <div id="divUnitActu" class="divUnit animDivUnitActuDashBoard">
                     <div id="divUnitActuh2" class="divUnith2">
                         <h2 class="h2Unit">Actualités</h2>
                     </div>
@@ -72,7 +79,7 @@ const navBoard = () => {
                         <img class="imgUnit" src="/images/img/img_actu2.png" alt="">
                     </div>
                 </div>
-                <div id="divUnitContact" class="divUnit opacityBlock">
+                <div id="divUnitContact" class="divUnit animDivUnitContactDashBoard">
                     <div class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img/img_contact.jpg" alt="">
                     </div>
@@ -112,6 +119,7 @@ const svgClose = () => {
 /**/
 /**/
 const homePage = () => {
+    scrolltop();
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divBorder">
             <div id="divSectionBoardWelcom" class="divSectionBoard">
@@ -174,6 +182,7 @@ const homePage = () => {
 /**/
 const lunchPage = () => {
     removeClass();
+    scrolltop();
     sectionBoard.classList.add("sectionBoardLunch");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardLunch" class="">
@@ -198,6 +207,7 @@ const lunchPage = () => {
     /*****/
     /*****/
     divLunchMenu.addEventListener("click", () => {
+        scrolltop();
         sectionBoard.classList.add("sectionBoardLunchMenu");
         document.querySelector("#sectionBoard").innerHTML = `
             <div id ="divMenu">
@@ -231,6 +241,7 @@ const lunchPage = () => {
         });
     });
     divLunchContrat.addEventListener("click", () => {
+        scrolltop();
         sectionBoard.classList.add("sectionBoardLunchContrat");
         document.querySelector("#sectionBoard").innerHTML = `
             <div id ="divContrat">
@@ -261,28 +272,29 @@ const lunchPage = () => {
 /**/
 const greenSpacePage = () => {
     removeClass();
+    scrolltop();
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
             <h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
             <div id="displayWrap">
-                <div id="divElemEvOne" class="divElemEv">
+                <div id="divElemEvOne" class="divElemEv animDivElemEvOne">
                     <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
                     <img id="imgElemEvOne" class="imgElemEv" src="/images/img/tondeuse.webp" alt="logo" />
                 </div>
-                <div id="divElemEvTwo" class="divElemEv">
+                <div id="divElemEvTwo" class="divElemEv animDivElemEvTwo">
                     <img id="imgElemEvTwo" class="imgElemEv" src="/images/img/taille_haie.webp" alt="logo" />
                     <p id="pElemEvTwo" class="pElemEv">Taille de haies</p>
                 </div>
-                <div id="divElemEvThree" class="divElemEv">
+                <div id="divElemEvThree" class="divElemEv animDivElemEvThree">
                     <p id="pElemEvThree" class="pElemEv">Entretien du jardin</p>
                     <img id="imgElemEvThree" class="imgElemEv" src="/images/img/entretien_jardin.webp" alt="logo" />
                 </div>
-                <div id="divElemEvFour" class="divElemEv">
+                <div id="divElemEvFour" class="divElemEv animDivElemEvFour">
                     <img id="imgElemEvFour" class="imgElemEv" src="/images/img/taille_arbuste.webp" alt="logo" />
                     <p id="pElemEvFour" class="pElemEv">Taille d'arbustes</p>
                 </div>
-                <div id="divElemEvFive" class="divElemEv">
+                <div id="divElemEvFive" class="divElemEv animDivElemEvFive">
                     <p id="pElemEvFive" class="pElemEv">Ramassage des feuilles</p>
                     <img id="imgElemEvFive" class="imgElemEv" src="/images/img/ramassage_feuille.webp" alt="logo" />
                 </div>
@@ -297,6 +309,7 @@ const greenSpacePage = () => {
 /**/
 const actuPage = () => {
     removeClass();
+    scrolltop();
     sectionBoard.classList.add("sectionBoardActu");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardAllActu" class="">
@@ -324,6 +337,7 @@ const actuPage = () => {
     /*****/
     /*****/
     liActuOne.addEventListener("click", () => {
+        scrolltop();
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuOne" class="">
                 <div class="divActu">
@@ -335,6 +349,7 @@ const actuPage = () => {
         `;
     });
     liActuTwo.addEventListener("click", () => {
+        scrolltop();
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuTwo" class="">
                 <div class="divActu">
@@ -346,6 +361,7 @@ const actuPage = () => {
         `;
     });
     liActuThree.addEventListener("click", () => {
+        scrolltop();
         document.querySelector("#sectionBoard").innerHTML = `
             <div id="divSectionBoardActuThree" class="">
                 <div class="divActu">
@@ -364,6 +380,7 @@ const actuPage = () => {
 /**/
 const contactPage = () => {
     removeClass();
+    scrolltop();
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
@@ -400,7 +417,7 @@ const contactPage = () => {
             <div id="infoAdress">
                 <p id="pInfoAdress">SARTH'72</br>
                 11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
-                Telephone 02 43 75 28 47</br>
+                Téléphone : 02 43 75 28 47</br>
                 Lundi au Vendredi : 8h15 à 17h</p>
             </div>
         </div>

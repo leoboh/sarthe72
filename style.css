@@ -323,8 +323,29 @@ nav {
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
 }
-.opacityBlock {
-    opacity: 1;
+.animDivUnitDeliveryDashBoard {
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitEVDashBoard {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitActuDashBoard {
+    animation-duration: 1s;
+    animation-delay: 0.75s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivUnitContactDashBoard {
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 #divUnitDeliveryh2 {
     border-radius: 15px 0 0 0;
@@ -386,6 +407,10 @@ nav {
     animation-name: animOpaScalTwo;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+.divUnit:hover {
+    cursor: pointer;
+    scale: 1.01 !important;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -611,6 +636,7 @@ nav {
     box-shadow: 0 0 7px #4f5506;
     padding: 10px;
     max-width: 350px;
+    opacity: 0;
 }
 .pElemEv {
     text-align: center;
@@ -641,6 +667,36 @@ nav {
 #divElemEvFive {
     border-radius: 70% 50% 70% 20%;
     margin: 2.5vh 2.5vh 10vh 2.5vh;
+}
+.animDivElemEvOne {
+    animation-duration: 0.5s;
+    animation-delay: 0.75s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivElemEvTwo {
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivElemEvThree {
+    animation-duration: 0.5s;
+    animation-delay: 1.25s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivElemEvFour {
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
+}
+.animDivElemEvFive {
+    animation-duration: 0.5s;
+    animation-delay: 1.75s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -994,10 +1050,6 @@ footer {
         color: #ef5f23c4;
         font-size: 0.8em !important;
         font-weight: bold;
-    }
-    .divUnit:hover {
-        cursor: pointer;
-        scale: 1.01;
     }
     p {
         font-size: 0.9em;
