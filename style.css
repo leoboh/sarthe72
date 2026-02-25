@@ -55,10 +55,11 @@ p {
 /* ----------------------------------------------------------------------------------------------- */
 #divLoader {
     background: bottom / contain no-repeat url(/images/img_loader.svg);
-    position: relative;
+    position: absolute;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fddefc;
+    z-index: 100;
 }
 #h1Loader {
     position: absolute;
@@ -172,7 +173,7 @@ nav {
 /* ----------------------------------------------------------------------------------------------- */
 #sectionBoard {
     width: 100vw;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
