@@ -27,6 +27,84 @@ const divUnitContact = document.querySelector("#divUnitContact");
 /* -------------------------------------- FONCTION PREPAREE -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
+const firstPage = () => {
+    scrolltop();
+    body.innerHTML = `
+        <header>
+            <nav>
+                <img id="imgNavLogo" src="/images/logo.webp" alt="logo" />
+                <svg id="svgNavDashBoard" class="svgNavDashBoardClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                    />
+                </svg>
+            </nav>
+        </header>
+        <section id="sectionBoard" class="sectionBoardHome">
+            <div id="divBorder">
+                <div id="divSectionBoardWelcom" class="divSectionBoard">
+                    <h1 id="h1Welcom">Bienvenue</h1>
+                    <p id="pWelcom">
+                        L'association Service d'Aides Rurales par des Travailleurs Handicapés se donne pour mission de :</br>
+                        • venir en aide aux personnes âgées en milieu rural</br>
+                        • soutenir des travailleurs handicapés par de l'emploi
+                    </p>
+                </div>
+                <svg id="svgSepare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                    <path fill="#0099ff" fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,96C320,96,400,64,480,42.7C560,21,640,11,720,16C800,21,880,43,960,42.7C1040,43,1120,21,1200,26.7C1280,32,1360,64,1400,80L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                </svg>
+            </div>
+            <div id="divSectionBoardUnits" class="">
+                <svg id="svgSeparetwo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                    <path fill="#0099ff" fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,96C320,96,400,64,480,42.7C560,21,640,11,720,16C800,21,880,43,960,42.7C1040,43,1120,21,1200,26.7C1280,32,1360,64,1400,80L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+                </svg>
+                <div id="divAllUnits">
+                    <div id="divUnitDelivery" class="divUnit animDivUnitDelivery">
+                        <div id="divUnitDeliveryh2" class="divUnith2">
+                            <h2 class="h2Unit">Livraison de repas à domicile</h2>
+                        </div>
+                        <div class="divUnitImg">
+                            <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
+                        </div>
+                    </div>
+                    <div id="divUnitEV" class="divUnit animDivUnitEV">
+                        <div class="divUnitImg">
+                            <img class="imgUnit" src="/images/img_ev.webp" alt="">
+                        </div>
+                        <div id="divUnitEvh2" class="divUnith2">
+                            <h2 class="h2Unit">Entretien d'espaces verts</h2>
+                        </div>
+                    </div>
+                    <div id="divUnitActu" class="divUnit animDivUnitActu">
+                        <div id="divUnitActuh2" class="divUnith2">
+                            <h2 class="h2Unit">Actualités</h2>
+                        </div>
+                        <div id="divUnitActuImg" class="divUnitImg">
+                            <img class="imgUnit" src="/images/img_actu2.webp" alt="">
+                        </div>
+                    </div>
+                    <div id="divUnitContact" class="divUnit animDivUnitContact">
+                        <div class="divUnitImg">
+                            <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
+                        </div>
+                        <div id="divUnitContacth2" class="divUnith2">
+                            <h2 class="h2Unit">Contact</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p id="pRealLeo" class="pFooter">Réalisation Leo</p>
+        </footer>
+        <script src="/index.js"></script>
+    `;
+};
+/**/
+/**/
+/**/
+/**/
+/**/
 const scrolltop = () => {
     if (window.scrollY > 0) {
         window.scroll(0, 0);
@@ -34,6 +112,11 @@ const scrolltop = () => {
         window.scroll(0, 0);
     }
 };
+/**/
+/**/
+/**/
+/**/
+/**/
 const removeClass = () => {
     sectionBoard.classList.remove(
         "sectionBoardLunch",
