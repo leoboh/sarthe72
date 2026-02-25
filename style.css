@@ -349,7 +349,7 @@ nav {
     height: 100%;
 }
 .imgStretch {
-    width: stretch;
+    width: stretch !important;
 }
 .animDivUnitDelivery {
     animation-duration: 1s;
