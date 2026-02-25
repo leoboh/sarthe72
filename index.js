@@ -28,6 +28,7 @@ const divUnitContact = document.querySelector("#divUnitContact");
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 const startWebSite = () => {
+    scrolltop();
     document.querySelector("#divLoader").style.display = "none";
     document.querySelector("#sectionBoard").style.display = "flex";
 };
@@ -40,7 +41,7 @@ const scrolltop = () => {
     if (window.scrollY > 0) {
         window.scroll(0, 0);
     } else {
-        window.scroll(0, 0);
+        // else window.scrollY = 0
     }
 };
 /**/
