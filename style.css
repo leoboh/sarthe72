@@ -53,7 +53,7 @@ p {
 /* ---------------------------------------- LOADER-PAGE ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-#divLoader {
+#divAllPreSite {
     background: bottom / contain no-repeat url(/images/img_loader.svg);
     position: absolute;
     width: 100vw;
@@ -61,27 +61,39 @@ p {
     background-color: #fddefc;
     z-index: 100;
 }
-#h1Loader {
+#divPreSite {
+    right: 0;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 10vh;
-    color: #968fed;
-    left: 15vw;
-    font-size: 2em;
-}
-#pLoader {
-    position: absolute;
-    top: 20vh;
-    color: #958fed;
-    right: 15vw;
     width: 60%;
+    top: 10vh;
+}
+#h1PreSite {
+    color: #968fed;
+    font-size: 2em;
+    margin: 30px auto;
+    opacity: 0;
+    animation-delay: 0.33s;
+    animation-duration: 1s;
+    animation-name: animh1PreSite;
+    animation-fill-mode: forwards;
+}
+#pPreSite {
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    color: #958fed;
     font-size: 1em;
     font-weight: 900;
-    text-align: right;
+    opacity: 0;
+    animation-delay: 0.66s;
+    animation-duration: 1s;
+    animation-name: animpPreSite;
+    animation-fill-mode: forwards;
 }
-#btnLoader {
-    position: absolute;
-    top: 35vh;
-    right: 40%;
+#btnPreSite {
+    width: 115px;
     padding: 8px;
     border-radius: 20px;
     border: 2px solid #998feb;
@@ -89,8 +101,16 @@ p {
     background: #ffcffd;
     font-weight: bolder;
     font-size: 1em;
-    box-shadow: 0px 4px 3px 1px #585e8c;
     cursor: pointer;
+    margin: 30px auto;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: animBtnPreSite;
+    animation-fill-mode: forwards;
+}
+#btnPreSite:hover {
+    scale: 1.05;
 }
 
 /* ----------------------------------------------------------------------------------------------- */
@@ -127,6 +147,38 @@ p {
     }
     100% {
         width: 85%;
+    }
+}
+@keyframes animBtnPreSite {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+        box-shadow: none;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        box-shadow: 0px 4px 3px 1px #585e8c;
+    }
+}
+@keyframes animh1PreSite {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes animpPreSite {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
 /* ----------------------------------------------------------------------------------------------- */
@@ -1006,6 +1058,34 @@ footer {
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 649px) and (max-width: 1300px) {
+    #divAllPreSite {
+        background: left / contain no-repeat url(/images/img_loader.svg);
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #fddefc;
+        z-index: 100;
+    }
+    #divPreSite {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 40%;
+        top: 30vh;
+    }
+    #h1PreSite {
+        text-align: left;
+        margin: 0 auto 30px 15%;
+    }
+    #pPreSite {
+        width: 50%;
+        text-align: right;
+        margin-left: 25%;
+    }
+    #btnPreSite {
+        margin: 30px auto auto 30%;
+    }
     .divSectionBoard {
         height: 22vh;
     }
@@ -1117,7 +1197,7 @@ footer {
     .pActuSectionBoard {
         background: none;
         border-radius: 0;
-        padding: 0;
+        padding: 10;
     }
     .divSectionBoardActuGrp {
         background: #ef5f23c4;

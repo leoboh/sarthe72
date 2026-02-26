@@ -29,7 +29,7 @@ const divUnitContact = document.querySelector("#divUnitContact");
 /* ----------------------------------------------------------------------------------------------- */
 const startWebSite = () => {
     scrolltop();
-    document.querySelector("#divLoader").style.display = "none";
+    document.querySelector("#divAllPreSite").style.display = "none";
     document.querySelector("#sectionBoard").style.display = "flex";
 };
 /**/
