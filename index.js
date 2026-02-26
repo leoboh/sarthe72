@@ -75,7 +75,7 @@ const navBoard = () => {
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img_delivery.webp" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEVDashBoard">
@@ -96,7 +96,7 @@ const navBoard = () => {
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContactDashBoard">
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img_contact.webp" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">
                         <h2 class="h2Unit">Contact</h2>
@@ -159,7 +159,7 @@ const homePage = () => {
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img_delivery.webp" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEV">
@@ -180,7 +180,7 @@ const homePage = () => {
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContact">
                     <div class="divUnitImg">
-                        <img class="imgUnit" src="/images/img_contact.webp" alt="">
+                        <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">
                         <h2 class="h2Unit">Contact</h2>

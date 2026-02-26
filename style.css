@@ -398,8 +398,11 @@ nav {
     background: rebeccapurple;
 }
 .imgUnit {
-    width: 100%;
+    width: auto;
     height: 100%;
+}
+.imgStretch {
+    width: stretch !important;
 }
 .animDivUnitDelivery {
     animation-duration: 1s;
