@@ -298,7 +298,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-image: url(/images/fd_1.webp);
+    background-image: url(/images/fd_1_resize.webp);
     background-size: cover;
 }
 #h1Welcom {
@@ -1057,7 +1057,7 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 649px) and (max-width: 1300px) {
+@media screen and (min-width: 649px) and (max-width: 1500px) {
     #divAllPreSite {
         background: left / contain no-repeat url(/images/img_loader.svg);
         position: absolute;
