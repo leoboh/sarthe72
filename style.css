@@ -908,6 +908,7 @@ nav {
 }
 .inputCheckedTrue {
     border: 2px solid #42ae66 !important;
+    background: #42ae66!important;
     box-shadow: none !important;
 }
 #h2SendMailContact {
@@ -946,7 +947,7 @@ nav {
     width: 80%;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10%;
+    padding-bottom: 10vh;
     opacity: 0;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
