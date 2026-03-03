@@ -8,6 +8,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const sectionBoard = document.querySelector("#sectionBoard");
 const footer = document.querySelector("footer");
+let arrayPage = ["sectionBoardHome"];
 
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -61,7 +62,24 @@ const removeClass = () => {
         "sectionBoardLunchMenu",
         "sectionBoardLunchContrat",
         "sectionBoardHome",
+        "sectionBoardDashBoard",
     );
+};
+/**/
+/**/
+/**/
+/**/
+/**/
+const navBackBtn = () => {
+    document.querySelector("nav").innerHTML = `
+        <svg id="svgBackNav" onclick="btnBack()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/>
+        </svg>
+        <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
+        <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>
+        </svg>
+    `;
 };
 /**/
 /**/
@@ -98,7 +116,46 @@ const btnBackHome = () => {
 /**/
 /**/
 /**/
-const btnBack = () => {};
+const btnBack = () => {
+    arrayPage.pop();
+    prevPage = arrayPage.pop();
+    if (prevPage === "sectionBoardHome") {
+        changeSvgDashBoard();
+        homePage();
+    } else if (prevPage === "sectionBoardLunch") {
+        changeSvgDashBoard();
+        lunchPage();
+    } else if (prevPage === "sectionBoardLunchContrat") {
+        changeSvgDashBoard();
+        contratPage();
+    } else if (prevPage === "sectionBoardLunchMenu") {
+        changeSvgDashBoard();
+        menuPage();
+    } else if (prevPage === "sectionBoardGreenSpace") {
+        changeSvgDashBoard();
+        greenSpacePage();
+    } else if (prevPage === "sectionBoardContact") {
+        changeSvgDashBoard();
+        contactPage();
+    } else if (prevPage === "sectionBoardActu") {
+        changeSvgDashBoard();
+        actuPage();
+    } else if (prevPage === "sectionBoardActuOne") {
+        changeSvgDashBoard();
+        actuOnePage();
+    } else if (prevPage === "sectionBoardActuTwo") {
+        changeSvgDashBoard();
+        actuTwoPage();
+    } else if (prevPage === "sectionBoardActuThree") {
+        changeSvgDashBoard();
+        actuThreePage();
+    } else if (prevPage === "sectionBoardDashBoard") {
+        changeSvgDashBoard();
+        dashBoardPage();
+    } else {
+        console.log("Aucune page n'a été trouvé.");
+    }
+};
 /**/
 /**/
 /**/
@@ -108,42 +165,8 @@ const btnDashBoard = () => {
     scrolltop();
     if (document.querySelector(".svgNavDashBoardClose")) {
         dashBoardPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardHome")) {
-        changeSvgDashBoard();
-        homePage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardLunch")) {
-        changeSvgDashBoard();
-        lunchPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardLunchContrat")) {
-        changeSvgDashBoard();
-        contratPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardLunchMenu")) {
-        changeSvgDashBoard();
-        menuPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardGreenSpace")) {
-        changeSvgDashBoard();
-        greenSpacePage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardContact")) {
-        changeSvgDashBoard();
-        contactPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActu")) {
-        changeSvgDashBoard();
-        actuPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActuOne")) {
-        changeSvgDashBoard();
-        actuOnePage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActuTwo")) {
-        changeSvgDashBoard();
-        actuTwoPage();
-    } else if (document.querySelector(".svgNavDashBoardOpen") && document.querySelector(".sectionBoardActuThree")) {
-        changeSvgDashBoard();
-        actuThreePage();
     } else {
-        svgNavDashBoard.classList.add("svgNavDashBoardClose");
-        document.querySelector("#svgNavDashBoard").innerHTML = `
-            <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>`;
-        changeSvgDashBoard();
-        homePage();
+        btnBack();
     }
 };
 /**/
@@ -152,17 +175,9 @@ const btnDashBoard = () => {
 /**/
 /**/
 const dashBoardPage = () => {
-    document.querySelector("nav").innerHTML = `
-        <svg id="svgBackNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/>
-        </svg>
-        <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
-        <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path
-                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-            />
-        </svg>
-    `;
+    removeClass();
+    navBackBtn();
+    sectionBoard.classList.add("sectionBoardDashBoard");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardDashBoard" class="">
             <div id="divAllUnitsDashBoard">
@@ -202,6 +217,7 @@ const dashBoardPage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardDashBoard");
 };
 /**/
 /**/
@@ -209,15 +225,15 @@ const dashBoardPage = () => {
 /**/
 /**/
 const homePage = () => {
+    removeClass();
     scrolltop();
     document.querySelector("nav").innerHTML = `
         <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
         <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path
-                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-            />
+            <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>
         </svg>
     `;
+    sectionBoard.classList.add("sectionBoardHome");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divBorder">
             <div id="divSectionBoardWelcom" class="divSectionBoard">
@@ -273,6 +289,7 @@ const homePage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardHome");
 };
 /**/
 /**/
@@ -282,17 +299,7 @@ const homePage = () => {
 const lunchPage = () => {
     removeClass();
     scrolltop();
-    document.querySelector("nav").innerHTML = `
-        <svg id="svgBackNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/>
-        </svg>
-        <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
-        <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-            <path
-                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-            />
-        </svg>
-    `;
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardLunch");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardLunch" class="">
@@ -311,24 +318,14 @@ const lunchPage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardLunch");
 };
 /**/
 /**/
 const menuPage = () => {
     removeClass();
     scrolltop();
-    document.querySelector("nav").innerHTML = `
-    <svg id="svgBackNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/>
-    </svg>
-    <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
-    <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-        <path
-            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-        />
-    </svg>
-    `;
-    sectionBoard.classList.add("sectionBoardLunchMenu");
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardLunchMenu");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id ="divMenu">
@@ -357,23 +354,14 @@ const menuPage = () => {
         window.open("/images/repas5.pdf", "_blank");
     });
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardLunchMenu");
 };
 /**/
 /**/
 const contratPage = () => {
     removeClass();
     scrolltop();
-    document.querySelector("nav").innerHTML = `
-    <svg id="svgBackNav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/>
-    </svg>
-    <img id="imgNavLogo" onclick="btnBackHome()" src="/images/logo.webp" alt="logo" />
-    <svg id="svgNavDashBoard" class="svgNavDashBoardClose" onclick="btnDashBoard()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-        <path
-            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-        />
-    </svg>
-    `;
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardLunchContrat");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id ="divContrat">
@@ -392,6 +380,7 @@ const contratPage = () => {
         window.open("/images/Plaquette-Parigné.pdf", "_blank");
     });
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardLunchContrat");
 };
 /**/
 /**/
@@ -401,6 +390,7 @@ const contratPage = () => {
 const greenSpacePage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
@@ -430,6 +420,7 @@ const greenSpacePage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardGreenSpace");
 };
 /**/
 /**/
@@ -439,6 +430,7 @@ const greenSpacePage = () => {
 const actuPage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardActu");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardAllActu" class="">
@@ -459,12 +451,14 @@ const actuPage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardActu");
 };
 /**/
 /**/
 const actuOnePage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardActuOne");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardActuOne" class="">
@@ -476,12 +470,14 @@ const actuOnePage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardActuOne");
 };
 /**/
 /**/
 const actuTwoPage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardActuTwo");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardActuTwo" class="">
@@ -493,12 +489,14 @@ const actuTwoPage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardActuTwo");
 };
 /**/
 /**/
 const actuThreePage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardActuThree");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardActuThree" class="">
@@ -510,6 +508,7 @@ const actuThreePage = () => {
         </div>
     `;
     changeSvgDashBoard();
+    arrayPage.push("sectionBoardActuThree");
 };
 /**/
 /**/
@@ -519,6 +518,7 @@ const actuThreePage = () => {
 const contactPage = () => {
     removeClass();
     scrolltop();
+    navBackBtn();
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
@@ -564,6 +564,7 @@ const contactPage = () => {
     checkInput();
     checkEmail();
     checkPhone();
+    arrayPage.push("sectionBoardContact");
 };
 /**/
 /**/
