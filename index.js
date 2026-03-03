@@ -524,6 +524,45 @@ const contactPage = () => {
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
             <h2 id="h2DivSectionBoardContact">Nous Contacter :</h2>
+            <div id="divSvgContactPage">
+                <svg id="svgPhoneContactPage" class="svgContactPage" onclick="svgPhone()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/>
+                </svg>
+                <svg id="svgMailContactPage" class="svgContactPage" onclick="svgMail()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/>
+                </svg>
+                <svg id="svgMapContactPage" class="svgContactPage" onclick="svgMap()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path d="M576 48c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4L413.5 77.5 234.1 17.6c-8.1-2.7-16.8-2.1-24.4 1.7l-128 64C70.8 88.8 64 99.9 64 112l0 352c0 11.1 5.7 21.4 15.2 27.2s21.2 6.4 31.1 1.4l116.1-58.1 173.3 57.8c-4.3-6.4-8.5-13.1-12.6-19.9-11-18.3-21.9-39.3-30-61.8l-101.2-33.7 0-284.5 128 42.7 0 99.3c31-35.8 77-58.4 128-58.4 22.6 0 44.2 4.4 64 12.5L576 48zM512 224c-66.3 0-120 52.8-120 117.9 0 68.9 64.1 150.4 98.6 189.3 11.6 13 31.3 13 42.9 0 34.5-38.9 98.6-120.4 98.6-189.3 0-65.1-53.7-117.9-120-117.9zM472 344a40 40 0 1 1 80 0 40 40 0 1 1 -80 0z"/>
+                </svg>
+            </div>
+            <div id="divElemContact">
+                <div id="infoAdress">
+                    <p id="pInfoAdress">SARTH'72</br>
+                    11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
+                    Téléphone : 02 43 75 28 47</br>
+                    Lundi au Vendredi : 8h15 à 17h</p>
+                </div>
+            </div>
+        </div>
+    `;
+    svgPhone = () => {
+        document.querySelector("#svgPhoneContactPage").style.background = "#ffb32e";
+        document.querySelector("#svgMailContactPage").style.background = "#ffd996";
+        document.querySelector("#svgMapContactPage").style.background = "#ffd996";
+        document.querySelector("#divElemContact").innerHTML = `
+            <div id="infoAdress">
+                <p id="pInfoAdress">SARTH'72</br>
+                11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
+                Téléphone : 02 43 75 28 47</br>
+                Lundi au Vendredi : 8h15 à 17h</p>
+            </div>
+        `;
+    };
+    svgMail = () => {
+        document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
+        document.querySelector("#svgMailContactPage").style.background = "#ffb32e";
+        document.querySelector("#svgMapContactPage").style.background = "#ffd996";
+        document.querySelector("#divElemContact").innerHTML = `
             <form id="formDivSectionBoardContact" action="#">
                 <div id="divInputNomFormContact" class="divInputFormContact">
                     <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
@@ -547,24 +586,25 @@ const contactPage = () => {
                 </div>
                 <button onclick="sendMail()" class="buttonFormContact" type="button">Envoyer</button>
             </form>
+        `;
+        checkInput();
+        checkEmail();
+        checkPhone();
+    };
+    svgMap = () => {
+        document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
+        document.querySelector("#svgMailContactPage").style.background = "#ffd996";
+        document.querySelector("#svgMapContactPage").style.background = "#ffb32e";
+        document.querySelector("#divElemContact").innerHTML = `
             <div id="divIframeSectionBoardContact">
                 <iframe
                     id="map"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10692.14107377621!2d0.362784!3d47.9357015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9796d88e89a034f3!2sS.a.r.t.h%2072!5e0!3m2!1sfr!2sfr!4v1620653831305!5m2!1sfr!2sfr">
                 </iframe>
             </div>
-            <div id="infoAdress">
-                <p id="pInfoAdress">SARTH'72</br>
-                11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
-                Téléphone : 02 43 75 28 47</br>
-                Lundi au Vendredi : 8h15 à 17h</p>
-            </div>
-        </div>
-    `;
+        `;
+    };
     changeSvgDashBoard();
-    checkInput();
-    checkEmail();
-    checkPhone();
     arrayPage.push("sectionBoardContact");
 };
 /**/
