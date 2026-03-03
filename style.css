@@ -924,6 +924,11 @@ nav {
     margin: 5vh 0;
     border-radius: 20% 40% 30% 60%;
     max-width: 350px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 #pInfoAdress {
     text-align: right;
@@ -936,6 +941,10 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-bottom: 10%;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: animOpaScalTwo;
+    animation-fill-mode: forwards;
 }
 #divElemContact{
     width: 100%;
@@ -951,6 +960,11 @@ nav {
 }
 #svgPhoneContactPage{
     background: #ffb32e;
+}
+#aPhoneContact{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -1055,7 +1069,7 @@ nav {
     opacity: 0;
     animation-duration: 1s;
     animation-name: animOpaScalTwo;
-    animation-delay: 1.75s;
+    animation-delay: 0.3s;
     animation-fill-mode: forwards;
 }
 /* ----------------------------------------------------------------------------------------------- */

@@ -539,7 +539,7 @@ const contactPage = () => {
                 <div id="infoAdress">
                     <p id="pInfoAdress">SARTH'72</br>
                     11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
-                    Téléphone : 02 43 75 28 47</br>
+                    Téléphone : <a id="aPhoneContact" href="tel:0243752847">02 43 75 28 47</a></br>
                     Lundi au Vendredi : 8h15 à 17h</p>
                 </div>
             </div>
@@ -553,7 +553,7 @@ const contactPage = () => {
             <div id="infoAdress">
                 <p id="pInfoAdress">SARTH'72</br>
                 11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
-                Téléphone : 02 43 75 28 47</br>
+                Téléphone : <a id="aPhoneContact" href="tel:0243752847">02 43 75 28 47</a></br>
                 Lundi au Vendredi : 8h15 à 17h</p>
             </div>
         `;
