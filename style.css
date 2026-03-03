@@ -67,7 +67,7 @@ p {
     flex-direction: column;
     position: absolute;
     width: 60%;
-    top: 10vh;
+    top: 5vh;
 }
 #h1PreSite {
     color: #968fed;
@@ -216,11 +216,6 @@ nav {
     height: 6.5vh;
     fill: white;
 }
-/* #svgHomeNavDashBoard {
-    width: 6vh;
-    height: 6vh;
-    fill: white;
-} */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ------------------------------------------ HOME-PAGE ------------------------------------------ */
@@ -725,6 +720,9 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+.h2TittleSectionBoardGreenSpace{
+    color: #ef5f23c4;
+}
 .liUldivSectionBoardGreenSpace {
     background: linear-gradient(311deg, #ff9c75 0%, #ef5f23c4 100%);
     width: 40%;
@@ -897,8 +895,7 @@ nav {
     display: block;
 }
 #h2DivSectionBoardContact {
-    background-color: #2fbcde !important;
-    border-radius: 15px 20px 40% 20% !important;
+    color: #2fbcde;
     max-width: 350px;
 }
 .inputCheckedTrue {
@@ -959,9 +956,6 @@ nav {
 .h2TittleSectionBoardGreenSpace,
 #h2DivSectionBoardContact {
     width: 80%;
-    color: white;
-    background: #ef5f23c4;
-    border-radius: 15px;
     padding: 5%;
     opacity: 0;
     animation-duration: 1s;
@@ -969,6 +963,10 @@ nav {
     animation-fill-mode: forwards;
     margin: 5vh auto 5vh auto;
     max-width: 350px;
+    text-align: center;
+    font-family: "Betania Patmos", cursive;
+    font-style: italic;
+    font-size: 2em;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */

@@ -176,6 +176,7 @@ const btnDashBoard = () => {
 /**/
 const dashBoardPage = () => {
     removeClass();
+    scrolltop();
     navBackBtn();
     sectionBoard.classList.add("sectionBoardDashBoard");
     document.querySelector("#sectionBoard").innerHTML = `
@@ -394,7 +395,7 @@ const greenSpacePage = () => {
     sectionBoard.classList.add("sectionBoardGreenSpace");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardGreenSpace" class="">
-            <h2 class="h2TittleSectionBoardGreenSpace">Nous sommes en mesure de vous aider pour les tâches courantes suivantes :</h2>
+            <h2 class="h2TittleSectionBoardGreenSpace">Nos services :</h2>
             <div id="displayWrap">
                 <div id="divElemEvOne" class="divElemEv animDivElemEvOne">
                     <p id="pElemEvOne" class="pElemEv">Tonte de pelouse</p>
@@ -522,7 +523,7 @@ const contactPage = () => {
     sectionBoard.classList.add("sectionBoardContact");
     document.querySelector("#sectionBoard").innerHTML = `
         <div id="divSectionBoardContact" class="">
-            <h2 id="h2DivSectionBoardContact">Contactez nous en remplissant ce formulaire :</h2>
+            <h2 id="h2DivSectionBoardContact">Nous Contacter :</h2>
             <form id="formDivSectionBoardContact" action="#">
                 <div id="divInputNomFormContact" class="divInputFormContact">
                     <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
