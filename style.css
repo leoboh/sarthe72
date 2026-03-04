@@ -211,14 +211,14 @@ nav {
     height: 8vh;
     fill: white;
 }
-#svgBackNav{
+#svgBackNav {
     width: 6.5vh;
     height: 6.5vh;
     fill: white;
     cursor: pointer;
 }
-#svgBackNav:hover{
-    fill : #ff9c75;
+#svgBackNav:hover {
+    fill: #ff9c75;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -724,7 +724,7 @@ nav {
     flex-direction: column;
     align-items: center;
 }
-.h2TittleSectionBoardGreenSpace{
+.h2TittleSectionBoardGreenSpace {
     color: #ef5f23c4;
 }
 .liUldivSectionBoardGreenSpace {
@@ -904,15 +904,15 @@ nav {
 #h2DivSectionBoardContact {
     color: #2fbcde;
     max-width: 350px;
-    margin: 8vh auto 4% auto!important;
-    padding: 5px!important;
+    margin: 8vh auto 4% auto !important;
+    padding: 5px !important;
     border-radius: 15px;
     background: #ffffff;
-    width: auto!important;
+    width: auto !important;
 }
 .inputCheckedTrue {
     border: 2px solid #42ae66 !important;
-    background: #42ae66!important;
+    background: #42ae66 !important;
     box-shadow: none !important;
 }
 #h2SendMailContact {
@@ -947,7 +947,7 @@ nav {
     font-weight: bold;
     color: white;
 }
-#divSvgContactPage{
+#divSvgContactPage {
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -958,11 +958,11 @@ nav {
     animation-fill-mode: forwards;
     max-width: 350px;
 }
-#divElemContact{
+#divElemContact {
     width: 100%;
     text-align: center;
 }
-.svgContactPage{
+.svgContactPage {
     width: 6vh;
     height: 6vh;
     fill: #2fbcde;
@@ -972,14 +972,14 @@ nav {
     border-radius: 50%;
     cursor: pointer;
 }
-.svgContactPage:hover{
-    background: #ffb32e!important;
+.svgContactPage:hover {
+    background: #ffb32e !important;
     scale: 1.05;
 }
-#svgPhoneContactPage{
+#svgPhoneContactPage {
     background: #ffb32e;
 }
-#aPhoneContact{
+#aPhoneContact {
     list-style-type: none;
     text-decoration: none;
     color: white;
@@ -1282,24 +1282,3 @@ footer {
 /* --------------------------------------------- END --------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-
-
-/**
-
-L'élément html qui te permet d'optimiser tes images pour des pages 2x plus rapides?
-
-Cet élément html, c'est <picture>. L'idée est simple: 
-D'abord il faut créer l'élément <picture>, puis lui ajouter un ou plusieurs éléments <source>.
-Chaque tag <source> doit avoir 2 attributs: [srcset] qui accepte une liste de liens vers la/les image-s à afficher et [media] qui, comme dans les media query css, permet de définir sous quelles conditions afficher l'image.
-
-Un exemple:
-
-  <picture>
-     <source srcset='/img/products/220px/image.png 2x' media='(max-width:767px)'>
-     <source srcset='/img/products/550px/image.png 2x' media='(min-width:768px)'>
-     <img class='item-img' loading='lazy' alt='product image' src='/img/products/550px/image.png' height='125px' width='125px'>
-  </picture>
-
-Ainsi lorsque l'utilisateur consulte ton site sur un appareil dont la largeur max est 767px (typiquement un smartphone), ce sera l'image contenu dans la première <source> qui sera chargé. Le reste étant tout bonnement ignoré par le user agent. Quand je dit ignoré, ça signifie qu'aucune requête réseau ne sera effectué. Et inversement, si un utilisateur consulte ton site un appareil d'une largeur d'écran >=768px (typiquement un tablette, ordi) alors ce sera le deuxième <source> qui sera chargé.
-
-De ce fait avec une simple technique, vous pouvez servir différentes variations d'une même image selon les tailles du viewport et optimiser la performance de votre site. Vous pouvez même aller plus loin en ajoutant l'attribut [loading='lazy'] pour pour un chargement diffère de l'image.
