@@ -8,6 +8,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const sectionBoard = document.querySelector("#sectionBoard");
 const footer = document.querySelector("footer");
+
 let arrayPage = ["sectionBoardHome"];
 
 /* ----------------------------------------------------------------------------------------------- */

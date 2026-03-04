@@ -972,6 +972,10 @@ nav {
     border-radius: 50%;
     cursor: pointer;
 }
+.svgContactPage:hover{
+    background: #ffb32e!important;
+    scale: 1.05;
+}
 #svgPhoneContactPage{
     background: #ffb32e;
 }
