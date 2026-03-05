@@ -780,3 +780,6 @@ sendMail = () => {
 document.querySelector("#pRealLeo").addEventListener("click", () => {
     window.open("https://leoblanche.com", "_blank");
 });
+document.querySelector("#pSiteOfficiel").addEventListener("click", () => {
+    window.open("https://sarth72.fr", "_blank");
+});
