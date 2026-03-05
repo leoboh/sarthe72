@@ -714,6 +714,7 @@ nav {
 /* ----------------------------------------------------------------------------------------------- */
 
 #divSectionBoardGreenSpace {
+    min-height: 90vh;
     height: auto !important;
     background-image: url(/images/fd_3.webp);
     background-size: cover;
@@ -1113,7 +1114,7 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 649px) and (max-width: 1500px) {
+@media screen and (min-width: 649px) {
     #divAllPreSite {
         background: left / contain no-repeat url(/images/img_loader.svg);
         position: absolute;
@@ -1177,7 +1178,7 @@ footer {
     }
     #uldivSectionBoardGreenSpace,
     .liUlDivMenuSectionBoardLunch {
-        width: 540px;
+        width: 540px !important;
     }
     .liUldivSectionBoardGreenSpace {
         height: 20%;
@@ -1275,7 +1276,25 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* ----------------------------------------- BIG-SCREEN ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1500px) {
+    .divUnit,
+    #divLunchMenu,
+    #divLunchContrat,
+    .divContratSectionBoardContrat,
+    #divSectionBoardWelcom,
+    .liUldivSectionBoardActu {
+        max-width: 700px !important;
+    }
+    #infoAdress,
+    #formDivSectionBoardContact,
+    #divSvgContactPage,
+    .imgSectionBoardActu {
+        max-width: 500px !important;
+    }
+    #map {
+        min-width: 700px !important;
+        min-height: 400px !important;
+    }
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
