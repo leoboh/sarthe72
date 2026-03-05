@@ -1114,7 +1114,7 @@ footer {
 /* ---------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* -------------------------------------- TABLETTE - LAPTOP -------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 649px) {
+@media screen and (min-width: 649px) and (max-width: 1499px) {
     #divAllPreSite {
         background: left / contain no-repeat url(/images/img_loader.svg);
         position: absolute;
