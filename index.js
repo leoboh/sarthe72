@@ -546,71 +546,77 @@ const contactPage = () => {
             </div>
         </div>
     `;
-    svgPhone = () => {
-        document.querySelector("#svgPhoneContactPage").style.background = "#ffb32e";
-        document.querySelector("#svgMailContactPage").style.background = "#ffd996";
-        document.querySelector("#svgMapContactPage").style.background = "#ffd996";
-        document.querySelector("#divElemContact").innerHTML = `
-            <div id="infoAdress">
-                <p id="pInfoAdress">SARTH'72</br>
-                11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
-                Téléphone : <a id="aPhoneContact" href="tel:0243752847">02 43 75 28 47</a></br>
-                Lundi au Vendredi : 8h15 à 17h</p>
-            </div>
-        `;
-    };
-    svgMail = () => {
-        document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
-        document.querySelector("#svgMailContactPage").style.background = "#ffb32e";
-        document.querySelector("#svgMapContactPage").style.background = "#ffd996";
-        document.querySelector("#divElemContact").innerHTML = `
-            <form id="formDivSectionBoardContact" action="#">
-                <div id="divInputNomFormContact" class="divInputFormContact">
-                    <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
-                    <p class="pErrorInputFormContact">Nom invalide</p>
-                </div>
-                <div id="divInputPrenomFormContact" class="divInputFormContact">
-                    <input id="inputPrenomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
-                    <p class="pErrorInputFormContact">Prénom invalide</p>
-                </div>
-                <div id="divInputPhoneFormContact" class="divInputFormContact">
-                    <input id="inputPhoneFormContact" class="inputFormContact" type="text" placeholder="Téléphone :" autocomplete="off">
-                    <p class="pErrorInputFormContact pErrorPhoneFormContact">Téléphone invalide</p>
-                </div>
-                <div id="divInputEmailFormContact" class="divInputFormContact">
-                    <input id="inputEmailFormContact" class="inputFormContact" type="text" placeholder="E-mail :" autocomplete="off">
-                    <p class="pErrorInputFormContact pErrorEmailFormContact">Adresse E-mail invalide</p>
-                </div>
-                <div id="divTextareaFormContact" class="divInputFormContact">
-                    <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
-                    <p class="pErrorInputFormContact">Message invalide</p>
-                </div>
-                <button onclick="sendMail()" class="buttonFormContact" type="button">Envoyer</button>
-            </form>
-        `;
-        checkInput();
-        checkEmail();
-        checkPhone();
-    };
-    svgMap = () => {
-        document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
-        document.querySelector("#svgMailContactPage").style.background = "#ffd996";
-        document.querySelector("#svgMapContactPage").style.background = "#ffb32e";
-        document.querySelector("#divElemContact").innerHTML = `
-            <div id="divIframeSectionBoardContact">
-                <iframe
-                    id="map"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10692.14107377621!2d0.362784!3d47.9357015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9796d88e89a034f3!2sS.a.r.t.h%2072!5e0!3m2!1sfr!2sfr!4v1620653831305!5m2!1sfr!2sfr">
-                </iframe>
-            </div>
-        `;
-    };
+    svgMap();
+    svgMail();
+    svgPhone();
     changeSvgDashBoard();
     arrayPage.push("sectionBoardContact");
 };
 /**/
 /**/
+svgMap = () => {
+    document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
+    document.querySelector("#svgMailContactPage").style.background = "#ffd996";
+    document.querySelector("#svgMapContactPage").style.background = "#ffb32e";
+    document.querySelector("#divElemContact").innerHTML = `
+        <div id="divIframeSectionBoardContact">
+            <iframe
+                id="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10692.14107377621!2d0.362784!3d47.9357015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9796d88e89a034f3!2sS.a.r.t.h%2072!5e0!3m2!1sfr!2sfr!4v1620653831305!5m2!1sfr!2sfr">
+            </iframe>
+        </div>
+    `;
+};
 /**/
+/**/
+svgMail = () => {
+    document.querySelector("#svgPhoneContactPage").style.background = "#ffd996";
+    document.querySelector("#svgMailContactPage").style.background = "#ffb32e";
+    document.querySelector("#svgMapContactPage").style.background = "#ffd996";
+    document.querySelector("#divElemContact").innerHTML = `
+        <form id="formDivSectionBoardContact" action="#">
+            <div id="divInputNomFormContact" class="divInputFormContact">
+                <input id="inputNomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Nom :" autocomplete="off">
+                <p class="pErrorInputFormContact">Nom invalide</p>
+            </div>
+            <div id="divInputPrenomFormContact" class="divInputFormContact">
+                <input id="inputPrenomFormContact" class="checkInputFormContact inputFormContact" type="text" placeholder="Prénom :" autocomplete="off">
+                <p class="pErrorInputFormContact">Prénom invalide</p>
+            </div>
+            <div id="divInputPhoneFormContact" class="divInputFormContact">
+                <input id="inputPhoneFormContact" class="inputFormContact" type="text" placeholder="Téléphone :" autocomplete="off">
+                <p class="pErrorInputFormContact pErrorPhoneFormContact">Téléphone invalide</p>
+            </div>
+            <div id="divInputEmailFormContact" class="divInputFormContact">
+                <input id="inputEmailFormContact" class="inputFormContact" type="text" placeholder="E-mail :" autocomplete="off">
+                <p class="pErrorInputFormContact pErrorEmailFormContact">Adresse E-mail invalide</p>
+            </div>
+            <div id="divTextareaFormContact" class="divInputFormContact">
+                <textarea id="textareaFormContact" class="checkInputFormContact" placeholder="Message :" autocomplete="off"></textarea>
+                <p class="pErrorInputFormContact">Message invalide</p>
+            </div>
+            <button onclick="sendMail()" class="buttonFormContact" type="button">Envoyer</button>
+        </form>
+    `;
+    checkInput();
+    checkEmail();
+    checkPhone();
+};
+/**/
+/**/
+svgPhone = () => {
+    document.querySelector("#svgPhoneContactPage").style.background = "#ffb32e";
+    document.querySelector("#svgMailContactPage").style.background = "#ffd996";
+    document.querySelector("#svgMapContactPage").style.background = "#ffd996";
+    document.querySelector("#divElemContact").innerHTML = `
+        <div id="infoAdress">
+            <p id="pInfoAdress">SARTH'72</br>
+            11 ZA du Ruisseau 72250 PARIGNE L'EVEQUE</br>
+            Téléphone : <a id="aPhoneContact" href="tel:0243752847">02 43 75 28 47</a></br>
+            Lundi au Vendredi : 8h15 à 17h</p>
+        </div>
+    `;
+};
 /**/
 /**/
 checkInput = () => {
@@ -635,9 +641,6 @@ checkInput = () => {
         });
     }
 };
-/**/
-/**/
-/**/
 /**/
 /**/
 checkEmail = () => {
@@ -665,9 +668,6 @@ checkEmail = () => {
 };
 /**/
 /**/
-/**/
-/**/
-/**/
 checkPhone = () => {
     const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/g;
     const inputPhoneContactForm = document.getElementById("inputPhoneFormContact");
@@ -691,9 +691,6 @@ checkPhone = () => {
         }
     });
 };
-/**/
-/**/
-/**/
 /**/
 /**/
 sendMail = () => {
