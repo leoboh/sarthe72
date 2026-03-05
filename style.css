@@ -1277,6 +1277,154 @@ footer {
 /* ----------------------------------------- BIG-SCREEN ------------------------------------------ */
 /* ----------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 1500px) {
+    #divAllPreSite {
+        background: left / contain no-repeat url(/images/img_loader.svg);
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #fddefc;
+        z-index: 100;
+    }
+    #divPreSite {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 40%;
+        top: 30vh;
+    }
+    #h1PreSite {
+        text-align: left;
+        margin: 0 auto 30px 15%;
+    }
+    #pPreSite {
+        width: 50%;
+        text-align: right;
+        margin-left: 25%;
+    }
+    #btnPreSite {
+        margin: 30px auto auto 30%;
+    }
+    .divSectionBoard {
+        height: 22vh;
+    }
+    #divBorder {
+        background-size: cover;
+        height: 45vh !important;
+    }
+    #pWelcom {
+        font-size: 0.8em;
+    }
+    #divSectionBoardWelcom {
+        padding: 0;
+    }
+    #divSectionBoardDashBoard {
+        width: 100%;
+    }
+    #divAllUnitsDashBoard {
+        flex-direction: column;
+        margin: 10vh 0;
+    }
+    #divAllUnits {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .divSectionBoardActuGrp {
+        width: 500px;
+    }
+    #uldivSectionBoardGreenSpace,
+    .liUlDivMenuSectionBoardLunch {
+        width: 540px !important;
+    }
+    .liUldivSectionBoardGreenSpace {
+        height: 20%;
+    }
+    #formDivSectionBoardContact {
+        width: 70%;
+    }
+    .h2TittleSectionBoardGreenSpace {
+        padding: 30px;
+    }
+    #divSectionBoardLunch {
+        background-size: cover;
+    }
+    /* ---HOVER--- */
+    #imgNavLogo:hover,
+    #svgNavDashBoard:hover,
+    #divLunchUnit:hover,
+    #divGreenSpaceUnit:hover,
+    #divSectionBoardActu:hover,
+    #pRealLeo:hover,
+    #pSiteOfficiel:hover,
+    #divLunchMenu:hover,
+    #divLunchContrat:hover,
+    .liUlDivMenuSectionBoardLunch:hover,
+    .divContratSectionBoardContrat:hover,
+    .buttonFormContact:hover,
+    .liUldivSectionBoardActu:hover,
+    .divSectionBoardDashBoardElements:hover {
+        cursor: pointer;
+    }
+    /**/
+    #divLunchUnit:hover,
+    #divGreenSpaceUnit:hover,
+    #divSectionBoardActu:hover,
+    #divLunchMenu:hover,
+    #divLunchContrat:hover,
+    .liUlDivMenuSectionBoardLunch:hover,
+    .divContratSectionBoardContrat:hover,
+    .liUldivSectionBoardActu:hover,
+    .divSectionBoardDashBoardElements:hover {
+        scale: 1.01 !important;
+        box-shadow: 0 0 0.5em 0px #27673d;
+        background: linear-gradient(135deg, #ff9c75 0%, #ef5f23c4 100%);
+    }
+    /**/
+    .buttonFormContact:hover {
+        scale: 1.02 !important;
+    }
+    /**/
+    #svgNavDashBoard:hover {
+        fill: #ff9c75;
+    }
+    .inputFormContact,
+    #textareaFormContact {
+        padding: 10px;
+    }
+    #pRealLeo:hover,
+    #pSiteOfficiel:hover {
+        color: #ef5f23c4;
+        font-size: 0.8em !important;
+        font-weight: bold;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .pFooter {
+        font-size: 0.7em;
+    }
+    .h2Actu,
+    .pActuSectionBoard {
+        background: none;
+        border-radius: 0;
+        padding: 10;
+    }
+    .divSectionBoardActuGrp {
+        background: #ef5f23c4;
+        box-shadow: none;
+    }
+
+    #imgNavLogo:hover {
+        scale: 1.05;
+    }
+    #displayWrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80%;
+    }
+    /****/
     .divUnit,
     #divLunchMenu,
     #divLunchContrat,
