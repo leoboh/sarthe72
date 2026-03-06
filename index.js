@@ -387,10 +387,10 @@ const contratPage = () => {
         </div>
     `;
     document.querySelector("#divContratHorsP").addEventListener("click", () => {
-        window.open("/images/Plaquette-hors-Parigné.pdf", "_blank");
+        window.open("./images/Plaquette-hp.pdf", "_blank");
     });
     document.querySelector("#divContratP").addEventListener("click", () => {
-        window.open("/images/Plaquette-Parigné.pdf", "_blank");
+        window.open("./images/Plaquette-p.pdf", "_blank");
     });
     changeSvgDashBoard();
     arrayPage.push("sectionBoardLunchContrat");
