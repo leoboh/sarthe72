@@ -187,12 +187,12 @@ const dashBoardPage = () => {
                     <div id="divUnitDeliveryh2" class="divUnith2">
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
-                    <div class="divUnitImg">
+                    <div id="divUnitImgDelivery" class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEVDashBoard" onclick="greenSpacePage()">
-                    <div class="divUnitImg">
+                    <div id="divUnitImgEV" class="divUnitImg">
                         <img class="imgUnit" src="/images/img_ev.webp" alt="">
                     </div>
                     <div id="divUnitEvh2" class="divUnith2">
@@ -208,7 +208,7 @@ const dashBoardPage = () => {
                     </div>
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContactDashBoard" onclick="contactPage()">
-                    <div class="divUnitImg">
+                    <div id="divUnitImgContact" class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">
@@ -259,12 +259,12 @@ const homePage = () => {
                     <div id="divUnitDeliveryh2" class="divUnith2">
                         <h2 class="h2Unit">Livraison de repas à domicile</h2>
                     </div>
-                    <div class="divUnitImg">
+                    <div id="divUnitImgDelivery" class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img_delivery.webp" alt="">
                     </div>
                 </div>
                 <div id="divUnitEV" class="divUnit animDivUnitEV" onclick="greenSpacePage()">
-                    <div class="divUnitImg">
+                    <div id="divUnitImgEV" class="divUnitImg">
                         <img class="imgUnit" src="/images/img_ev.webp" alt="">
                     </div>
                     <div id="divUnitEvh2" class="divUnith2">
@@ -280,7 +280,7 @@ const homePage = () => {
                     </div>
                 </div>
                 <div id="divUnitContact" class="divUnit animDivUnitContact" onclick="contactPage()">
-                    <div class="divUnitImg">
+                    <div id="divUnitImgContact" class="divUnitImg">
                         <img class="imgUnit imgStretch" src="/images/img_contact.webp" alt="">
                     </div>
                     <div id="divUnitContacth2" class="divUnith2">

@@ -397,7 +397,37 @@ nav {
 .divUnitImg {
     width: 50%;
     text-align: center;
-    background: rebeccapurple;
+}
+#divUnitImgDelivery {
+    background: #f0e4d9;
+}
+#divUnitImgContact {
+    background: #ffffff;
+}
+#divUnitImgEV {
+    background: #5f3b9b;
+}
+#divUnitActuImg {
+    background: #0f7b0f;
+}
+#divUnitDeliveryh2 {
+    border-radius: 15px 0 0 0;
+    background-color: #de73ea;
+}
+#divUnitEvh2 {
+    background: #efc817;
+}
+#divUnitActuh2 {
+    background: #d96d3b;
+}
+#divUnitContacth2 {
+    background: #12d9d9;
+    border-radius: 0 0 15px 0;
+}
+.h2Unit {
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .imgUnit {
     width: auto;
@@ -453,28 +483,6 @@ nav {
     animation-delay: 1s;
     animation-name: animOpaScalTwo;
     animation-fill-mode: forwards;
-}
-#divUnitDeliveryh2 {
-    border-radius: 15px 0 0 0;
-    background-color: #de73ea;
-}
-#divUnitEvh2 {
-    background: #efc817;
-}
-#divUnitActuh2 {
-    background: #d96d3b;
-}
-#divUnitContacth2 {
-    background: #12d9d9;
-    border-radius: 0 0 15px 0;
-}
-#divUnitActuImg {
-    background: #0f7b0f;
-}
-.h2Unit {
-    font-family: "Betania Patmos", cursive;
-    font-weight: 400;
-    font-style: normal;
 }
 /* ----------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
